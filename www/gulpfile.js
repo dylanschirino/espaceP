@@ -49,7 +49,7 @@ css = {
   }
 },
 html = {
-  in: sourcePug + '*.pug',
+  in: sourcePug + 'index.pug',
   watch: [sourcePug + '*.pug', sourcePug + 'template/**/*'],
   out: dest,
   context: {
