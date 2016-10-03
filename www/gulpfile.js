@@ -49,8 +49,8 @@ css = {
   }
 },
 html = {
-  in: sourcePug + 'index.pug',
-  watch: [sourcePug + 'index.pug', sourcePug + 'template/**/*'],
+  in: sourcePug + '*.pug',
+  watch: [sourcePug + '*.pug', sourcePug + 'template/**/*'],
   out: dest,
   context: {
     devBuild: devBuild,

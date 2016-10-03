@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.1 (25234) - http://www.bohemiancoding.com/sketch -->
+    <title>searcn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Accueil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-1256.000000, -33.000000)" stroke="#000000">
+            <g id="searcn" sketch:type="MSLayerGroup" transform="translate(1257.000000, 34.000000)">
+                <g id="Group" sketch:type="MSShapeGroup">
+                    <g id="search_1_">
+                        <ellipse id="Oval" cx="4.51562259" cy="4.55844933" rx="4.51562259" ry="4.51562259"></ellipse>
+                        <path d="M8.2893929,7.39684067 L12.6759977,11.7834455 C12.8050155,11.9124633 12.8050155,12.1059899 12.6759977,12.2350077 L12.2244354,12.68657 C12.0954177,12.8155878 11.901891,12.8155878 11.7728732,12.68657 L7.35401394,8.33221963" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,6 +5,37 @@
  * coded by Dylan Schirino
  * started at 03/10/2016
  */
+@font-face {
+  font-family: 'playfair_display';
+  src: url("../fonts/playfair/playfairdisplay-regular-webfont.eot");
+  src: url("../fonts/playfair/playfairdisplay-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair/playfairdisplay-regular-webfont.woff2") format("woff2"), url("../fonts/playfair/playfairdisplay-regular-webfont.woff") format("woff"), url("../fonts/playfair/playfairdisplay-regular-webfont.ttf") format("truetype"), url("../fonts/playfair/playfairdisplay-regular-webfont.svg#playfair_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source_sans_prolight';
+  src: url("../fonts/source-sans/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/source-sans/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/source-sans/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/source-sans/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/source-sans/sourcesanspro-light-webfont.svg#source_sans_prolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("../fonts/source-sans/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/source-sans/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/source-sans/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/source-sans/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/source-sans/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,8 +104,42 @@ body {
  * started at 03/10/2016
  */
 .header__content {
-  width: 78.8%;
-  margin: auto; }
+  max-width: 88.7%;
+  margin: auto;
+  height: 9em; }
+
+.header__logo {
+  display: inline-block; }
+
+.header__search {
+  display: inline-block;
+  width: 15.5em;
+  position: relative;
+  left: 4px; }
+
+.menu__content {
+  display: inline-block;
+  margin-left: 5.1em; }
+
+.menu__list {
+  display: inline-block; }
+
+.menu__element {
+  display: inline-block; }
+
+.search__box {
+  margin-left: 1em; }
+
+.search__submit {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  width: 1.7em;
+  height: 1.7em;
+  transition: .2s ease-in-out; }
+  .search__submit:hover {
+    cursor: pointer;
+    transform: rotate(45deg); }
 
 /* EspaceP
  *
@@ -85,3 +150,30 @@ body {
  */
 .header {
   background-color: #FBF9F9; }
+  .header__logo {
+    font: 2.4em "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    padding-top: 0.6667em; }
+  .header__img {
+    vertical-align: middle;
+    padding-right: 0.8333em; }
+
+.menu__list {
+  font: 1.8em/2.3 "source_sans_prolight";
+  text-transform: uppercase;
+  letter-spacing: 0.4px; }
+
+.menu__element {
+  padding-right: 1.666em; }
+
+.search__box {
+  font: 1.8em/1.4 "source_sans_prolight";
+  border: none;
+  background: none;
+  border-bottom: 1px solid #979797;
+  outline: none; }
+
+.search__submit {
+  background: none;
+  border: none;
+  background: url("../images/search.svg") no-repeat; }

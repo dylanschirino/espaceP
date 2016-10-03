@@ -7,4 +7,38 @@
  */
 .header{
   background-color: $headerBckg;
+  &__logo{
+    font:2.4em $sourcesans;
+    text-transform: uppercase;
+    padding-top:0.6667em;
+  }
+  &__img{
+    vertical-align:middle;
+    padding-right: 0.8333em;
+  }
+}
+.menu{
+  &__list{
+    font:1.8em/2.3 $sourcesanslight;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  &__element{
+    padding-right: 1.666em;
+  }
+}
+
+.search{
+  &__box{
+    font: 1.8em/1.4 $sourcesanslight;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #979797;
+    outline: none;
+  }
+  &__submit{
+    background: none;
+    border:none;
+    background:url("../images/search.svg") no-repeat;
+  }
 }

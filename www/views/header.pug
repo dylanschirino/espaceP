@@ -1,16 +1,19 @@
 
 header.header
   div.header__content
-    h1.header__logo
-      a(href="index.html").logo__link="Espace P... "
-        span.hidden="- Accueil"
     nav.header__menu
-      ul.menu
-        li.menu__element="Actualité"
-        li.menu__element="Rapport D'activités"
-        li.menu__element="Contact"
-        li.menu__element="Manifeste"
-        li.menu__element="Soutenir"
-      form.header__search(method="get",action="/")
-        input.search__box(type="search",placeholder="Recherche",name="search")
-        input.search__submit(type="submit", value="OK")
+      h1.header__logo
+        a(href="index.html").header__logolink
+          img.header__img(src="images/logo.jpg",width="76",height="57",alt="Logo de espaceP")
+          ="Espace P..."
+          span.hidden="- Accueil"
+      div.menu__content
+        ul.menu__list
+          li.menu__element="Actualité"
+          li.menu__element="Rapport D'activités"
+          li.menu__element="Contact"
+          li.menu__element="Manifeste"
+          li.menu__element="Soutenir"
+        form.header__search(method="get",action="/")
+          input.search__box(type="search",placeholder="Recherche",name="search")
+          input.search__submit(type="submit", value="")

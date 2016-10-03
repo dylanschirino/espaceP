@@ -7,7 +7,46 @@
  */
 .header{
   &__content{
-    width: 78.8%;
+    max-width: 88.7%;
     margin: auto;
+    height: 9em;
+  }
+  &__logo{
+    display: inline-block;
+  }
+  &__search{
+    display: inline-block;
+    width: 15.5em;
+    position: relative;
+    left:4px;
+  }
+}
+.menu{
+  &__content{
+    display: inline-block;
+    margin-left:5.1em;
+  }
+  &__list{
+    display: inline-block;
+  }
+  &__element{
+    display: inline-block;
+  }
+}
+.search{
+  &__box{
+    margin-left: 1em;
+  }
+  &__submit{
+    position: absolute;
+    right: 0;
+    bottom:5px;
+    width: 1.7em;
+    height: 1.7em;
+    transition: .2s ease-in-out;
+    &:hover{
+      cursor: pointer;
+      transform: rotate(45deg);
+    }
   }
 }
