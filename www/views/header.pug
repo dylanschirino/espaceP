@@ -9,11 +9,16 @@ header.header
           span.hidden="- Accueil"
       div.menu__content
         ul.menu__list
-          li.menu__element="Actualité"
-          li.menu__element="Rapport D'activités"
-          li.menu__element="Contact"
-          li.menu__element="Manifeste"
-          li.menu__element="Soutenir"
+          li.menu__element
+            a.menu__link(href="actu.html", title="Vers la page actualité")="Actualité"
+          li.menu__element
+            a.menu__link(href="rapport.html", title="Vers la page rapport d'activité")="Rapport D'activités"
+          li.menu__element
+            a.menu__link(href="contact.html",title="Vers la page contact")="Contact"
+          li.menu__element
+            a.menu__link(href="manifeste.html",title="Vers la page manifeste")="Manifeste"
+          li.menu__element
+            a.menu__link(href="soutenir.html",title="Vers la page de soutien")="Soutenir"
         form.header__search(method="get",action="/")
           input.search__box(type="search",placeholder="Recherche",name="search")
           input.search__submit(type="submit", value="")
