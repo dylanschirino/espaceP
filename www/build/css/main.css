@@ -236,10 +236,10 @@ body {
 .mainimage {
   min-height: 85.8vh; }
   .mainimage__title {
-    margin-left: 1.8em; }
+    margin-left: 1.63em; }
   .mainimage__subtitle {
     width: 14.8611em;
-    margin-left: 2.38em; }
+    margin-left: 2.20em; }
   .mainimage__link {
     display: block;
     text-align: center; }
@@ -252,6 +252,25 @@ body {
     text-align: center; }
   .mainimage__subtitle {
     width: 100%; } }
+
+/* EspaceP
+ *
+ * /sass/object/news.scss - News Object
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.news {
+  height: 22.7em; }
+  .news__content {
+    width: 57.5%;
+    margin: auto; }
+  .news__text {
+    margin-top: 2em; }
+  .news__time {
+    display: block;
+    text-align: center;
+    margin-top: 1em; }
 
 /* EspaceP
  *
@@ -277,6 +296,29 @@ body {
 
 .menu__element {
   padding-right: 1.666em; }
+
+.menu__link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: .2s ease-in; }
+
+.menu__link--active {
+  font-weight: bold; }
+  .menu__link--active::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30px;
+    background-color: black; }
+
+.menu__link:hover:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30px; }
 
 .search__box {
   font: 1.8em/1.4 "source_sans_prolight";
@@ -329,7 +371,7 @@ body {
     padding-top: 3.5333em;
     transition: .2s ease-in-out; }
     .mainimage__link:hover {
-      transform: translateY(10px); }
+      transform: translateY(5px); }
     .mainimage__link::after {
       display: block;
       font: 1.6em "glyphs";
@@ -341,3 +383,29 @@ body {
     font-size: 3.6em; }
   .mainimage__subtitle {
     font-size: 2.4em; } }
+
+/* EspaceP
+ *
+ * /sass/components/news.scss - News components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.news {
+  background-color: #F2F2E8; }
+  .news__title {
+    font: 1.8em/1.333em "playfair_display";
+    text-transform: uppercase;
+    padding-top: 1.556em; }
+    .news__title::after {
+      display: block;
+      content: "";
+      margin-top: 0.3em;
+      width: 97px;
+      height: 1px;
+      background-color: black; }
+  .news__text {
+    font: 1.8em/1.278em "source_sans_prolight"; }
+  .news__time {
+    font: 1.3em/1.233em "source_sans_prolight";
+    text-transform: uppercase; }

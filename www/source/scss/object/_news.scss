@@ -1,0 +1,22 @@
+/* EspaceP
+ *
+ * /sass/object/news.scss - News Object
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+ .news{
+   height: 22.7em;
+   &__content{
+     width: 57.5%;
+     margin: auto;
+   }
+   &__text{
+     margin-top: 2em;
+   }
+   &__time{
+     display: block;
+     text-align: center;
+     margin-top: 1em;
+   }
+ }

@@ -1,0 +1,30 @@
+/* EspaceP
+ *
+ * /sass/components/news.scss - News components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+ .news{
+   background-color: $actuBckg;
+   &__title{
+     font: 1.8em/1.3333em $playfair;
+     text-transform: uppercase;
+     padding-top: 1.556em;
+     &::after{
+       display: block;
+       content: "";
+       margin-top: 0.3em;
+       width:97px;
+       height: 1px;
+       background-color: $black;
+     }
+   }
+   &__text{
+     font: 1.8em/1.277777em $sourcesanslight;
+   }
+   &__time{
+     font: 1.3em/1.2333em $sourcesanslight;
+     text-transform: uppercase;
+   }
+ }

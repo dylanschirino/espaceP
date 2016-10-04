@@ -26,6 +26,32 @@
   &__element{
     padding-right: 1.666em;
   }
+  &__link{
+    &::after{
+      content: "";
+      display: block;
+      height: 1px;
+      width: 0;
+      background-color: black;
+      transition: .2s ease-in;
+    }
+    &--active{
+      font-weight: bold;
+      &::after{
+        content: "";
+        display: block;
+        height: 1px;
+        width: 30px;
+        background-color: black;
+      }
+    }
+    &:hover:after{
+      content: "";
+      display: block;
+      height: 1px;
+      width: 30px;
+    }
+  }
 }
 
 .search{
