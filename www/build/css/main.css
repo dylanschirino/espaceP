@@ -26,6 +26,13 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'glyphs';
+  src: url("../fonts/glyphs/icomoon.eot?lu6wyt");
+  src: url("../fonts/glyphs/icomoon.eot?lu6wyt#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?lu6wyt") format("truetype"), url("../fonts/glyphs/icomoon.woff?lu6wyt") format("woff"), url("../fonts/glyphs/icomoon.svg?lu6wyt#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -168,8 +175,6 @@ body {
         top: 30px;
         left: 0px;
         box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black; }
-  .site-container {
-    height: 100%; }
   .site-pusher {
     height: 100%;
     position: absolute;
@@ -191,7 +196,7 @@ body {
     line-height: 40px; }
   .site-content {
     position: absolute;
-    top: 110px;
+    top: 90px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -220,6 +225,33 @@ body {
   .header__logolink {
     font-size: 0.55em;
     margin-top: 1.5em; } }
+
+/* EspaceP
+ *
+ * /sass/object/mainimage.scss - Mainimage components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.mainimage {
+  min-height: 85.8vh; }
+  .mainimage__title {
+    margin-left: 1.8em; }
+  .mainimage__subtitle {
+    width: 14.8611em;
+    margin-left: 2.38em; }
+  .mainimage__link {
+    display: block;
+    text-align: center; }
+
+@media screen and (max-width: 640px) {
+  .mainimage__title {
+    font-size: 0.7em; }
+  .mainimage__title, .mainimage__subtitle {
+    margin: 0;
+    text-align: center; }
+  .mainimage__subtitle {
+    width: 100%; } }
 
 /* EspaceP
  *
@@ -269,3 +301,43 @@ body {
       background-color: #333333;
       color: white;
       cursor: pointer; } }
+
+/* EspaceP
+*
+* /sass/components/mainimage.scss - Mainimage components
+*
+* coded by Dylan Schirino
+* started at 04/10/2016
+*/
+.mainimage {
+  background: url("../images/mainimage.jpg") center fixed;
+  font-family: "playfair_display";
+  color: white; }
+  .mainimage__title {
+    font-size: 4.8em;
+    line-height: 1.3333333333em;
+    text-transform: uppercase;
+    letter-spacing: 1.07px;
+    padding-top: 3.4em; }
+  .mainimage__subtitle {
+    font-size: 3.6em;
+    line-height: 1.3333em;
+    padding-top: 0.9444em; }
+  .mainimage__link {
+    font: 2.4em/1.292em "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    padding-top: 3.5333em;
+    transition: .2s ease-in-out; }
+    .mainimage__link:hover {
+      transform: translateY(10px); }
+    .mainimage__link::after {
+      display: block;
+      font: 1.6em "glyphs";
+      padding-top: 0.375em;
+      content: "\e900"; }
+
+@media screen and (max-width: 640px) {
+  .mainimage__title {
+    font-size: 3.6em; }
+  .mainimage__subtitle {
+    font-size: 2.4em; } }

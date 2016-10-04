@@ -9,7 +9,14 @@ html(lang="fr")
         meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
         title= "EspaceP... - Accueil"
         link(rel='stylesheet', href='css/main.css', type='text/css')
-include header.pug
+    include header.pug
+
+      main
+        section.mainimage
+          h2.mainimage__title="Prostitution admise"
+          p.mainimage__subtitle="Pour une approche plus juste des métiers du sexe."
+          a.mainimage__link(href="#menu",title="Vers le menu principal de choix des sections")
+            span="Vers le menu principal"
 
 script(src="https://code.jquery.com/jquery-3.1.1.min.js")
 script(src="script/script.js")

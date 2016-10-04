@@ -44,7 +44,19 @@
 
 }
 
+
+@font-face {
+  font-family: 'glyphs';
+  src:  url('../fonts/glyphs/icomoon.eot?lu6wyt');
+  src:  url('../fonts/glyphs/icomoon.eot?lu6wyt#iefix') format('embedded-opentype'),
+    url('../fonts/glyphs/icomoon.ttf?lu6wyt') format('truetype'),
+    url('../fonts/glyphs/icomoon.woff?lu6wyt') format('woff'),
+    url('../fonts/glyphs/icomoon.svg?lu6wyt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $sourcesans:"source_sans_proregular","Helvetica",Arial,sans-serif;
 $sourcesanslight:"source_sans_prolight";
 $playfair:"playfair_display";
-// $glyphs:"glyphs";
+$glyphs:"glyphs";

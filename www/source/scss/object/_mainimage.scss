@@ -1,0 +1,38 @@
+/* EspaceP
+ *
+ * /sass/object/mainimage.scss - Mainimage components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+
+.mainimage{
+  min-height: 85.8vh;
+  &__title{
+    margin-left: 1.8em;
+  }
+  &__subtitle{
+    width: 14.8611em;
+    margin-left: 2.38em;
+  }
+  &__link{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:640px) {
+.mainimage{
+  &__title{
+    font-size:0.7em;
+  }
+  &__title,&__subtitle{
+      margin:0;
+      text-align: center;
+
+    }
+    &__subtitle{
+      width: 100%;
+    }
+  }
+}

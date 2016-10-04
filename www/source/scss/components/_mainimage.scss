@@ -1,0 +1,49 @@
+/* EspaceP
+*
+* /sass/components/mainimage.scss - Mainimage components
+*
+* coded by Dylan Schirino
+* started at 04/10/2016
+*/
+.mainimage{
+  background: url('../images/mainimage.jpg') center fixed;
+  font-family: $playfair;
+  color: $white;
+  &__title{
+    font-size: 4.8em;
+    line-height: 1.3333333333em;
+    text-transform: uppercase;
+    letter-spacing: 1.07px;
+    padding-top: 3.4em;
+  }
+  &__subtitle{
+    font-size: 3.6em;
+    line-height: 1.3333em;
+    padding-top: 0.9444em;
+  }
+  &__link{
+    font: 2.4em/1.2916em $sourcesans;
+    text-transform: uppercase;
+    padding-top: 3.5333em;
+    transition: .2s ease-in-out;
+    &:hover{
+      transform: translateY(10px);
+    }
+    &::after{
+      display: block;
+      font:1.6em $glyphs;
+      padding-top:0.375em;
+      content: "\e900";
+    }
+  }
+}
+@media screen and (max-width:640px) {
+.mainimage{
+  &__title{
+    font-size:3.6em;
+  }
+  &__subtitle{
+    font-size: 2.4em;
+  }
+}
+}
