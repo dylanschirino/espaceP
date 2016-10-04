@@ -6,7 +6,8 @@
  * started at 04/10/2016
  */
  .news{
-   height: 22.7em;
+   min-height: 22.5em;
+   padding-bottom:3.5em;
    &__content{
      width: 57.5%;
      margin: auto;
@@ -18,5 +19,21 @@
      display: block;
      text-align: center;
      margin-top: 1em;
+   }
+   &__button{
+     display: block;
+     margin: auto;
+     width: 9.8em;
+     margin-top:2em;
+     height: 3em;
+   }
+ }
+
+ @media screen and (max-width:614px) {
+   .news{
+    &__content{
+      width: 90%;
+      margin: auto;
+    }
    }
  }

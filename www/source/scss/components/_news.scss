@@ -26,5 +26,32 @@
    &__time{
      font: 1.3em/1.2333em $sourcesanslight;
      text-transform: uppercase;
+     letter-spacing: 0.6px;
+   }
+   &__button{
+     font: 1.6em/3em $playfair;
+     letter-spacing: 0.4px;
+     text-transform: uppercase;
+     background-color: $black;
+     border: 1px solid $white;
+     color: $white;
+     text-align: center;
+     transition: .2s ease-in;
+     &:hover{
+       border: 1px solid $black;
+       background-color: $white;
+       color: $black;
+     }
    }
  }
+
+ @media screen and (max-width:400px) {
+   .news{
+    &__title{
+        text-align: center;
+        &::after{
+          margin:0.3em auto;
+        }
+    }
+  }
+}

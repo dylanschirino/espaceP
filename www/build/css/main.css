@@ -261,7 +261,8 @@ body {
  * started at 04/10/2016
  */
 .news {
-  height: 22.7em; }
+  min-height: 22.5em;
+  padding-bottom: 3.5em; }
   .news__content {
     width: 57.5%;
     margin: auto; }
@@ -271,6 +272,17 @@ body {
     display: block;
     text-align: center;
     margin-top: 1em; }
+  .news__button {
+    display: block;
+    margin: auto;
+    width: 9.8em;
+    margin-top: 2em;
+    height: 3em; }
+
+@media screen and (max-width: 614px) {
+  .news__content {
+    width: 90%;
+    margin: auto; } }
 
 /* EspaceP
  *
@@ -408,4 +420,24 @@ body {
     font: 1.8em/1.278em "source_sans_prolight"; }
   .news__time {
     font: 1.3em/1.233em "source_sans_prolight";
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    letter-spacing: 0.6px; }
+  .news__button {
+    font: 1.6em/3em "playfair_display";
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    transition: .2s ease-in; }
+    .news__button:hover {
+      border: 1px solid black;
+      background-color: white;
+      color: black; }
+
+@media screen and (max-width: 400px) {
+  .news__title {
+    text-align: center; }
+    .news__title::after {
+      margin: 0.3em auto; } }
