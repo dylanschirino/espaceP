@@ -5,3 +5,46 @@
  * coded by Dylan Schirino
  * started at 04/10/2016
  */
+
+.navigation{
+  width: 87.4%;
+  margin: auto;
+  &__container{
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.profil{
+  width: 47.6em;
+  min-height:42.9em;
+  margin-top: 6em;
+  &--tds,&--sympathisant{
+    margin-right: 15.3em;
+    float: left;
+  }
+  &--etudiants,&--clients{
+    float: right;
+  }
+  &__box{
+    width: 28.5em;
+    margin:3em auto;
+    &--etudiants{
+      margin-top:3.5em;
+    }
+    &--clients{
+      margin-top:3.7em;
+    }
+  }
+  &__text{
+    width: 17.4375em;
+    margin:1em auto;
+  }
+  &__button{
+    display: block;
+    height: 100%;
+  }
+}

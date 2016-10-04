@@ -286,6 +286,44 @@ body {
 
 /* EspaceP
  *
+ * /sass/object/navigation.scss - Navigation components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.navigation {
+  width: 87.4%;
+  margin: auto; }
+  .navigation__container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.profil {
+  width: 47.6em;
+  min-height: 42.9em;
+  margin-top: 6em; }
+  .profil--tds, .profil--sympathisant {
+    margin-right: 15.3em;
+    float: left; }
+  .profil--etudiants, .profil--clients {
+    float: right; }
+  .profil__box {
+    width: 28.5em;
+    margin: 3em auto; }
+    .profil__box--etudiants {
+      margin-top: 3.5em; }
+    .profil__box--clients {
+      margin-top: 3.7em; }
+  .profil__text {
+    width: 17.4375em;
+    margin: 1em auto; }
+  .profil__button {
+    display: block;
+    height: 100%; }
+
+/* EspaceP
+ *
  * /sass/components/header.scss - Header components
  *
  * coded by Dylan Schirino
@@ -441,3 +479,76 @@ body {
     text-align: center; }
     .news__title::after {
       margin: 0.3em auto; } }
+
+/* EspaceP
+ *
+ * /sass/components/navigation.scss - Navigation components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.profil--tds {
+  background: url("../images/tds.png") no-repeat; }
+
+.profil--etudiants {
+  background: url("../images/etudiant.png") no-repeat; }
+
+.profil--sympathisant {
+  background: url("../images/sympathisant.png") no-repeat; }
+
+.profil--clients {
+  background: url("../images/client.png") no-repeat; }
+
+.profil__title {
+  font: 2.4em/3.2 "playfair_display";
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+  .profil__title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 285px;
+    background-color: white;
+    margin: auto; }
+
+.profil__text {
+  font: 1.6em/1.4 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  color: white; }
+
+.profil__box {
+  background-color: white;
+  padding: 1.5em 0; }
+
+.profil__element {
+  font: 1.6em/1.9 "source_sans_prolight";
+  padding-left: 1.1428571429em; }
+  .profil__element::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 0.7em; }
+  .profil__element--tds::before {
+    background-color: #F4A6B0; }
+  .profil__element--etudiants::before {
+    background-color: #8BB1B3; }
+  .profil__element--sympathisant::before {
+    background-color: #75D4BA; }
+
+.profil__link {
+  border-bottom: 1px solid black;
+  transition: .2s ease-in; }
+  .profil__link:hover {
+    border: none; }
+
+.profil__button {
+  font: 1.6em/2.1 "playfair_display";
+  text-align: center;
+  text-transform: uppercase; }
+
+.profil__box {
+  transition: .2s ease-in-out; }
+  .profil__box--clients:hover {
+    background-color: black;
+    color: white; }

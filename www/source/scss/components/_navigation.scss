@@ -5,3 +5,79 @@
  * coded by Dylan Schirino
  * started at 04/10/2016
  */
+
+.profil{
+  &--tds{
+      background: url("../images/tds.png") no-repeat;
+  }
+  &--etudiants{
+      background: url("../images/etudiant.png") no-repeat;
+  }
+  &--sympathisant{
+    background: url("../images/sympathisant.png") no-repeat;
+  }
+  &--clients{
+    background: url("../images/client.png") no-repeat;
+  }
+  &__title{
+    font: 2.4em/3.2 $playfair;
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    &::after{
+      content: "";
+      display: block;
+      height: 1px;
+      width: 285px;
+      background-color: $white;
+      margin: auto;
+    }
+  }
+  &__text{
+    font: 1.6em/1.4 $sourcesans;
+    color: $white;
+  }
+  &__box{
+    background-color: $white;
+    padding: 1.5em 0;
+  }
+  &__element{
+    font: 1.6em/1.9 $sourcesanslight;
+    padding-left: 1.1428571429em;
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 0.7em;
+      }
+      &--tds::before{
+        background-color:#F4A6B0;
+      }
+      &--etudiants::before{
+        background-color:#8BB1B3;
+      }
+      &--sympathisant::before{
+        background-color: #75D4BA;
+      }
+  }
+  &__link{
+      border-bottom: 1px solid $black;
+      transition: .2s ease-in;
+    &:hover{
+      border: none;
+    }
+  }
+  &__button{
+    font: 1.6em/2.1 $playfair;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__box{
+    transition: .2s ease-in-out;
+    &--clients:hover{
+      background-color:$black;
+      color: $white;
+    }
+  }
+}
