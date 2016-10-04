@@ -42,3 +42,21 @@
     background:url("../images/search.svg") no-repeat;
   }
 }
+
+@media only screen and (max-width: 1027px) {
+    .menu{
+      &__list{
+        background-color: $headerBckg;
+      }
+      &__element{
+        padding-left: 2em;
+        border-bottom: 1px solid white;
+        transition: .2s ease-in-out;
+        &:hover{
+          background-color: #333333;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+}

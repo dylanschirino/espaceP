@@ -10,24 +10,35 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
   </head>
 </html>
-<header class="header">
-  <div class="header__content">
-    <nav class="header__menu">
-      <h1 class="header__logo"><a class="header__logolink" href="index.html"><img class="header__img" src="images/logo.jpg" width="76" height="57" alt="Logo de espaceP">Espace P...<span class="hidden">- Accueil</span></a></h1>
-      <div class="menu__content">
-        <ul class="menu__list">
-          <li class="menu__element"><a class="menu__link" href="actu.html" title="Vers la page actualité">Actualité</a></li>
-          <li class="menu__element"><a class="menu__link" href="rapport.html" title="Vers la page rapport d'activité">Rapport D'activités</a></li>
-          <li class="menu__element"><a class="menu__link" href="contact.html" title="Vers la page contact">Contact</a></li>
-          <li class="menu__element"><a class="menu__link" href="manifeste.html" title="Vers la page manifeste">Manifeste</a></li>
-          <li class="menu__element"><a class="menu__link" href="soutenir.html" title="Vers la page de soutien">Soutenir</a></li>
-        </ul>
-        <form class="header__search" method="get" action="/">
-          <input class="search__box" type="search" placeholder="Recherche" name="search">
-          <input class="search__submit" type="submit" value="">
-        </form>
+<div class="site-container">
+  <div class="site-pusher">
+    <header class="header">
+      <div class="header__content">
+        <nav class="header__menu"><a class="header__burger" id="header__burger" href="#" title="Voir le menu"><span class="hidden">Menu</span></a>
+          <h1 class="header__logo"><a class="header__logolink" href="index.html"><img class="header__img" src="images/logo.jpg" width="76" height="57" alt="Logo de espaceP">Espace P...<span class="hidden">- Accueil</span></a></h1>
+          <div class="menu__content">
+            <ul class="menu__list">
+              <li class="menu__element"><a class="menu__link" href="actu.html" title="Vers la page actualité">Actualité</a></li>
+              <li class="menu__element"><a class="menu__link" href="rapport.html" title="Vers la page rapport d'activité">Rapport D'activités</a></li>
+              <li class="menu__element"><a class="menu__link" href="contact.html" title="Vers la page contact">Contact</a></li>
+              <li class="menu__element"><a class="menu__link" href="manifeste.html" title="Vers la page manifeste">Manifeste</a></li>
+              <li class="menu__element"><a class="menu__link" href="soutenir.html" title="Vers la page de soutien">Soutenir</a></li>
+            </ul>
+          </div>
+          <form class="header__search" method="get" action="/">
+            <input class="search__box" type="search" placeholder="Recherche" name="search">
+            <input class="search__submit" type="submit" value="">
+          </form>
+        </nav>
       </div>
-    </nav>
+    </header>
+    <div class="site-content">
+      <div class="site-container">
+        <h2>Responsive Navigation Bar</h2>
+      </div>
+    </div>
+    <div class="site-cache" id="site-cache"></div>
   </div>
-</header>
-<body></body>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="script/script.js"></script>
