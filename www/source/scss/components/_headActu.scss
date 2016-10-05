@@ -1,0 +1,27 @@
+/* EspaceP
+ *
+ * /sass/components/headActu.scss - HeadActu components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+
+.headActu{
+  background:url("../images/actu.png")no-repeat center;
+  color: $texteColor;
+  &__title{
+    font: 3.4em/1.35294117em $playfair;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2.9411764706em 0 1.5588235294em 0;
+    letter-spacing: 0.84px;
+    &::after{
+      background-color: $black;
+    }
+  }
+  &__subtitle{
+    font: 2.4em/1.333em $playfair;
+    letter-spacing: 0.6px;
+    text-align: center;
+  }
+}

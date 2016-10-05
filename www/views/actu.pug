@@ -1,0 +1,63 @@
+doctype html
+html(lang="fr")
+    head
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+        meta(charset="utf-8")
+        meta(name="description", content="Espace P… | Association pour la défense des droits des personnes prostituées")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title= "EspaceP... - Actualité"
+        link(rel='stylesheet', href='css/main.css', type='text/css')
+        div.site-container
+          div.site-pusher
+            header.header
+             div.header__content
+              h1.hidden="EspaceP... - Actualité"
+              nav.header__menu
+                a.header__burger#header__burger(href="#", title="Voir le menu")
+                  span.hidden="Menu"
+                h2.header__logo
+                  a(href="index.html").header__logolink
+                    img.header__img(src="images/logo.jpg",width="76",height="57")
+                    ="Espace P..."
+                    span.hidden="- Navigation"
+                div.menu__content
+                  ul.menu__list
+                    li.menu__element
+                      a.menu__link.menu__link--active(href="actu.html", title="Vers la page actualité")="Actualité"
+                    li.menu__element
+                      a.menu__link(href="rapport.html", title="Vers la page rapport d'activité")="Rapport D'activités"
+                    li.menu__element
+                      a.menu__link(href="contact.html",title="Vers la page contact")="Contact"
+                    li.menu__element
+                      a.menu__link(href="manifeste.html",title="Vers la page manifeste")="Manifeste"
+                    li.menu__element
+                      a.menu__link(href="soutenir.html",title="Vers la page de soutien")="Soutenir"
+                    li.menu__element.none
+                      a.menu__link.none(href="tds.html",title="Vers la page travailleur du sexe")="Travailleur du sexe"
+                      li.menu__element.none
+                        a.menu__link.none(href="etudiant.html",title="Vers la page etudiant")="Étudiants"
+                      li.menu__element.none
+                        a.menu__link.none(href="clients.html",title="Vers la page client")="Clients"
+                      li.menu__element.none
+                        a.menu__link.none(href="sympathisant.html",title="Vers la page etudiant")="Sympathisant"
+                form.header__search(method="get",action="/")
+                  input.search__box(type="search",placeholder="Recherche",name="search")
+                  input.search__submit(type="submit", value="")
+            div.site-content
+              div.site-container
+            div.site-cache#site-cache
+
+          main
+            section.headActu
+              h2.headActu__title="Actualité"
+              p.headActu__subtitle="Des récits de vie, des nouvelles, pour en savoir plus"
+            div.maincontainer
+              section.facebook
+                h2.facebook__title="Dernière publication de notre facebook"
+                div.facebook__box
+                  span.facebook__time="Il y a un an environs"
+                  p.facebook__text="Dans un article sur le dernier livre de Lilian Mathieu : « Prostitution, quel est le problème ? » une pensée très juste : « Tout cela avec une certaine méfiance pour le système idéologique néo-libéral qui semble être l’impensé de la pensée abolitionniste : « le tout sauf la prostitution paraît inviter à ne pas se montrer trop regardant quant à ce tout, qui pourrait comporter des activités tout autant éprouvantes, répugnantes et éventuellement moins rémunératrices que la prostitution mais autrement nécessaires à la prospérité capitaliste »"
+                  a.facebook__button(href="#commenter",title="Commenter sur facebook")="Commenter"
+                  a.facebook__button(href="#partager",title="Commenter sur facebook")="Partager"

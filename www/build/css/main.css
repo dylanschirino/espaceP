@@ -103,7 +103,13 @@ a {
   color: inherit; }
 
 body {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background: url("../images/grid.png") repeat-y center;
+  opacity: 0.7; }
+
+.maincontainer {
+  width: 86.3%;
+  margin: auto; }
 
 /* EspaceP
  *
@@ -425,6 +431,53 @@ body {
 
 /* EspaceP
  *
+ * /sass/object/headActu.scss - HeadActu objects
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.headActu {
+  min-height: 33.1em; }
+  .headActu__title::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 180px; }
+
+/* EspaceP
+ *
+ * /sass/object/facebook.scss - Facebook components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.facebook::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.facebook__title {
+  margin-top: 2em; }
+
+.facebook__box {
+  width: 72.5em;
+  margin: 5em auto; }
+
+.facebook__time {
+  display: block;
+  margin-bottom: 1em; }
+
+.facebook__button {
+  width: 7em;
+  height: 2.5714285714em;
+  margin-right: 1em; }
+
+.facebook__text {
+  margin-bottom: 2em; }
+
+/* EspaceP
+ *
  * /sass/components/header.scss - Header components
  *
  * coded by Dylan Schirino
@@ -716,3 +769,67 @@ body {
 .information__element {
   font: 1.4em/1.333em "source_sans_prolight";
   padding-top: 0.8em; }
+
+/* EspaceP
+ *
+ * /sass/components/headActu.scss - HeadActu components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.headActu {
+  background: url("../images/actu.png") no-repeat center;
+  color: #333333; }
+  .headActu__title {
+    font: 3.4em/1.353em "playfair_display";
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2.9411764706em 0 1.5588235294em 0;
+    letter-spacing: 0.84px; }
+    .headActu__title::after {
+      background-color: black; }
+  .headActu__subtitle {
+    font: 2.4em/1.333em "playfair_display";
+    letter-spacing: 0.6px;
+    text-align: center; }
+
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.facebook {
+  color: #333333; }
+  .facebook__title {
+    font: 2.4em/1.333em "playfair_display";
+    text-transform: uppercase;
+    letter-spacing: 0.6px; }
+  .facebook__box {
+    font-family: "source_sans_prolight";
+    background-color: white;
+    box-shadow: 0 0 4px black;
+    padding: 3.5em; }
+  .facebook__time {
+    font-size: 1.4em;
+    text-transform: uppercase; }
+    .facebook__time::before {
+      content: "\e901";
+      font: 2em "glyphs";
+      display: block;
+      padding-bottom: 0.5em; }
+  .facebook__text {
+    font-size: 1.6em;
+    line-height: 1.4em; }
+  .facebook__button {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border: 1px solid white; }
+    .facebook__button:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black; }

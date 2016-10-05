@@ -1,0 +1,50 @@
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+
+ .facebook{
+    color: $texteColor;
+   &__title{
+     font: 2.4em/1.333em $playfair;
+     text-transform: uppercase;
+     letter-spacing: 0.6px;
+   }
+   &__box{
+     font-family:$sourcesanslight;
+     background-color: $white;
+     box-shadow: 0 0 4px $black;
+     padding:3.5em;
+   }
+   &__time{
+     font-size: 1.4em;
+     text-transform: uppercase;
+
+     &::before{
+       content: "\e901";
+       font: 2em $glyphs;
+       display: block;
+       padding-bottom:0.5em;
+     }
+   }
+   &__text{
+     font-size: 1.6em;
+     line-height: 1.4em;
+   }
+   &__button{
+      font-size: 1.4em;
+      text-transform: uppercase;
+      padding: 1em;
+      background-color: $black;
+      color: $white;
+      border: 1px solid $white;
+      &:hover{
+        background-color: $white;
+        color: $black;
+        border: 1px solid $black;
+      }
+   }
+ }

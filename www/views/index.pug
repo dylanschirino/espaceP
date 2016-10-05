@@ -9,16 +9,16 @@ html(lang="fr")
         meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
         title= "EspaceP... - Accueil"
         link(rel='stylesheet', href='css/main.css', type='text/css')
-    include header.pug
+    include template/header.pug
 
       main
-        include _mainimage.pug
+        include template/_mainimage.pug
 
-        include _news.pug
+        include template/_news.pug
 
-        include _navigation.pug
-        
-      include _footer.pug
+        include template/_navigation.pug
+
+      include template/_footer.pug
 
 script(src="https://code.jquery.com/jquery-3.1.1.min.js")
 script(src="script/script.js")

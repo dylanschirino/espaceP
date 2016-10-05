@@ -1,0 +1,20 @@
+/* EspaceP
+ *
+ * /sass/object/headActu.scss - HeadActu objects
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+
+.headActu{
+  min-height: 33.1em;
+  &__title{
+    &::after{
+      content: "";
+      display: block;
+      margin: auto;
+      height: 1px;
+      width: 180px;
+    }
+  }
+}
