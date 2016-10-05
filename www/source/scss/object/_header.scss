@@ -155,6 +155,10 @@
       margin-top:0.6em;
     }
   }
+  .none{
+    display: block;
+    position: static;
+  }
 }
 
 @media screen and (max-width:366px){
