@@ -1,0 +1,47 @@
+/* EspaceP
+ *
+ * /sass/object/footer.scss - Footer components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+
+ .footer{
+   background-color: $footerBckg;
+   padding: 5em 0;
+   color: $white;
+   &__menu{
+     font: 1.6em/1.25em $sourcesanslight;
+   }
+   &__title{
+     font: 1.125em/1.333em $playfair;
+     text-transform: uppercase;
+     border-bottom: 1px solid $white;
+   }
+   &__element{
+     padding-top:0.9375em;
+     &--button{
+       font-family: $playfair;
+       text-transform: uppercase;
+       text-align: center;
+       background-color: $white;
+       color: $black;
+       &:hover{
+         background-color: $black;
+         color: $white;
+       }
+     }
+   }
+ }
+
+ .information{
+   &__subtitle{
+     font: 1.8em/1.4em $playfair;
+     text-transform: uppercase;
+     border-bottom: 1px solid $white;
+   }
+   &__element{
+     font: 1.4em/1.333em $sourcesanslight;
+     padding-top: 0.8em;
+   }
+ }

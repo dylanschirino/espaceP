@@ -334,6 +334,90 @@ body {
 
 /* EspaceP
  *
+ * /sass/object/footer.scss - Footer object
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.footer::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.footer__menu {
+  margin-left: 5em;
+  float: left; }
+
+.footer__information {
+  display: flex;
+  justify-content: space-between;
+  width: 76%;
+  margin: auto; }
+
+.footer__title {
+  display: inline-block; }
+
+.footer__element--button {
+  width: 9.6875em;
+  height: 2.5em;
+  margin-top: 1em; }
+
+.information__subtitle {
+  display: inline-block; }
+
+.information__list {
+  width: 17.9em; }
+
+.information__content {
+  margin-bottom: 3.8em;
+  margin-left: 9.5em; }
+
+@media screen and (max-width: 1082px) {
+  .footer__menu {
+    float: none;
+    width: 80%;
+    margin: auto; }
+  .footer__title {
+    display: block;
+    text-align: center;
+    padding-bottom: 1em; }
+  .footer__element {
+    display: inline-block;
+    padding-left: 1em; }
+    .footer__element--button {
+      display: block;
+      margin: 2em auto;
+      padding-left: 0; }
+  .footer__information {
+    width: 80%;
+    margin: auto; }
+  .information__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 667px) {
+  .footer__menu, .footer__information {
+    width: 90%;
+    margin: auto;
+    display: block; }
+  .information__subtitle {
+    display: block;
+    text-align: center;
+    padding-bottom: 1em; }
+  .information__list {
+    width: 90%;
+    margin: auto; }
+  .information__element {
+    text-align: center; }
+  .information__content {
+    width: 90%;
+    margin: 3em auto; } }
+
+@media screen and (max-width: 587px) {
+  .footer__menu {
+    display: none; } }
+
+/* EspaceP
+ *
  * /sass/components/header.scss - Header components
  *
  * coded by Dylan Schirino
@@ -583,3 +667,41 @@ body {
   .profil--clients {
     background: #754385;
     background-color: rgba(117, 67, 133, 0.62); } }
+
+/* EspaceP
+ *
+ * /sass/object/footer.scss - Footer components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.footer {
+  background-color: #3C3D41;
+  padding: 5em 0;
+  color: white; }
+  .footer__menu {
+    font: 1.6em/1.25em "source_sans_prolight"; }
+  .footer__title {
+    font: 1.125em/1.333em "playfair_display";
+    text-transform: uppercase;
+    border-bottom: 1px solid white; }
+  .footer__element {
+    padding-top: 0.9375em; }
+    .footer__element--button {
+      font-family: "playfair_display";
+      text-transform: uppercase;
+      text-align: center;
+      background-color: white;
+      color: black; }
+      .footer__element--button:hover {
+        background-color: black;
+        color: white; }
+
+.information__subtitle {
+  font: 1.8em/1.4em "playfair_display";
+  text-transform: uppercase;
+  border-bottom: 1px solid white; }
+
+.information__element {
+  font: 1.4em/1.333em "source_sans_prolight";
+  padding-top: 0.8em; }

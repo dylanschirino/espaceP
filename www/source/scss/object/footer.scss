@@ -1,0 +1,118 @@
+/* EspaceP
+ *
+ * /sass/object/footer.scss - Footer object
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+
+.footer{
+  &::after{
+    content: "";
+    clear: both;
+    display: block;
+  }
+  &__menu{
+    margin-left: 5em;
+    float: left;
+  }
+  &__information{
+    display: flex;
+    justify-content: space-between;
+    width: 76%;
+    margin: auto;
+  }
+  &__title{
+    display: inline-block;
+  }
+  &__element{
+    &--button{
+      width: 9.6875em;
+      height: 2.5em;
+      margin-top: 1em;
+    }
+  }
+}
+
+.information{
+  &__subtitle{
+    display: inline-block;
+  }
+  &__list{
+    width: 17.9em;
+  }
+  &__content{
+    margin-bottom: 3.8em;
+    margin-left: 9.5em;
+  }
+}
+
+@media screen and (max-width:1082px) {
+
+  .footer{
+    &__menu{
+      float: none;
+      width:80%;
+      margin: auto;
+    }
+    &__title{
+      display: block;
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    &__element{
+      display: inline-block;
+      padding-left: 1em;
+      &--button{
+        display: block;
+        margin:2em auto;
+        padding-left: 0;
+      }
+    }
+    &__information{
+      width: 80%;
+      margin: auto;
+    }
+
+  }
+  .information{
+    &__content{
+      margin-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width:667px) {
+  .footer{
+    &__menu,&__information{
+      width: 90%;
+      margin: auto;
+      display: block;
+    }
+  }
+  .information{
+    &__subtitle{
+      display: block;
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    &__list{
+      width: 90%;
+      margin: auto;
+    }
+    &__element{
+      text-align: center;
+    }
+    &__content{
+      width: 90%;
+      margin:3em auto;
+    }
+}
+}
+@media screen and (max-width:587px) {
+.footer{
+  &__menu{
+    display: none;
+  }
+}
+}
