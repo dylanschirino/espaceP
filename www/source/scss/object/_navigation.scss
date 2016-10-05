@@ -7,14 +7,11 @@
  */
 
 .navigation{
-  width: 87.4%;
-  margin: auto;
   &__container{
-    &::after{
-      content: "";
-      display: block;
-      clear: both;
-    }
+    width: 87.4%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
   }
 }
 
@@ -22,13 +19,6 @@
   width: 47.6em;
   min-height:42.9em;
   margin-top: 6em;
-  &--tds,&--sympathisant{
-    margin-right: 15.3em;
-    float: left;
-  }
-  &--etudiants,&--clients{
-    float: right;
-  }
   &__box{
     width: 28.5em;
     margin:3em auto;
@@ -45,6 +35,34 @@
   }
   &__button{
     display: block;
-    height: 100%;
+  }
+}
+
+@media screen and (max-width:1099px) {
+  .navigation{
+    &__container{
+      width: 95%;
+      margin: auto;
+    }
+  }
+}
+@media screen and (max-width:1010px) {
+  .profil{
+    width: 40em;
+  }
+}
+
+@media screen and (max-width:854px) {
+  .navigation{
+    &__container{
+      display: block;
+    }
+  }
+  .profil{
+    width: 100%;
+    display: block;
+    &__box{
+      margin: 3em auto;
+    }
   }
 }

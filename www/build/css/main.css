@@ -291,23 +291,16 @@ body {
  * coded by Dylan Schirino
  * started at 04/10/2016
  */
-.navigation {
+.navigation__container {
   width: 87.4%;
+  display: flex;
+  justify-content: space-between;
   margin: auto; }
-  .navigation__container::after {
-    content: "";
-    display: block;
-    clear: both; }
 
 .profil {
   width: 47.6em;
   min-height: 42.9em;
   margin-top: 6em; }
-  .profil--tds, .profil--sympathisant {
-    margin-right: 15.3em;
-    float: left; }
-  .profil--etudiants, .profil--clients {
-    float: right; }
   .profil__box {
     width: 28.5em;
     margin: 3em auto; }
@@ -319,8 +312,25 @@ body {
     width: 17.4375em;
     margin: 1em auto; }
   .profil__button {
-    display: block;
-    height: 100%; }
+    display: block; }
+
+@media screen and (max-width: 1099px) {
+  .navigation__container {
+    width: 95%;
+    margin: auto; } }
+
+@media screen and (max-width: 1010px) {
+  .profil {
+    width: 40em; } }
+
+@media screen and (max-width: 854px) {
+  .navigation__container {
+    display: block; }
+  .profil {
+    width: 100%;
+    display: block; }
+    .profil__box {
+      margin: 3em auto; } }
 
 /* EspaceP
  *
@@ -552,3 +562,24 @@ body {
   .profil__box--clients:hover {
     background-color: black;
     color: white; }
+
+@media screen and (max-width: 854px) {
+  .profil--tds, .profil--etudiants, .profil--sympathisant, .profil--clients {
+    background-size: contain;
+    background-position: center center; } }
+
+@media screen and (max-width: 513px) {
+  .profil--tds, .profil--etudiants, .profil--sympathisant, .profil--clients {
+    background: none; }
+  .profil--tds {
+    background: #ED707F;
+    background-color: rgba(237, 112, 127, 0.62); }
+  .profil--etudiants {
+    background: #438185;
+    background-color: rgba(67, 129, 133, 0.62); }
+  .profil--sympathisant {
+    background: #21B990;
+    background-color: rgba(33, 185, 144, 0.62); }
+  .profil--clients {
+    background: #754385;
+    background-color: rgba(117, 67, 133, 0.62); } }

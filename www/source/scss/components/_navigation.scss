@@ -81,3 +81,37 @@
     }
   }
 }
+
+@media screen and (max-width:854px) {
+  .profil{
+    &--tds,&--etudiants,&--sympathisant,&--clients{
+        background-size: contain;
+        background-position: center center;
+    }
+  }
+}
+
+
+@media screen and (max-width:513px) {
+  .profil{
+    &--tds,&--etudiants,&--sympathisant,&--clients{
+      background: none;
+    }
+    &--tds{
+      background: #ED707F;
+      background-color: rgba(237,112,127,0.62);
+    }
+    &--etudiants{
+      background: #438185;
+      background-color: rgba(67,129,133,0.62);
+    }
+    &--sympathisant{
+      background: #21B990;
+      background-color: rgba(33,185,144,0.62);
+    }
+    &--clients{
+      background: #754385;
+      background-color: rgba(117,67,133,0.62);
+    }
+  }
+}
