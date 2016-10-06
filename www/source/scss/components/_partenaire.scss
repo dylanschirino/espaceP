@@ -5,3 +5,12 @@
  * coded by Dylan Schirino
  * started at 06/10/2016
  */
+
+ .partenaire{
+   &__title{
+     font: 2.4em/1.3333 $playfair;
+     text-transform: uppercase;
+     letter-spacing: 0.6px;
+     padding-bottom: 2em;
+   }
+ }

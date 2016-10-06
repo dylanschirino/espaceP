@@ -48,13 +48,14 @@ html(lang="fr")
                       label.form__label(for="city")="Ville"
                       input.form__input(type="text",name="ville",id="city",placeholder="Ex : Liège ")
                     div.form__container.form__container--cp
-                      label.form__label(for="cp")="Code Postal"
+                      label.form__label(for="cp")="CP"
                       input.form__input(type="number",name="cp",id="cp",placeholder="Ex : 4000 ")
 
                   input.form__submit(type="submit",value="Voici mes infos !")
 
           section.partenaire
             h2.partenaire__title="Ils nous soutiennent déja"
+            div.partenaire__container
               ul.partenaire__list
                 li.partenaire__element
                   a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
@@ -62,14 +63,6 @@ html(lang="fr")
                     img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
                 li.partenaire__element
                   a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
-                  span.hidden="Région Wallone"
-                  img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
-                li.partenaire__element
-                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
-                    span.hidden="Région Wallone"
-                    img.partenaire__img(src="images/partenaire2.jpg",alt="Logo de la région wallone" width="115", height="100")
-                li.partenaire__element
-                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
                     span.hidden="Région Wallone"
                     img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
                 li.partenaire__element
@@ -80,3 +73,13 @@ html(lang="fr")
                   a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
                     span.hidden="Région Wallone"
                     img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                    span.hidden="Région Wallone"
+                    img.partenaire__img(src="images/partenaire2.jpg",alt="Logo de la région wallone" width="115", height="100")
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                    span.hidden="Région Wallone"
+                    img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
+
+        include template/_footer.pug

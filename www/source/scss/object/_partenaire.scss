@@ -5,3 +5,37 @@
  * coded by Dylan Schirino
  * started at 06/10/2016
  */
+.partenaire{
+  margin-bottom: 5em;
+  &__container{
+    display: flex;
+    flex-direction: row;
+  }
+  &__list{
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  &__element{
+    display: inline-block;
+  }
+  &__element:not(:first-child){
+      margin:0 2.5em;
+  }
+  &__element:last-child{
+    margin: 0;
+  }
+}
+@media screen and (max-width:1250px) {
+  .partenaire{
+    &__element,&__element:not(:first-child){
+      margin: 0;
+    }
+    &__element{
+      padding: 1em;
+    }
+  }
+
+}

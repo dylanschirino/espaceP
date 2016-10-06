@@ -103,9 +103,7 @@ a {
   color: inherit; }
 
 body {
-  font-size: 62.5%;
-  background: url("../images/grid.png") repeat-y center;
-  opacity: 0.7; }
+  font-size: 62.5%; }
 
 .maincontainer {
   width: 87.3%;
@@ -562,7 +560,7 @@ body {
  * started at 06/10/2016
  */
 .mainSoutien {
-  width: 91.5em;
+  width: 72.5%;
   margin: 5em auto; }
 
 .headSoutien {
@@ -578,6 +576,20 @@ body {
     margin-left: 4.28571428em; }
   .headSoutien__compte {
     margin-left: 2.4em; }
+
+@media screen and (max-width: 567px) {
+  .mainSoutien {
+    width: 90%;
+    margin: 5em auto; } }
+
+@media screen and (max-width: 400px) {
+  .headSoutien__subtitle {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2.777em; }
+  .headSoutien__cards {
+    width: 80%;
+    margin: auto; } }
 
 /* EspaceP
  *
@@ -605,14 +617,14 @@ body {
     display: inline-block; }
 
 .form__float {
-  width: 100%; }
+  width: 91%; }
   .form__float::after {
     content: "";
     display: block;
     clear: both; }
 
 .form__input {
-  width: 100%;
+  width: 90%;
   margin-bottom: 2em; }
 
 .form__container--adress {
@@ -639,6 +651,12 @@ body {
   width: 15.625em;
   height: 3.6em; }
 
+@media screen and (max-width: 971px) {
+  .explain__text, .explain__formulaire {
+    float: none;
+    width: 90%;
+    margin: 2em auto; } }
+
 /* EspaceP
  *
  * /sass/object/Partenaire.scss - Partenaire object
@@ -646,6 +664,28 @@ body {
  * coded by Dylan Schirino
  * started at 06/10/2016
  */
+.partenaire {
+  margin-bottom: 5em; }
+  .partenaire__container {
+    display: flex;
+    flex-direction: row; }
+  .partenaire__list::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .partenaire__element {
+    display: inline-block; }
+  .partenaire__element:not(:first-child) {
+    margin: 0 2.5em; }
+  .partenaire__element:last-child {
+    margin: 0; }
+
+@media screen and (max-width: 1250px) {
+  .partenaire__element, .partenaire__element:not(:first-child) {
+    margin: 0; }
+  .partenaire__element {
+    padding: 1em; } }
+
 /* EspaceP
  *
  * /sass/components/header.scss - Header components
@@ -1134,3 +1174,8 @@ body {
  * coded by Dylan Schirino
  * started at 06/10/2016
  */
+.partenaire__title {
+  font: 2.4em/1.333 "playfair_display";
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding-bottom: 2em; }

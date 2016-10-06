@@ -7,7 +7,7 @@
  */
 
  .mainSoutien{
-   width:91.5em;
+   width:72.5%;
    margin:5em auto;
  }
 
@@ -16,7 +16,7 @@
    &__subtitle{
      width: 19.2em;
      margin: auto;
-     margin-bottom: 2.777em
+     margin-bottom: 2.777em;
    }
    &__cards{
      width:14.375em;
@@ -27,5 +27,26 @@
    }
    &__compte{
      margin-left: 2.4em;
+   }
+ }
+
+ @media screen and (max-width:567px) {
+   .mainSoutien{
+     width: 90%;
+     margin:5em auto;
+   }
+ }
+
+ @media screen and (max-width:400px) {
+   .headSoutien{
+     &__subtitle{
+       width: 80%;
+       margin: auto;
+       margin-bottom: 2.777em;
+     }
+     &__cards{
+       width: 80%;
+       margin: auto;
+     }
    }
  }
