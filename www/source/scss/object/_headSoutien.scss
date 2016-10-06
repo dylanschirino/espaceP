@@ -1,0 +1,31 @@
+/* EspaceP
+ *
+ * /sass/objects/headSoutien.scss - HeadSoutien objects
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+
+ .mainSoutien{
+   width:91.5em;
+   margin:5em auto;
+ }
+
+ .headSoutien{
+   margin-bottom: 6.5em;
+   &__subtitle{
+     width: 19.2em;
+     margin: auto;
+     margin-bottom: 2.777em
+   }
+   &__cards{
+     width:14.375em;
+     margin: auto;
+   }
+   &__label{
+     margin-left:4.28571428em;
+   }
+   &__compte{
+     margin-left: 2.4em;
+   }
+ }

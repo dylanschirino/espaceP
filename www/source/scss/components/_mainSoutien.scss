@@ -1,0 +1,52 @@
+/* EspaceP
+ *
+ * /sass/components/mainSoutien.scss - mainSoutien components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+
+.explain{
+  &__title{
+    font: 2.4em/1.333em $playfair;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: $texteColor;
+    padding-bottom: 1em;
+  }
+  &__text{
+    font: 1.6em/1.25 $sourcesanslight;
+    color: $texteColor;
+  }
+}
+
+.form{
+  &__label{
+    font: 1.6em/1.3125 $sourcesans;
+    text-transform: uppercase;
+    padding-bottom:0.9375em;
+  }
+  &__input{
+    font: 1.6em/1.3125 $sourcesans;
+    background:$white;
+    border: 1px solid $black;
+    padding: 1em;
+  }
+  &__submit{
+    font: 1.6em/1.3125 $playfair;
+    text-transform: uppercase;
+    background-color: $black;
+    border: none;
+    -webkit-appareance:none;
+    color: $white;
+    outline: none;
+    border: 1px solid $white;
+    transition: .2s ease-in;
+    &:hover{
+      background-color: $white;
+      border: 1px solid $black;
+      color: $black;
+      cursor: pointer;
+    }
+  }
+}

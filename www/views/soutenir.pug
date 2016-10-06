@@ -1,0 +1,82 @@
+doctype html
+html(lang="fr")
+    head
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+        meta(charset="utf-8")
+        meta(name="description", content="Espace P… | Association pour la défense des droits des personnes prostituées")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title= "EspaceP... - Soutenir"
+        link(rel='stylesheet', href='css/main.css', type='text/css')
+    include template/header.pug
+
+      main
+        div.mainSoutien
+
+          section.headSoutien
+            h2.headSoutien__title="Nous soutenir"
+            p.headSoutien__subtitle="Vous pouvez vous abboné à notre magazine mensuel pour 5€ par mois sans engagement en fesant un virement banquaire au numéro de compte ci-joint."
+            div.headSoutien__cards
+              span.headSoutien__label="Numéro de compte"
+              p.headSoutien__compte="BE 1863 2383 3736 4683"
+
+          section.explain
+            h2.hidden="Information"
+
+            article.explain__article
+              h3.explain__title="Plus d'information"
+              p.explain__text="Notre magazine offre de nombreuse opportunité comme le fait de découvrir des histoires de vie de certaines travailleuse, travailleurs du sexe. Vous pourrez en savoir plus sur comment fonctionne ce milieu sombre et découvrir en même temps pourquoi nous avons choisi de défendre les droits de ces hommes, femmes, transgenre qui méritent tout le respect du monde et qui n’ont pas forcement la vie facile tout les jours."
+
+            div.explain__formulaire
+              form.form(method="post",action="/")
+                fieldset
+                  legend.hidden="Formulaire d'information"
+                  label.form__label(for="name")="Nom"
+                  input.form__input(type="text",name="nom",id="name",placeholder="Ex : Dupont ")
+                  label.form__label(for="firstname")="Prénom"
+                  input.form__input(type="text",name="prénom",id="firstname",placeholder="Ex : Jean ")
+                  div.form__float
+                    div.form__container.form__container--adress
+                      label.form__label.form__label--inline(for="adress")="Adresse"
+                      input.form__input.form__input--adress(type="text",name="adresse",id="adress",placeholder="Ex : Rue de la rue ")
+                    div.form__container.form__container--number
+                      label.form__label.form__label--inline(for="number")="N°"
+                      input.form__input.form__input--number(type="number",name="numero",id="number",placeholder="Ex : 4 ")
+                  div.form__float
+                    div.form__container.form__container--ville
+                      label.form__label(for="city")="Ville"
+                      input.form__input(type="text",name="ville",id="city",placeholder="Ex : Liège ")
+                    div.form__container.form__container--cp
+                      label.form__label(for="cp")="Code Postal"
+                      input.form__input(type="number",name="cp",id="cp",placeholder="Ex : 4000 ")
+
+                  input.form__submit(type="submit",value="Voici mes infos !")
+
+          section.partenaire
+            h2.partenaire__title="Ils nous soutiennent déja"
+              ul.partenaire__list
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                    span.hidden="Région Wallone"
+                    img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                  span.hidden="Région Wallone"
+                  img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                    span.hidden="Région Wallone"
+                    img.partenaire__img(src="images/partenaire2.jpg",alt="Logo de la région wallone" width="115", height="100")
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                    span.hidden="Région Wallone"
+                    img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                    span.hidden="Région Wallone"
+                    img.partenaire__img(src="images/partenaire2.jpg",alt="Logo de la région wallone" width="115", height="100")
+                li.partenaire__element
+                  a.partenaire__link(href="http://www.wallonie.be/",title="Vers le site de la région wallone")
+                    span.hidden="Région Wallone"
+                    img.partenaire__img(src="images/partenaire1.jpg",alt="Logo de la région wallone" width="115", height="100")

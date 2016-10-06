@@ -1,0 +1,35 @@
+/* EspaceP
+ *
+ * /sass/components/headSoutien.scss - HeadSoutien components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+
+ .headSoutien{
+   background: url("../images/soutien.png") no-repeat center center;
+   height: 60em;
+   &__title{
+     font: 3.4em/1.3529411765 $playfair;
+     text-transform: uppercase;
+     letter-spacing: 0.84px;
+     color: $white;
+     text-align: center;
+     padding:4.4117647059em 0 1.4705882353em 0;
+   }
+   &__subtitle{
+     font: 1.8em/1.2777777778 $sourcesans;
+     color: $white;
+   }
+   &__cards{
+     background-color: $texteColor;
+     color: $white;
+     font: 2.4em/1.2916666667 $sourcesanslight;
+     text-transform: uppercase;
+     padding: 0.8em 0;
+   }
+   &__label{
+     letter-spacing: 0.6px;
+     font-size: 0.58333em;
+   }
+ }

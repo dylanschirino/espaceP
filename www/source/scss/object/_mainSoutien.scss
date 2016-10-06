@@ -1,0 +1,71 @@
+/* EspaceP
+ *
+ * /sass/objects/mainSoutien.scss - mainSoutien objects
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+
+.explain{
+  margin-bottom: 5em;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__text{
+    width: 21.5625em;
+    float: left;
+  }
+  &__formulaire{
+    width: 34.6em;
+    float: right;
+  }
+}
+
+.form{
+  &__label{
+    display: block;
+    &--inline{
+      display: inline-block;
+    }
+  }
+  &__float{
+    width: 100%;
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  &__input{
+    width: 100%;
+    margin-bottom:2em;
+  }
+  &__container{
+    &--adress{
+      float: left;
+      width: 63%;
+      display: inline-block;
+    }
+    &--number{
+      float: right;
+      width: 17.8%;
+      display: inline-block;
+    }
+    &--ville{
+      float: left;
+      width: 50%;
+      display: inline-block;
+    }
+    &--cp{
+      float: right;
+      width: 30%;
+      display: inline-block;
+    }
+  }
+  &__submit{
+    width: 15.625em;
+    height: 3.6em;
+  }
+}
