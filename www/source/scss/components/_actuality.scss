@@ -1,0 +1,59 @@
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook Components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+
+.actuality{
+  background-color: $actuBckg;
+  padding-bottom: 6.1em;
+  &__title{
+    font: 3.6em/1.333em $playfair;
+    text-transform: uppercase;
+    letter-spacing: 0.89px;
+    padding: 1.333em 0;
+    color: $texteColor;
+  }
+}
+
+.etiquette{
+  &__title{
+    font: 2.4em/1.3333em $playfair;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: $gold;
+    border-bottom: 1px solid $gold;
+  }
+  &__element{
+    font: 1.6em/1.5 $sourcesans;
+  }
+  &__link{
+    transition: .2s ease-in;
+    &::after{
+      font: 2em/1.6 $glyphs;
+      display: block;
+    }
+    &--facebook::after{
+      content: "\e901";
+    }
+    &--twitter::after{
+      content: "\e904";
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+
+.article{
+  &__title{
+    font: 1.8em/1.5 $playfair;
+    text-transform: uppercase;
+    color: $gold;
+  }
+  &__text{
+    font: 1.6em/1.3125em $sourcesanslight;
+  }
+}

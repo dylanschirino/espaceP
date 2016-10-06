@@ -1,0 +1,51 @@
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook Object
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+ .actuality{
+   &__container{
+     width: 87.3%;
+     margin: auto;
+   }
+   &__etiquette{
+     display: inline-block;
+     vertical-align: top;
+     margin-right: 8.4em;
+   }
+   &__article{
+     margin-top: 8.8em;
+     &::after{
+       content: "";
+       display: block;
+       clear: both;
+     }
+   }
+ }
+ .etiquette{
+   &__list{
+     margin-top: 2em;
+   }
+   &__element{
+     &--facebook{
+       margin-right: 2.4em;
+     }
+     &--facebook,&--twitter{
+       display: inline-block;
+     }
+   }
+   &__link{
+     display: block;
+   }
+ }
+ .article{
+   &__title{
+     float: left;
+   }
+   &__text{
+     float: right;
+     width: 45.3125em;
+   }
+ }

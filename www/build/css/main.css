@@ -103,12 +103,10 @@ a {
   color: inherit; }
 
 body {
-  font-size: 62.5%;
-  background: url("../images/grid.png") repeat-y center;
-  opacity: 0.7; }
+  font-size: 62.5%; }
 
 .maincontainer {
-  width: 86.3%;
+  width: 87.3%;
   margin: auto; }
 
 /* EspaceP
@@ -473,8 +471,57 @@ body {
   height: 2.5714285714em;
   margin-right: 1em; }
 
-.facebook__text {
-  margin-bottom: 2em; }
+@media screen and (max-width: 867px) {
+  .facebook__box {
+    width: 80%;
+    margin: 5em auto; } }
+
+@media screen and (max-width: 555px) {
+  .facebook__box {
+    width: 80%;
+    margin: 5em auto; } }
+
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook Object
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.actuality__container {
+  width: 87.3%;
+  margin: auto; }
+
+.actuality__etiquette {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8.4em; }
+
+.actuality__article {
+  margin-top: 8.8em; }
+  .actuality__article::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.etiquette__list {
+  margin-top: 2em; }
+
+.etiquette__element--facebook {
+  margin-right: 2.4em; }
+
+.etiquette__element--facebook, .etiquette__element--twitter {
+  display: inline-block; }
+
+.etiquette__link {
+  display: block; }
+
+.article__title {
+  float: left; }
+
+.article__text {
+  float: right;
+  width: 45.3125em; }
 
 /* EspaceP
  *
@@ -821,7 +868,8 @@ body {
       padding-bottom: 0.5em; }
   .facebook__text {
     font-size: 1.6em;
-    line-height: 1.4em; }
+    line-height: 1.4em;
+    padding-bottom: 3em; }
   .facebook__button {
     font-size: 1.4em;
     text-transform: uppercase;
@@ -833,3 +881,50 @@ body {
       background-color: white;
       color: black;
       border: 1px solid black; }
+
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook Components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.actuality {
+  background-color: #F2F2E8;
+  padding-bottom: 6.1em; }
+  .actuality__title {
+    font: 3.6em/1.333em "playfair_display";
+    text-transform: uppercase;
+    letter-spacing: 0.89px;
+    padding: 1.333em 0;
+    color: #333333; }
+
+.etiquette__title {
+  font: 2.4em/1.333em "playfair_display";
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #A69064;
+  border-bottom: 1px solid #A69064; }
+
+.etiquette__element {
+  font: 1.6em/1.5 "source_sans_proregular", "Helvetica", Arial, sans-serif; }
+
+.etiquette__link {
+  transition: .2s ease-in; }
+  .etiquette__link::after {
+    font: 2em/1.6 "glyphs";
+    display: block; }
+  .etiquette__link--facebook::after {
+    content: "\e901"; }
+  .etiquette__link--twitter::after {
+    content: "\e904"; }
+  .etiquette__link:hover {
+    transform: scale(1.1); }
+
+.article__title {
+  font: 1.8em/1.5 "playfair_display";
+  text-transform: uppercase;
+  color: #A69064; }
+
+.article__text {
+  font: 1.6em/1.312em "source_sans_prolight"; }

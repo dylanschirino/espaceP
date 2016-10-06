@@ -17,7 +17,7 @@
    &__box{
      width: 72.5em;
      margin:5em auto;
-     
+
    }
    &__time{
      display: block;
@@ -28,7 +28,26 @@
      height: 2.5714285714em;
      margin-right: 1em;
    }
-   &__text{
-     margin-bottom: 2em;
+ }
+
+ @media screen and (max-width:867px) {
+
+   .facebook{
+     &__box{
+       width: 80%;
+       margin:5em auto;
+     }
    }
+
+ }
+
+ @media screen and (max-width:555px) {
+
+   .facebook{
+     &__box{
+       width: 80%;
+       margin:5em auto;
+     }
+   }
+
  }

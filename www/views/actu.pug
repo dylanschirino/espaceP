@@ -61,3 +61,35 @@ html(lang="fr")
                   p.facebook__text="Dans un article sur le dernier livre de Lilian Mathieu : « Prostitution, quel est le problème ? » une pensée très juste : « Tout cela avec une certaine méfiance pour le système idéologique néo-libéral qui semble être l’impensé de la pensée abolitionniste : « le tout sauf la prostitution paraît inviter à ne pas se montrer trop regardant quant à ce tout, qui pourrait comporter des activités tout autant éprouvantes, répugnantes et éventuellement moins rémunératrices que la prostitution mais autrement nécessaires à la prospérité capitaliste »"
                   a.facebook__button(href="#commenter",title="Commenter sur facebook")="Commenter"
                   a.facebook__button(href="#partager",title="Commenter sur facebook")="Partager"
+
+            section.actuality
+              div.actuality__container
+                h2.actuality__title="Titre de l'article"
+                div.actuality__etiquette
+                  p.etiquette__title="Date"
+                  ul.etiquette__list
+                    li.etiquette__element="21 Janvier 2016"
+                div.actuality__etiquette
+                  p.etiquette__title="Catégorie"
+                  ul.etiquette__list
+                    li.etiquette__element="Protection"
+                    li.etiquette__element="Préservation"
+                    li.etiquette__element="Sexe"
+                div.actuality__etiquette
+                  p.etiquette__title="Partage"
+                  ul.etiquette__list
+                    li.etiquette__element.etiquette__element--facebook
+                      a.etiquette__link.etiquette__link--facebook(href="http://facebook.com",title="Partager sur facebook")
+                        span.hidden="Facebook"
+                    li.etiquette__element.etiquette__element--twitter
+                      a.etiquette__link.etiquette__link--twitter(href="http://facebook.com",title="Partager sur facebook")
+                        span.hidden="Facebook"
+
+                article.actuality__article
+                  h3.article__title="Titre du paragraphe"
+                  p.article__text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget scelerisque nisi. Nullam varius dui et hendrerit dignissim. Aliquam vel augue in massa auctor feugiat. Vivamus ullamcorper sollicitudin lacus eget molestie. Aenean eu sem justo. Praesent consectetur, leo in commodo tristique, ex odio iaculis ligula, vel commodo felis dolor imperdiet mi. Praesent a felis blandit lorem tincidunt luctus id eu ante. Aliquam erat volutpat. Vivamus a diam eleifend, sodales libero ut, aliquet enim. In at augue magna. Morbi porta rutrum nulla, quis eleifend urna faucibus nec. Donec id maximus arcu, in sodales nulla. Quisque ornare ipsum ut nisi hendrerit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                article.actuality__article
+                  h3.article__title="Titre du paragraphe"
+                  p.article__text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget scelerisque nisi. Nullam varius dui et hendrerit dignissim. Aliquam vel augue in massa auctor feugiat. Vivamus ullamcorper sollicitudin lacus eget molestie. Aenean eu sem justo. Praesent consectetur, leo in commodo tristique, ex odio iaculis ligula, vel commodo felis dolor imperdiet mi. Praesent a felis blandit lorem tincidunt luctus id eu ante. Aliquam erat volutpat. Vivamus a diam eleifend, sodales libero ut, aliquet enim. In at augue magna. Morbi porta rutrum nulla, quis eleifend urna faucibus nec. Donec id maximus arcu, in sodales nulla. Quisque ornare ipsum ut nisi hendrerit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+          include template/_footer.pug
