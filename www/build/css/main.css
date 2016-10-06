@@ -483,7 +483,7 @@ body {
 
 /* EspaceP
  *
- * /sass/components/facebook.scss - Facebook Object
+ * /sass/components/facebook.scss - Actuality Object
  *
  * coded by Dylan Schirino
  * started at 06/10/2016
@@ -522,6 +522,35 @@ body {
 .article__text {
   float: right;
   width: 45.3125em; }
+
+@media screen and (max-width: 1075px) {
+  .actuality__title {
+    text-align: center;
+    margin-left: 0; }
+  .actuality__etiquette {
+    display: block;
+    width: 90%;
+    margin: 2em auto; }
+  .etiquette__title {
+    text-align: center;
+    padding-bottom: 1em; }
+  .etiquette__element {
+    text-align: center; }
+    .etiquette__element--facebook, .etiquette__element--twitter {
+      display: block;
+      text-align: center;
+      margin: 0; }
+  .article__text, .article__title {
+    float: none; }
+  .article__title {
+    text-align: center; }
+  .article__text {
+    width: 90%;
+    margin: 2em auto; } }
+
+@media screen and (max-width: 692px) {
+  .actuality__etiquette {
+    margin-right: 2em; } }
 
 /* EspaceP
  *
