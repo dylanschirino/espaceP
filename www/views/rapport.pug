@@ -1,0 +1,49 @@
+doctype html
+html(lang="fr")
+    head
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+        meta(charset="utf-8")
+        meta(name="description", content="Espace P… | Association pour la défense des droits des personnes prostituées")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title= "EspaceP... - Rapport"
+        link(rel='stylesheet', href='css/main.css', type='text/css')
+    include template/header.pug
+
+      main
+        div.header__mainContainer
+          section.rapport
+            h2.rapport__title="Rapport d'activité"
+
+          section.sommaire#sommaire
+            h2.sommaire__title="Sommaire"
+
+            ul.sommaire__list
+              li.sommaire__element
+                a.sommaire__link(href="#paragraphe1",title="Aller vers la ville de ")="Paragraphe 1"
+              li.sommaire__element
+                a.sommaire__link(href="#paragraphe2",title="Aller vers la ville de ")="Paragraphe 2"
+              li.sommaire__element
+                a.sommaire__link(href="#paragraphe1",title="Aller vers la ville de ")="Paragraphe 1"
+              li.sommaire__element
+                a.sommaire__link(href="#paragraphe2",title="Aller vers la ville de ")="Paragraphe 2"
+              li.sommaire__element
+                a.sommaire__link(href="#paragraphe1",title="Aller vers la ville de ")="Paragraphe 1"
+              li.sommaire__element
+                a.sommaire__link(href="#paragraphe2",title="Aller vers la ville de ")="Paragraphe 2"
+          div.actuality__container
+
+            section.rapportContent
+              h2.hidden="Rapport Complet"
+
+              article.actuality__article#paragraphe1
+                h3.article__title="Titre du paragraphe"
+                p.article__text.article__text--rapport="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget scelerisque nisi. Nullam varius dui et hendrerit dignissim. Aliquam vel augue in massa auctor feugiat. Vivamus ullamcorper sollicitudin lacus eget molestie. Aenean eu sem justo. Praesent consectetur, leo in commodo tristique, ex odio iaculis ligula, vel commodo felis dolor imperdiet mi. Praesent a felis blandit lorem tincidunt luctus id eu ante. Aliquam erat volutpat. Vivamus a diam eleifend, sodales libero ut, aliquet enim. In at augue magna. Morbi porta rutrum nulla, quis eleifend urna faucibus nec. Donec id maximus arcu, in sodales nulla. Quisque ornare ipsum ut nisi hendrerit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              article.actuality__article#paragraphe2
+                h3.article__title="Titre du paragraphe"
+                p.article__text.article__text--rapport="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget scelerisque nisi. Nullam varius dui et hendrerit dignissim. Aliquam vel augue in massa auctor feugiat. Vivamus ullamcorper sollicitudin lacus eget molestie. Aenean eu sem justo. Praesent consectetur, leo in commodo tristique, ex odio iaculis ligula, vel commodo felis dolor imperdiet mi. Praesent a felis blandit lorem tincidunt luctus id eu ante. Aliquam erat volutpat. Vivamus a diam eleifend, sodales libero ut, aliquet enim. In at augue magna. Morbi porta rutrum nulla, quis eleifend urna faucibus nec. Donec id maximus arcu, in sodales nulla. Quisque ornare ipsum ut nisi hendrerit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          div.button#button
+            a.button__link(href="#sommaire" title="Retourner au sommaire")="Sommaire"
+
+      include template/_footer.pug

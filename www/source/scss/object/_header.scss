@@ -5,6 +5,11 @@
  * coded by Dylan Schirino
  * started at 03/10/2016
  */
+
+ .none{
+   position: absolute;
+   display: none;
+ }
 .header{
   &__content{
     max-width: 88.7%;
@@ -70,6 +75,10 @@
 
 
   // MENU RESPONSIVE
+  .none{
+    display: block;
+    position: static;
+  }
   .header{
     position: static;
     &__search{
@@ -154,10 +163,6 @@
       display: block;
       margin-top:0.6em;
     }
-  }
-  .none{
-    display: block;
-    position: static;
   }
 }
 
