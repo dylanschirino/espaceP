@@ -1,0 +1,37 @@
+doctype html
+html(lang="fr")
+    head
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+        meta(charset="utf-8")
+        meta(name="description", content="Espace P… | Association pour la défense des droits des personnes prostituées")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title= "EspaceP... - Soutenir"
+        link(rel='stylesheet', href='css/main.css', type='text/css')
+    include template/header.pug
+
+      main
+        div.contact__mainContainer
+          section.mainContact
+            h2.mainContact__title="Contact"
+            p.mainContact__subtitle="Nos bureaux sont disponible dans plusieurs ville de Belgique Vous pouvez facilement trouver un bureau près de chez vous pour nous contacter."
+
+          section.country
+            h2.hidden="Ville disponible"
+
+            ul.country__list
+              li.country__element
+                a.country__link.country__link--bruxelles(href="ville.html",title="Aller vers la ville de ")="Bruxelles"
+              li.country__element
+                a.country__link.country__link--namur(href="ville.html",title="Aller vers la ville de ")="Namur"
+              li.country__element
+                a.country__link.country__link--mons(href="ville.html",title="Aller vers la ville de ")="Mons"
+              li.country__element
+                a.country__link.country__link--liege(href="ville.html",title="Aller vers la ville de ")="Liège"
+              li.country__element
+                a.country__link.country__link--charleroi(href="ville.html",title="Aller vers la ville de ")="Charleroi"
+              li.country__element
+                a.country__link.country__link--arlon(href="ville.html",title="Aller vers la ville de ")="Arlon"
+
+      include template/_footer.pug

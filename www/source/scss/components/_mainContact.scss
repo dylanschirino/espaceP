@@ -1,0 +1,89 @@
+/* EspaceP
+ *
+ * /sass/objects/mainContact.scss - mainContact objects
+ *
+ * coded by Dylan Schirino
+ * started at 07/10/2016
+ */
+
+ .mainContact{
+   background-color: $contactColor;
+   color: $white;
+   &__title{
+     font: 3.4em/1.3529411765 $playfair;
+     text-transform: uppercase;
+     letter-spacing: 0.84px;
+     text-align: center;
+     padding-top: 4.5294117647em;
+   }
+   &__subtitle{
+     font: 1.6em/1.25 $sourcesans;
+     padding: 3.125em 0;
+     &::after{
+       content: "";
+       display: block;
+       height: 1px;
+       width: 18em;
+       background-color: $white;
+       margin: 5em auto;
+     }
+   }
+ }
+
+ @media screen and (max-width:659px) {
+
+   .mainContact{
+     &__subtitle{
+      &::after{
+        background: none;
+      }
+     }
+   }
+
+ }
+
+ .country{
+   &__element{
+     text-align: center;
+   }
+   &__link{
+     font: 2.4em/1.34375 $playfair;
+     text-transform: uppercase;
+     color: white;
+     padding:1.134em;
+     transition: .2s ease-in;
+
+     &--bruxelles{
+       background: url("../images/bruxelles.png")no-repeat center center;
+     }
+     &--namur{
+       background: url("../images/namur.png")no-repeat center center;
+     }
+     &--mons{
+       background: url("../images/mons.png")no-repeat center center;
+     }
+     &--liege{
+       background: url("../images/liege.png")no-repeat center center;
+     }
+     &--charleroi{
+       background: url("../images/charleroi.png")no-repeat center center;
+     }
+     &--arlon{
+       background: url("../images/arlon.png")no-repeat center center;
+     }
+
+     &::after{
+       content: "\e902";
+       font: 1em $glyphs;
+       display:none;
+      padding-left:4em;
+     }
+     &:hover{
+       background: none;
+       color: $contactColor;
+     }
+     &:hover:after{
+       display: inline-block;
+     }
+   }
+ }

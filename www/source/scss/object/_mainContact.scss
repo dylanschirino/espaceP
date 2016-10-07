@@ -1,0 +1,45 @@
+/* EspaceP
+ *
+ * /sass/components/mainContact.scss - mainContact components
+ *
+ * coded by Dylan Schirino
+ * started at 07/10/2016
+ */
+.contact{
+  &__mainContainer{
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+.mainContact{
+  width: 50%;
+  height: 85.2vh;
+  float: right;
+  &__subtitle{
+    width: 80%;
+    margin:auto;
+  }
+}
+
+.country{
+  width: 50%;
+  float: left;
+  &__link{
+    display: block;
+  }
+}
+
+@media screen and (max-width:557px) {
+
+  .mainContact{
+    display: none;
+  }
+  .country{
+    width: 100%;
+    float: none;
+  }
+
+}
