@@ -9,6 +9,11 @@
    &__container{
      width: 87.3%;
      margin: auto;
+     &::after{
+       content: "";
+       display: block;
+       clear: both;
+     }
    }
    &__etiquette{
      display: inline-block;

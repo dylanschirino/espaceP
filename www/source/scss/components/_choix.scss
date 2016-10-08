@@ -7,12 +7,24 @@
  */
 
  .choix{
-   background-color: $sympathisantColor;
-   background-color: rgba(33,185,144,0.62);
+   &--sympathisant{
+     background-color: $sympathisantColor;
+     background-color: rgba(33,185,144,0.62);
+   }
+   &--clients{
+     background-color: $contactColor;
+     background-color: rgba(117,67,133,0.62);
+     float: right;
+   }
    &__image{
      &--sympathisant{
        background: url("../images/sympathisant.png") no-repeat center center;
        background-size: cover;
+     }
+     &--client{
+      background: url("../images/client.png") no-repeat center center;
+      background-size: cover;
+      float: left;
      }
    }
    &__title{
@@ -35,6 +47,20 @@
        background-color: $white;
      }
 
+   }
+ }
+
+ .aside{
+   &__list{
+     border-left: 1px solid $black;
+     padding: 0 1.875em;
+   }
+   &__link{
+     font: 1.6em/1.25 $sourcesanslight;
+     padding:0.7em 0;
+     &:hover{
+       text-decoration: underline;
+     }
    }
  }
 

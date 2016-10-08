@@ -491,6 +491,10 @@ body {
 .actuality__container {
   width: 87.3%;
   margin: auto; }
+  .actuality__container::after {
+    content: "";
+    display: block;
+    clear: both; }
 
 .actuality__etiquette {
   display: inline-block;
@@ -852,6 +856,26 @@ body {
   .choix__subtitle {
     width: 80%;
     margin: 2.9375em auto; }
+
+.actuality__container {
+  position: relative; }
+
+.aside {
+  float: right;
+  margin-top: 10em; }
+  .aside__link {
+    display: block; }
+
+@media screen and (max-width: 1231px) {
+  .aside {
+    float: none;
+    margin-top: 10em; } }
+
+@media screen and (max-width: 975px) {
+  .aside {
+    width: 90%;
+    margin: auto;
+    margin-top: 5em; } }
 
 @media screen and (max-width: 624px) {
   .choix {
@@ -1559,29 +1583,52 @@ body {
  * coded by Dylan Schirino
  * started at 08/10/2016
  */
-.choix {
+.choix--sympathisant {
   background-color: #21B990;
   background-color: rgba(33, 185, 144, 0.62); }
-  .choix__image--sympathisant {
-    background: url("../images/sympathisant.png") no-repeat center center;
-    background-size: cover; }
-  .choix__title {
-    font: 3.4em/1.353 "playfair_display";
-    text-transform: uppercase;
-    letter-spacing: 0.84px;
-    padding-top: 4.5294117647em;
-    text-align: center;
-    color: white; }
-  .choix__subtitle {
-    font: 1.6em/1.25 "source_sans_prolight";
-    color: white; }
-    .choix__subtitle::after {
-      content: "";
-      display: block;
-      width: 50%;
-      margin: 3em auto;
-      height: 1px;
-      background-color: white; }
+
+.choix--clients {
+  background-color: #754385;
+  background-color: rgba(117, 67, 133, 0.62);
+  float: right; }
+
+.choix__image--sympathisant {
+  background: url("../images/sympathisant.png") no-repeat center center;
+  background-size: cover; }
+
+.choix__image--client {
+  background: url("../images/client.png") no-repeat center center;
+  background-size: cover;
+  float: left; }
+
+.choix__title {
+  font: 3.4em/1.353 "playfair_display";
+  text-transform: uppercase;
+  letter-spacing: 0.84px;
+  padding-top: 4.5294117647em;
+  text-align: center;
+  color: white; }
+
+.choix__subtitle {
+  font: 1.6em/1.25 "source_sans_prolight";
+  color: white; }
+  .choix__subtitle::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 3em auto;
+    height: 1px;
+    background-color: white; }
+
+.aside__list {
+  border-left: 1px solid black;
+  padding: 0 1.875em; }
+
+.aside__link {
+  font: 1.6em/1.25 "source_sans_prolight";
+  padding: 0.7em 0; }
+  .aside__link:hover {
+    text-decoration: underline; }
 
 @media screen and (max-width: 624px) {
   .choix__title {
