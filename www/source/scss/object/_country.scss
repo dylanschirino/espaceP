@@ -1,0 +1,83 @@
+/* EspaceP
+ *
+ * /sass/object/country.scss - country object
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+
+ .mainCountry{
+   width: 87.8%;
+   margin:5em auto;
+   &::after{
+     content: "";
+     display: block;
+     clear: both;
+   }
+ }
+
+ .contactForm{
+   float: left;
+   width: 33.5em;
+ }
+ .contactInfo{
+   float: right;
+   width: 44.1em;
+ }
+
+ .contactForm{
+    &__title{
+      margin-bottom: 1em;
+      &--country{
+        display: inline-block;
+      }
+    }
+    &__label{
+      display: block;
+    }
+    &__input{
+      width: 97%;
+      height: 3em;
+      margin-bottom:2em;
+      &--textarea{
+        height: 14.25em;
+      }
+    }
+    &__submit{
+      width: 15.625em;
+      height: 3.5em;
+    }
+ }
+
+ .contactInfo{
+   &__list{
+     margin-bottom:5em;
+   }
+ }
+
+
+ @media screen and (max-width:931px) {
+    .contactForm,.contactInfo{
+      float: none;
+      width: 80%;
+      margin:8em auto;
+      display: block;
+    }
+
+ }
+
+ @media screen and (max-width:534px) {
+    .contactInfo{
+      &__img{
+        width: 100%;
+        height: auto;
+      }
+    }
+ }
+
+ @media screen and (max-width:405px) {
+    .contactForm,.contactInfo{
+      width: 90%;
+      margin: 8em auto;
+    }
+ }

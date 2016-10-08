@@ -1,0 +1,54 @@
+doctype html
+html(lang="fr")
+    head
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+        meta(charset="utf-8")
+        meta(name="description", content="Espace P… | Association pour la défense des droits des personnes prostituées")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title= "EspaceP... - Contact Bruxelles"
+        link(rel='stylesheet', href='css/main.css', type='text/css')
+    include template/header.pug
+
+      main
+        div.mainCountry
+          section.contactForm
+            h2.contactForm__title="Contact"
+            form.contactForm__form
+              fieldset
+                legend.hidden="Formulaire de contact"
+                label.contactForm__label(for="name")="Nom"
+                input.contactForm__input(type="text",name="nom",id="name",placeholder="Ex : Dupont ")
+                label.contactForm__label(for="firstname")="Prénom"
+                input.contactForm__input(type="text",name="prénom",id="firstname",placeholder="Ex : Jean ")
+                label.contactForm__label(for="email")="Email"
+                input.contactForm__input(type="email",name="email",id="email",placeholder="Ex : jean@dupont.be")
+                label.contactForm__label(for="sujet")="Sujet : "
+                input.contactForm__input(type="text",name="sujet",id="sujet",placeholder="Ex : J'aimerais vous aider ")
+                label.contactForm__label(for="message")="Message : "
+                textarea.contactForm__input.contactForm__input--textarea(name="message",id="message")
+
+                input.contactForm__submit(type="submit",value="Nous contacter")
+
+          section.contactInfo
+            h2.contactForm__title.contactForm__title--country="Bruxelles"
+            ul.contactInfo__list
+              li.contactInfo__element
+                span.contactInfo__subtitle.contactInfo__subtitle--coordinateur="Coordinatrice : "
+                =" Isabelle Jaramillo"
+              li.contactInfo__element
+                span.contactInfo__subtitle.contactInfo__subtitle--adresse="Adresse : "
+                =" 116, Rue des plantes 1030 Bruxelles"
+              li.contactInfo__element
+                span.contactInfo__subtitle.contactInfo__subtitle--telephone="Téléphone : "
+                a.contactInfo__link(href="tel:042199874",title="Nous téléphoner?")=" 02 / 219 98 74"
+              li.contactInfo__element
+                span.contactInfo__subtitle.contactInfo__subtitle--fax="Fax : "
+                a.contactInfo__link(href="tel:022170215",title="Nous envoyer un fax?")=" 02 / 217 02 15"
+              li.contactInfo__element
+                span.contactInfo__subtitle.contactInfo__subtitle--email="Email : "
+                a.contactInfo__link(href="mailto:espacebxl@hotmail.com",title="Nous envoyer un email?")=" espacebxl@hotmail.com"
+            <a href="https://www.google.com/maps/dir//116,+Rue+des+plantes+1030+Bruxelles/"><img class="contactInfo__img" src="http://maps.googleapis.com/maps/api/staticmap?center=116,+Rue+des+plantes+1030+Bruxelles&zoom=13&scale=2&size=440x300&maptype=roadmap&key=AIzaSyD0FsoxEPq60TK55sKfmEDqI3Iow0RjVLI&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C116,+Rue+des+plantes+1030+Bruxelles" alt="Google Map of 116, Rue des plantes 1030 Bruxelles" width="440" height="300"></a>
+
+      include template/_footer.pug

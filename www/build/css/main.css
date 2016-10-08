@@ -774,6 +774,68 @@ body {
 
 /* EspaceP
  *
+ * /sass/object/country.scss - country object
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.mainCountry {
+  width: 87.8%;
+  margin: 5em auto; }
+  .mainCountry::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.contactForm {
+  float: left;
+  width: 33.5em; }
+
+.contactInfo {
+  float: right;
+  width: 44.1em; }
+
+.contactForm__title {
+  margin-bottom: 1em; }
+  .contactForm__title--country {
+    display: inline-block; }
+
+.contactForm__label {
+  display: block; }
+
+.contactForm__input {
+  width: 97%;
+  height: 3em;
+  margin-bottom: 2em; }
+  .contactForm__input--textarea {
+    height: 14.25em; }
+
+.contactForm__submit {
+  width: 15.625em;
+  height: 3.5em; }
+
+.contactInfo__list {
+  margin-bottom: 5em; }
+
+@media screen and (max-width: 931px) {
+  .contactForm, .contactInfo {
+    float: none;
+    width: 80%;
+    margin: 8em auto;
+    display: block; } }
+
+@media screen and (max-width: 534px) {
+  .contactInfo__img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 405px) {
+  .contactForm, .contactInfo {
+    width: 90%;
+    margin: 8em auto; } }
+
+/* EspaceP
+ *
  * /sass/components/header.scss - Header components
  *
  * coded by Dylan Schirino
@@ -1390,3 +1452,69 @@ body {
       text-align: center; }
     .sommaire__element {
       text-align: center; } }
+
+/* EspaceP
+ *
+ * /sass/components/country.scss - country components
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.contactForm__title {
+  font: 3.2em/1.344 "playfair_display";
+  text-transform: uppercase;
+  color: #754385; }
+  .contactForm__title--country {
+    border-bottom: 1px solid #754385; }
+
+.contactForm__label {
+  font: 1.6em/1.333 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 1em; }
+
+.contactForm__input {
+  font: 1.6em/1.333 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  background: none;
+  border: none;
+  border: 1px solid black;
+  padding-left: 1em; }
+
+.contactForm__submit {
+  font: 1.6em/2 "playfair_display";
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  -webkit-appareance: none;
+  border: 1px solid white;
+  transition: .2s ease-in; }
+  .contactForm__submit:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer; }
+
+.contactInfo__subtitle {
+  font: 1.125em/1.278 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-right: 1em; }
+  .contactInfo__subtitle::before {
+    font: 1.4em "glyphs";
+    display: inline-block;
+    padding-right: 0.7em; }
+  .contactInfo__subtitle--coordinateur::before {
+    content: "\e906"; }
+  .contactInfo__subtitle--adresse::before {
+    content: "\e908"; }
+  .contactInfo__subtitle--telephone::before {
+    content: "\e905"; }
+  .contactInfo__subtitle--fax::before {
+    content: "\e903"; }
+  .contactInfo__subtitle--email::before {
+    content: "\e907"; }
+
+.contactInfo__element {
+  font: 1.6em/1.25 "source_sans_prolight";
+  padding-bottom: 1.25em; }
+
+.contactInfo__link:hover {
+  text-decoration: underline; }

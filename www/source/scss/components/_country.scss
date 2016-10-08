@@ -1,0 +1,81 @@
+/* EspaceP
+ *
+ * /sass/components/country.scss - country components
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+ .contactForm{
+    &__title{
+      font: 3.2em/1.34375 $playfair;
+      text-transform: uppercase;
+      color: $contactColor;
+      &--country{
+        border-bottom: 1px solid $contactColor;
+      }
+    }
+    &__label{
+      font: 1.6em/1.333 $sourcesans;
+      text-transform: uppercase;
+      padding-bottom: 1em;
+    }
+    &__input{
+      font: 1.6em/1.333 $sourcesans;
+      background: none;
+      border: none;
+      border: 1px solid $black;
+      padding-left: 1em;
+    }
+    &__submit{
+      font: 1.6em/2 $playfair;
+      text-transform: uppercase;
+      background-color: $black;
+      color: $white;
+      -webkit-appareance:none;
+      border: 1px solid $white;
+      transition: .2s ease-in;
+      &:hover{
+        background-color: $white;
+        color: $black;
+        border: 1px solid $black;
+        cursor: pointer;
+      }
+    }
+ }
+
+ .contactInfo{
+   &__subtitle{
+     font: 1.125em/1.2778 $sourcesans;
+     text-transform: uppercase;
+     padding-right: 1em;
+     &::before{
+       font: 1.4em $glyphs;
+       display: inline-block;
+       padding-right:0.7em;
+     }
+     &--coordinateur::before{
+       content: "\e906";
+     }
+     &--adresse::before{
+       content: "\e908";
+     }
+     &--telephone::before{
+       content: "\e905";
+     }
+     &--fax::before{
+       content: "\e903";
+     }
+     &--email::before{
+       content: "\e907";
+     }
+   }
+   &__element{
+     font: 1.6em/1.25 $sourcesanslight;
+    padding-bottom: 1.25em;
+   }
+   &__link{
+     &:hover{
+       text-decoration: underline;
+     }
+   }
+ }
