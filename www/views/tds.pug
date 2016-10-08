@@ -58,17 +58,20 @@ html(lang="fr")
             h2.askforus__title="Demander le passage de l'équipe"
             form.askforus__form
               fieldset
-                legend.hidden="Formulaire de contact"
-                label.askforus__label(for="name")="Nom"
-                input.askforus__input(type="text",name="nom",id="name",placeholder="Ex : Dupont ")
-                label.askforus__label(for="firstname")="Prénom"
-                input.askforus__input(type="text",name="prénom",id="firstname",placeholder="Ex : Jean ")
-                label.askforus__label(for="email")="Email"
-                input.askforus__input(type="email",name="email",id="email",placeholder="Ex : jean@dupont.be")
-                label.askforus__label(for="sujet")="Sujet : "
-                input.askforus__input(type="text",name="sujet",id="sujet",placeholder="Ex : J'aimerais vous aider ")
-                label.askforus__label(for="message")="Message : "
-                textarea.askforus__input.askforus__input--textarea(name="message",id="message")
+                legend.hidden="Formulaire de passage"
+                div.askforus__left
 
-                input.askforus__submit(type="submit",value="Nous contacter")
+                  label.askforus__label(for="name")="Nom"
+                  input.askforus__input(type="text",name="nom",id="name",placeholder="Ex : Dupont ")
+                  label.askforus__label(for="firstname")="Prénom"
+                  input.askforus__input(type="text",name="prénom",id="firstname",placeholder="Ex : Jean ")
+                  label.askforus__label(for="adresse")="Adresse"
+                  input.askforus__input(type="text",name="adresse",id="adresse",placeholder="Ex : Rue de la rue")
+                  label.askforus__label(for="cp")="Code Postal : "
+                  input.askforus__input(type="number",name="cp",id="cp",placeholder="Ex : 4000 ")
+                div.askforus__right
+                  label.askforus__label(for="message")="Message : "
+                  textarea.askforus__input.askforus__input--textarea(name="message",id="message")
+
+                  input.askforus__submit(type="submit",value="Demander le passage")
       include template/_footer.pug

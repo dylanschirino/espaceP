@@ -8,4 +8,40 @@
 
 .askforus{
   background-color: $sectionChange;
+  padding-bottom:5em;
+  &__title{
+    font: 2.4em/1.344 $playfair;
+    text-transform: uppercase;
+    color: $texteColor;
+    padding:2.08333em 0;
+  }
+  &__label{
+    font: 1.6em/1.333 $sourcesans;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    color: $texteColor;
+  }
+  &__input{
+    font: 1.6em/1.3333 $sourcesans;
+    padding-left: 1em;
+    color: $texteColor;
+    background: none;
+    background-color: $white;
+    border: 1px solid $black;
+  }
+  &__submit{
+    font: 1.6em/2 $playfair;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    border: 1px solid $sectionChange;
+    transition: .2s ease-in;
+    &:hover{
+      background-color: $sectionChange;
+      color: $black;
+      border: 1px solid $black;
+      cursor: pointer;
+    }
+  }
 }
