@@ -7,29 +7,31 @@ html(lang="fr")
         meta(charset="utf-8")
         meta(name="description", content="Espace P… | Association pour la défense des droits des personnes prostituées")
         meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
-        title= "EspaceP... - Clients"
+        title= "EspaceP... - Étudiant"
         link(rel='stylesheet', href='css/main.css', type='text/css')
     include template/header.pug
 
       main
         div.header__mainContainer
-          section.choix.choix--clients
-            h2.choix__title="Clients"
-            p.choix__subtitle="Vous êtes un client et vous avez des droits  mais vous avez aussi des obligations et  des précautions à prendre de votre côtés  pour que tout se passe dans le respect de chaqu’un. Vous trouverez ici un petit guide du client pour en apprendre d’avantage."
-          div.choix__image.choix__image--client
-            p.hidden="Image représentant une main qui sort tendu vers ce qu'on imagine être une femme qui sors de sa voiture"
+          section.choix.choix--etudiant
+            h2.choix__title="Étudiant"
+            p.choix__subtitle="Pour toute question concernant un stage, une intervention scolaire ou si vous avez simplement des interrogations sur nos actions, consultez cette section"
+          div.choix__image.choix__image--etudiant
+            p.hidden="Image représentant un homme qui est dans les bras d'une Travailleuse du sexe, plein de tendresse dans cette image"
 
 
         div.actuality__container
           aside.aside#sidebar
-            ul.aside__list
+            ul.aside__list.aside__list--etudiant
               li.aside__element
                 a.aside__link(href="#poinfort",title="Aller vers les points fort")="Point fort de notre manifeste"
               li.aside__element
                 a.aside__link(href="#legislation",title="Aller vers les points fort")="le point sur notre législation"
+              li.aside__element
+                a.aside__link.aside__link--button(href="#stage",title="Aller vers la section stage")="Stage et intervention"
 
           section.rapportContent
-            h2.hidden="Guide du clients"
+            h2.hidden="Texte sur les sympathisant"
 
             article.actuality__article#poinfort
               h3.article__title="Titre du paragraphe"

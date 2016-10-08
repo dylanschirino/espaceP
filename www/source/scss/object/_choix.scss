@@ -29,6 +29,10 @@
     margin-top: 10em;
   &__link{
     display: block;
+    &--button{
+      width: 16.166em;
+      height: 2.5em;
+    }
   }
 }
 
