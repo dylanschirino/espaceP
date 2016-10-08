@@ -1,0 +1,59 @@
+/* EspaceP
+ *
+ * /sass/components/sympathisant.scss - Sympathisant Components
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+
+ .choix{
+   background-color: $sympathisantColor;
+   background-color: rgba(33,185,144,0.62);
+   &__image{
+     &--sympathisant{
+       background: url("../images/sympathisant.png") no-repeat center center;
+       background-size: cover;
+     }
+   }
+   &__title{
+     font: 3.4em/1.3529411765 $playfair;
+     text-transform: uppercase;
+     letter-spacing: 0.84px;
+     padding-top:4.5294117647em;
+     text-align: center;
+     color: $white;
+   }
+   &__subtitle{
+     font: 1.6em/1.25 $sourcesanslight;
+     color: $white;
+     &::after{
+       content: "";
+       display: block;
+       width: 50%;
+       margin:3em auto;
+       height: 1px;
+       background-color: $white;
+     }
+
+   }
+ }
+
+ @media screen and (max-width:624px) {
+
+   .choix{
+     &__title{
+       padding-top: 2em;
+     }
+    &__subtitle{
+      padding: 3em 0;
+      margin: auto;
+    }
+    &__subtitle{
+      &::after{
+        background:none;
+        margin: 0;
+      }
+    }
+   }
+
+ }
