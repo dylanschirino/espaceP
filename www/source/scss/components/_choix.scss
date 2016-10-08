@@ -20,6 +20,10 @@
      background-color: $etudiantColor;
      background-color: rgba(67,129,133,0.62);
    }
+   &--tds{
+     background-color: $tdsColor;
+     background-color: rgba(237,112,127,0.62);
+   }
    &__image{
      &--sympathisant{
        background: url("../images/sympathisant.png") no-repeat center center;
@@ -34,6 +38,10 @@
        background: url("../images/etudiant.png") no-repeat center center;
        background-size: cover;
      }
+     &--tds{
+       background: url("../images/tds.png") no-repeat center center;
+       background-size: cover;
+     }
    }
    &__title{
      font: 3.4em/1.3529411765 $playfair;
@@ -42,6 +50,9 @@
      padding-top:4.5294117647em;
      text-align: center;
      color: $white;
+     &--tds{
+       font-size:3em;
+     }
    }
    &__subtitle{
      font: 1.6em/1.25 $sourcesanslight;

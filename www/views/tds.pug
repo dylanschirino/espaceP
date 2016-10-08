@@ -1,0 +1,74 @@
+doctype html
+html(lang="fr")
+    head
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+      <![endif]-->
+        meta(charset="utf-8")
+        meta(name="description", content="Espace P… | Association pour la défense des droits des personnes prostituées")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title= "EspaceP... - TDS"
+        link(rel='stylesheet', href='css/main.css', type='text/css')
+    include template/header.pug
+
+      main
+        div.header__mainContainer
+          section.choix.choix--tds
+            h2.choix__title.choix__title--tds="Travailleur du sexe"
+            p.choix__subtitle="L’intime, c’est l’ensemble de ce qui se déroule depuis le moment où le client franchit le seuil et puis en ressort. Quels en sont les rituels, les codes et les enjeux intimes que vivent les personnes prostituées dans leur quotidien professionnel?"
+          div.choix__image.choix__image--tds
+            p.hidden="Image représentant les pieds d'une femme qui porte des chaussures rouge, le sol est représenter par du carrelage"
+
+
+        div.actuality__container
+          aside.aside#sidebar
+            ul.aside__list
+              li.aside__element
+                a.aside__link(href="#service",title="Aller vers les points fort")="Nos services"
+              li.aside__element
+                a.aside__link(href="#legislation",title="Aller vers les points fort")="Législation (droits et devoirs)"
+              li.aside__element
+                a.aside__link(href="#legislation",title="Aller vers les points fort")="Infos vaccination et dépistage"
+              li.aside__element
+                a.aside__link(href="#legislation",title="Aller vers les points fort")="Retrouver le code de vaccination"
+              li.aside__element
+                a.aside__link(href="#legislation",title="Aller vers les points fort")="Quand la capote éclate"
+              li.aside__element
+                a.aside__link(href="#legislation",title="Aller vers les points fort")="Fellation sans préservatif"
+              li.aside__element
+                a.aside__link(href="#legislation",title="Aller vers les points fort")="Hygiène du vagin"
+              li.aside__element
+                a.aside__link(href="#legislation",title="Aller vers les points fort")="Brochure (PDF)"
+              li.aside__element
+                a.aside__link.aside__link--button(href="#legislation",title="Aller vers les points fort")="Passage de l'équipe"
+
+          section.rapportContent
+            h2.hidden="Travailleur du sexe contenu"
+
+            article.actuality__article#services
+              h3.article__title="Nos services"
+              p.article__text.article__text--rapport="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget scelerisque nisi. Nullam varius dui et hendrerit dignissim. Aliquam vel augue in massa auctor feugiat. Vivamus ullamcorper sollicitudin lacus eget molestie. Aenean eu sem justo. Praesent consectetur, leo in commodo tristique, ex odio iaculis ligula, vel commodo felis dolor imperdiet mi. Praesent a felis blandit lorem tincidunt luctus id eu ante. Aliquam erat volutpat. Vivamus a diam eleifend, sodales libero ut, aliquet enim. In at augue magna. Morbi porta rutrum nulla, quis eleifend urna faucibus nec. Donec id maximus arcu, in sodales nulla. Quisque ornare ipsum ut nisi hendrerit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            article.actuality__article#vaccin
+              h3.article__title="Infos vaccination et dépistage"
+              p.article__text.article__text--rapport="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget scelerisque nisi. Nullam varius dui et hendrerit dignissim. Aliquam vel augue in massa auctor feugiat. Vivamus ullamcorper sollicitudin lacus eget molestie. Aenean eu sem justo. Praesent consectetur, leo in commodo tristique, ex odio iaculis ligula, vel commodo felis dolor imperdiet mi. Praesent a felis blandit lorem tincidunt luctus id eu ante. Aliquam erat volutpat. Vivamus a diam eleifend, sodales libero ut, aliquet enim. In at augue magna. Morbi porta rutrum nulla, quis eleifend urna faucibus nec. Donec id maximus arcu, in sodales nulla. Quisque ornare ipsum ut nisi hendrerit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+
+        div.askforus
+          section.askforus__section
+            h2.askforus__title="Demander le passage de l'équipe"
+            form.askforus__form
+              fieldset
+                legend.hidden="Formulaire de contact"
+                label.askforus__label(for="name")="Nom"
+                input.askforus__input(type="text",name="nom",id="name",placeholder="Ex : Dupont ")
+                label.askforus__label(for="firstname")="Prénom"
+                input.askforus__input(type="text",name="prénom",id="firstname",placeholder="Ex : Jean ")
+                label.askforus__label(for="email")="Email"
+                input.askforus__input(type="email",name="email",id="email",placeholder="Ex : jean@dupont.be")
+                label.askforus__label(for="sujet")="Sujet : "
+                input.askforus__input(type="text",name="sujet",id="sujet",placeholder="Ex : J'aimerais vous aider ")
+                label.askforus__label(for="message")="Message : "
+                textarea.askforus__input.askforus__input--textarea(name="message",id="message")
+
+                input.askforus__submit(type="submit",value="Nous contacter")
+      include template/_footer.pug

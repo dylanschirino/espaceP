@@ -521,7 +521,8 @@ body {
   display: block; }
 
 .article__title {
-  float: left; }
+  float: left;
+  width: 11em; }
 
 .article__text {
   float: right;
@@ -548,7 +549,8 @@ body {
       text-align: center;
       margin: 0; }
   .article__text, .article__title {
-    float: none; }
+    float: none;
+    width: 100%; }
   .article__title {
     text-align: center; }
   .article__text {
@@ -845,6 +847,11 @@ body {
  * coded by Dylan Schirino
  * started at 08/10/2016
  */
+.actuality__container::after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .choix {
   height: 85.2vh;
   float: left;
@@ -856,9 +863,6 @@ body {
   .choix__subtitle {
     width: 80%;
     margin: 2.9375em auto; }
-
-.actuality__container {
-  position: relative; }
 
 .aside {
   float: right;
@@ -894,6 +898,13 @@ body {
   .choix__image {
     display: none; } }
 
+/* EspaceP
+ *
+ * /sass/object/askforus.scss - Askforus Object
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
 /* EspaceP
  *
  * /sass/components/header.scss - Header components
@@ -1599,6 +1610,10 @@ body {
   background-color: #438185;
   background-color: rgba(67, 129, 133, 0.62); }
 
+.choix--tds {
+  background-color: #ED707F;
+  background-color: rgba(237, 112, 127, 0.62); }
+
 .choix__image--sympathisant {
   background: url("../images/sympathisant.png") no-repeat center center;
   background-size: cover; }
@@ -1612,6 +1627,10 @@ body {
   background: url("../images/etudiant.png") no-repeat center center;
   background-size: cover; }
 
+.choix__image--tds {
+  background: url("../images/tds.png") no-repeat center center;
+  background-size: cover; }
+
 .choix__title {
   font: 3.4em/1.353 "playfair_display";
   text-transform: uppercase;
@@ -1619,6 +1638,8 @@ body {
   padding-top: 4.5294117647em;
   text-align: center;
   color: white; }
+  .choix__title--tds {
+    font-size: 3em; }
 
 .choix__subtitle {
   font: 1.6em/1.25 "source_sans_prolight";
@@ -1664,3 +1685,13 @@ body {
   .choix__subtitle::after {
     background: none;
     margin: 0; } }
+
+/* EspaceP
+ *
+ * /sass/components/askforus.scss - Askforus Components
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.askforus {
+  background-color: #F9F9F4; }

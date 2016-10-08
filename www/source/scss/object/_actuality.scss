@@ -48,6 +48,7 @@
  .article{
    &__title{
      float: left;
+     width: 11em;
    }
    &__text{
      float: right;
@@ -90,6 +91,7 @@
     .article{
       &__text,&__title{
         float: none;
+        width: 100%;
       }
       &__title{
         text-align: center;

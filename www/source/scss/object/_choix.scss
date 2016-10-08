@@ -5,6 +5,15 @@
  * coded by Dylan Schirino
  * started at 08/10/2016
  */
+ .actuality{
+   &__container{
+     &::after{
+       content: "";
+       display: block;
+       clear: both;
+     }
+   }
+ }
 .choix{
   height: 85.2vh;
   float: left;
@@ -19,11 +28,6 @@
     margin: 2.9375em auto;
   }
 }
-.actuality{
-  &__container{
-         position: relative;
-  }
-}
 .aside{
     float: right;
     margin-top: 10em;
@@ -35,6 +39,7 @@
     }
   }
 }
+
 
 @media screen and (max-width:1231px) {
   .aside{
