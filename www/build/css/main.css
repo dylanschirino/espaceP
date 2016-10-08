@@ -866,7 +866,7 @@ body {
 
 .aside {
   float: right;
-  margin-top: 10em; }
+  margin-top: 4em; }
   .aside__link {
     display: block; }
     .aside__link--button {
