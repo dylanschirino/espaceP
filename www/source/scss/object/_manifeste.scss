@@ -1,0 +1,66 @@
+/* EspaceP
+ *
+ * /sass/Object/manifeste.scss - manifeste Object
+ *
+ * coded by Dylan Schirino
+ * started at 09/10/2016
+ */
+.headManifeste{
+  height: 100vh;
+}
+.manifeste{
+  &__title{
+    margin-top:2.0833em;
+    display: inline-block;
+  }
+  &__number{
+    display: block;
+  }
+  &__subtitle{
+    float: left;
+    width: 19em;
+  }
+  &__text{
+    float: right;
+    width:65%;
+  }
+  &__citation{
+    width: 50%;
+    margin:3em auto;
+  }
+  &__section{
+    margin-bottom:5em;
+    &--change{
+      padding-bottom:5em;
+    }
+    &--changer{
+      width: 87.3%;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width:1006px) {
+  .manifeste{
+    &__title{
+      text-align: center;
+      display: block;
+      padding:2em 0 1em 0;
+    }
+    &__subtitle{
+      float: none;
+      width:100%;
+      text-align: center;
+      padding-bottom:3em;
+    }
+    &__text{
+      width: 100%;
+      margin: auto;
+      float: none;
+    }
+    &__citation{
+      width: 100%;
+      margin:3em auto;
+    }
+  }
+}

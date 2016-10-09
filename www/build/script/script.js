@@ -3,17 +3,17 @@ $(document).ready(function(){
     (function($) {
 
       //Aside fixe
-
+      $(window).on('resize', function(){
         if ( $(window).width() > 1231) {
-          $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[1]).offset().top });
+          $('aside').css({"float":"none"});
+          $('aside').css({"display":"block"});
+          $('aside').css({"position":"static"});
+          $('.no-sticky').trigger('resize');
       }
       else{
-        $(window).resize(function(){
-          $('aside').addClass('no-sticky');
-          $('.no-sticky').trigger('resize');
-        });
+        $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[1]).offset().top });
       }
-
+    });
 
         // Menu burger
 
@@ -27,4 +27,6 @@ $(document).ready(function(){
     });
 
     })(jQuery);
+
+
   });

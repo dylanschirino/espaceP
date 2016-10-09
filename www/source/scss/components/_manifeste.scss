@@ -1,0 +1,77 @@
+/* EspaceP
+ *
+ * /sass/Components/manifeste.scss - manifeste Components
+ *
+ * coded by Dylan Schirino
+ * started at 09/10/2016
+ */
+ .headManifeste{
+   background: url("../images/Manifeste.jpg")no-repeat center fixed;
+   color: $white;
+   &__subtitle{
+     font: 2.4em/1.3333 $playfair;
+     text-align: center;
+     padding-top: 4.667em;
+   }
+   &__title{
+     font: 3.4em/1.3529411765 $playfair;
+     text-transform: uppercase;
+     text-align: center;
+     padding-top: 1.4705882353em;
+   }
+   &__link{
+     font: 1.6em/2.5 $playfair;
+     text-transform: uppercase;
+     color: $white;
+     background-color: $black;
+     border: 1px solid $white;
+     transition: .2s ease-in;
+     &:hover{
+       color: $black;
+       background-color: $white;
+       border: 1px solid $black;
+     }
+   }
+ }
+ .manifeste{
+   color: $texteColor;
+   &__title{
+     font: 2.4em/1.3333 $playfair;
+     text-transform: uppercase;
+     letter-spacing: 0.6px;
+     border-bottom: 1px solid $texteColor;
+   }
+   &__number{
+     font: 2.4em/1.3333 $sourcesanslight;
+     padding-bottom:0.5em;
+     color: $gold;
+     font-weight: bold;
+   }
+   &__subtitle{
+     font:1.6em/1.25 $sourcesans;
+     letter-spacing: 0.4px;
+     text-transform: uppercase;
+   }
+   &__text{
+     font: 1.6em/1.4 $sourcesanslight;
+     padding-bottom: 1.5em;
+   }
+   &__citation{
+     font: 1.8em/1.5 $playfair;
+     color: $gold;
+     text-align: center;
+     &::after,&::before{
+       content: "";
+       display: block;
+       background-color: $actuBckg;
+       width: 50%;
+       height: 10px;
+       margin:2em auto;
+     }
+   }
+   &__section{
+     &--change{
+       background-color: $sectionChange;
+     }
+   }
+ }
