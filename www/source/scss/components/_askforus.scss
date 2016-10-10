@@ -9,6 +9,9 @@
 .askforus{
   background-color: $sectionChange;
   padding-bottom:5em;
+  &--comment{
+    background: none;
+  }
   &__title{
     font: 2.4em/1.344 $playfair;
     text-transform: uppercase;

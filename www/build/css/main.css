@@ -955,6 +955,11 @@ body {
  */
 .headManifeste {
   height: 100vh; }
+  .headManifeste__link {
+    display: block;
+    width: 15em;
+    margin: 3em auto;
+    height: 3.5em; }
 
 .manifeste__title {
   margin-top: 2.0833em;
@@ -982,6 +987,51 @@ body {
   .manifeste__section--changer {
     width: 87.3%;
     margin: auto; }
+
+.commentaire {
+  width: 87.3%;
+  margin: auto; }
+  .commentaire__content {
+    width: 83%;
+    margin: auto; }
+    .commentaire__content::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .commentaire__subject {
+    display: block; }
+  .commentaire__info {
+    display: block;
+    float: left; }
+  .commentaire__time {
+    display: block; }
+  .commentaire__text {
+    float: right;
+    width: 80%;
+    margin: auto; }
+
+@media screen and (max-width: 952px) {
+  .commentaire__info {
+    display: block;
+    float: none;
+    text-align: center; }
+  .commentaire__time {
+    display: inline-block;
+    padding-left: 1em; }
+  .commentaire__text {
+    float: none;
+    width: 90%;
+    margin: 1em auto; } }
+
+@media screen and (max-width: 559px) {
+  .commentaire {
+    width: 100%;
+    margin: auto; }
+    .commentaire__title {
+      text-align: center; }
+    .commentaire__text {
+      width: 100%;
+      margin: 1em auto; } }
 
 @media screen and (max-width: 1006px) {
   .manifeste__title {
@@ -1792,6 +1842,8 @@ body {
 .askforus {
   background-color: #F9F9F4;
   padding-bottom: 5em; }
+  .askforus--comment {
+    background: none; }
   .askforus__title {
     font: 2.4em/1.344 "playfair_display";
     text-transform: uppercase;
@@ -1843,16 +1895,22 @@ body {
     text-align: center;
     padding-top: 1.4705882353em; }
   .headManifeste__link {
-    font: 1.6em/2.5 "playfair_display";
+    font: 1.6em/3.2 "playfair_display";
     text-transform: uppercase;
     color: white;
     background-color: black;
-    border: 1px solid white;
-    transition: .2s ease-in; }
+    transition: .2s ease-in;
+    text-align: center; }
     .headManifeste__link:hover {
       color: black;
       background-color: white;
       border: 1px solid black; }
+
+@media screen and (max-width: 400px) {
+  .headManifeste__title {
+    font-size: 3em; }
+  .headManifeste__subtitle {
+    font-size: 2em; } }
 
 .manifeste {
   color: #333333; }
@@ -1886,3 +1944,29 @@ body {
       margin: 2em auto; }
   .manifeste__section--change {
     background-color: #F9F9F4; }
+
+.commentaire__title {
+  font: 2.4em/0.875 "playfair_display";
+  text-transform: uppercase;
+  padding: 2em 0; }
+
+.commentaire__content {
+  padding-bottom: 2.6em;
+  border-bottom: 1px solid black; }
+
+.commentaire__subject {
+  font: 1.6em/1.315 "playfair_display";
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1.5625em; }
+
+.commentaire__info {
+  font: 1.8em/1.167 "source_sans_proregular", "Helvetica", Arial, sans-serif; }
+
+.commentaire__time {
+  font-family: "source_sans_prolight";
+  font-style: italic;
+  padding-top: 0.6111em; }
+
+.commentaire__text {
+  font: 1.6em/1.4 "source_sans_prolight"; }

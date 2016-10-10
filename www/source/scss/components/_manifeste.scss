@@ -20,12 +20,12 @@
      padding-top: 1.4705882353em;
    }
    &__link{
-     font: 1.6em/2.5 $playfair;
+     font: 1.6em/3.2 $playfair;
      text-transform: uppercase;
      color: $white;
      background-color: $black;
-     border: 1px solid $white;
      transition: .2s ease-in;
+     text-align: center;
      &:hover{
        color: $black;
        background-color: $white;
@@ -33,6 +33,19 @@
      }
    }
  }
+
+ @media screen and (max-width:400px) {
+    .headManifeste{
+      &__title{
+        font-size:3em;
+      }
+      &__subtitle{
+        font-size:2em;
+      }
+    }
+ }
+
+
  .manifeste{
    color: $texteColor;
    &__title{
@@ -73,5 +86,36 @@
      &--change{
        background-color: $sectionChange;
      }
+   }
+ }
+
+
+ .commentaire{
+   &__title{
+     font: 2.4em/0.875 $playfair;
+     text-transform: uppercase;
+     padding: 2em 0;
+   }
+   &__content{
+     padding-bottom: 2.6em;
+     border-bottom: 1px solid $black;
+   }
+   &__subject{
+     font: 1.6em/1.315 $playfair;
+     text-transform: uppercase;
+     text-align: center;
+     padding-bottom: 1.5625em;
+   }
+   &__info{
+     font: 1.8em/1.1667 $sourcesans;
+   }
+   &__time{
+     font-family: $sourcesanslight;
+     font-style: italic;
+     padding-top: 0.6111em;
+   }
+   &__text{
+     font: 1.6em/1.4 $sourcesanslight;
+
    }
  }

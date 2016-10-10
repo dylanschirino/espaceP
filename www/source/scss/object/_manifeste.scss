@@ -7,6 +7,12 @@
  */
 .headManifeste{
   height: 100vh;
+  &__link{
+    display: block;
+    width: 15em;
+    margin:3em auto;
+    height:3.5em;
+  }
 }
 .manifeste{
   &__title{
@@ -36,6 +42,68 @@
     &--changer{
       width: 87.3%;
       margin: auto;
+    }
+  }
+}
+
+.commentaire{
+  width: 87.3%;
+  margin: auto;
+  &__content{
+    width: 83%;
+    margin: auto;
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  &__subject{
+    display: block;
+  }
+  &__info{
+    display: block;
+    float: left;
+  }
+  &__time{
+    display: block;
+  }
+  &__text{
+    float: right;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:952px) {
+  .commentaire{
+    &__info{
+      display: block;
+      float: none;
+      text-align: center;
+    }
+    &__time{
+      display: inline-block;
+      padding-left: 1em;
+    }
+    &__text{
+      float: none;
+      width: 90%;
+      margin: 1em auto;
+    }
+  }
+}
+
+@media screen and (max-width:559px) {
+  .commentaire{
+    width: 100%;
+    margin: auto;
+    &__title{
+      text-align: center;
+    }
+    &__text{
+      width: 100%;
+      margin: 1em auto;
     }
   }
 }
