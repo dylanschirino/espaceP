@@ -1298,6 +1298,14 @@ body {
     background-color: white;
     margin: auto; }
 
+.profil__english {
+  color: white;
+  display: block;
+  font: 0.6em/1.333 "source_sans_prolight";
+  text-decoration: underline;
+  text-align: center;
+  text-transform: lowercase; }
+
 .profil__text {
   font: 1.6em/1.4 "source_sans_proregular", "Helvetica", Arial, sans-serif;
   color: white; }

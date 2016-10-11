@@ -33,6 +33,15 @@
       margin: auto;
     }
   }
+  &__english{
+    color: $white;
+    display: block;
+    font: 0.6em/1.333 $sourcesanslight;
+    text-decoration: underline;
+    text-align: center;
+    text-transform: lowercase;
+
+  }
   &__text{
     font: 1.6em/1.4 $sourcesans;
     color: $white;
