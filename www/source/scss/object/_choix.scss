@@ -41,8 +41,11 @@
   }
 }
 
-
-
+.no-sticky .aside{
+  float: none;
+  display: block;
+  position: static;
+}
 
 @media screen and (max-width:975px) {
   .aside{

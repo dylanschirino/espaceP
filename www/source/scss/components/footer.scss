@@ -40,8 +40,13 @@
      text-transform: uppercase;
      border-bottom: 1px solid $white;
    }
+   &__span{
+     text-transform: uppercase;
+     font: 1.3em/1.333em $sourcesans;
+     padding-bottom: 0.3em;
+   }
    &__element{
-     font: 1.4em/1.333em $sourcesanslight;
+     font: 1.2em/1.4em $sourcesanslight;
      padding-top: 0.8em;
    }
  }

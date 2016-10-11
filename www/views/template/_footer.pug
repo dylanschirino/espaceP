@@ -30,23 +30,32 @@ footer.footer
     h2.information__title.hidden="Information de contact"
     div.information__container.information__container--left
       section.information__content
-        h3.information__subtitle="Bruxelles"
+        a.information__titleLink(href="ville.html",title="Aller vers la page bruxelles")
+          h3.information__subtitle="Bruxelles"
         ul.information__list
           li.information__element
-            a.information__link(href="tel:022199874 ",title="Nous téléphoner?")="Tel: 02/219 98 74 "
+            span.information__span="Tel"
+            a.information__link(href="tel:022199874 ",title="Nous téléphoner?")="02 219 98 74"
           li.information__element
-            a.information__link(href="mailto:espacepbxl@hotmail.com",title="Nous envoyer un email")="Mail: espacepbxl@hotmail.com"
-          li.information__element.information__element--adresse="Adresse : 116, rue des Plantes 1030 Bruxelles"
+            span.information__span="Mail"
+            a.information__link(href="mailto:espacepbxl@hotmail.com",title="Nous envoyer un email")="espacepbxl@hotmail.com"
+          li.information__element.information__element--adresse
+            span.information__span="Adresse"
+            ="116, rue des Plantes 1030 Bruxelles"
 
 
       section.information__content
         h3.information__subtitle="Namur"
         ul.information__list
           li.information__element
-            a.information__link(href="tel:022199874 ",title="Nous téléphoner?")="Tel: 081/77 68 21$"
+            span.information__span="Tel"
+            a.information__link(href="tel:022199874 ",title="Nous téléphoner?")="081 77 68 21"
           li.information__element
-            a.information__link(href="mailto:espacepnamur@gmail.com",title="Nous envoyer un email")="Mail: espacepnamur@gmail.com"
-          li.information__element.information__element--adresse="Adresse : 4, rue du Docteur Haibe 5002 Namur"
+            span.information__span="Mail"
+            a.information__link(href="mailto:espacepnamur@gmail.com",title="Nous envoyer un email")="espacepnamur@gmail.com"
+          li.information__element.information__element--adresse
+            span.information__span="Adresse"
+            =" 4, rue du Docteur Haibe 5002 Namur"
 
 
     div.information__container.information__container--center
@@ -54,18 +63,24 @@ footer.footer
         h3.information__subtitle="Charleroi"
         ul.information__list
           li.information__element
-            a.information__link(href="tel:042210509 ",title="Nous téléphoner?")="Tel: 04/ 221 05 09 "
+            span.information__span="Tel"
+            a.information__link(href="tel:042210509 ",title="Nous téléphoner?")="04 221 05 09 "
           li.information__element
-            a.information__link(href="mailto:espacepliege@gmail.com",title="Nous envoyer un email")="Mail: espacepliege@gmail.com"
-          li.information__element.information__element--adresse="Adresse : 116, rue des Plantes 1030 Bruxelles"
+            span.information__span="Mail"
+            a.information__link(href="mailto:espacepliege@gmail.com",title="Nous envoyer un email")="espacepcharleroi@gmail.com"
+          li.information__element.information__element--adresse
+            span.information__span="Adresse"
+            ="116, rue des Plantes 1030 Bruxelles"
 
       section.information__content
         h3.information__subtitle="Liège"
         ul.information__list
           li.information__element
-            a.information__link(href="tel:042210509 ",title="Nous téléphoner?")="Tel: 04/ 221 05 09 "
+            span.information__span="Tel"
+            a.information__link(href="tel:042210509 ",title="Nous téléphoner?")="04 221 05 09 "
           li.information__element
-            a.information__link(href="mailto:espacepbxl@hotmail.com",title="Nous envoyer un email")="Mail: espacepbxl@hotmail.com"
+            span.information__span="Mail"
+            a.information__link(href="mailto:espacepliege@hotmail.com",title="Nous envoyer un email")="espacepliege@hotmail.com"
           li.information__element.information__element--adresse="Adresse :50, rue Souverain-Pont 4000 Liège"
 
     div.information__container.information__container--center
@@ -73,20 +88,29 @@ footer.footer
         h3.information__subtitle="Mons"
         ul.information__list
           li.information__element
-            a.information__link(href="tel:022199874 ",title="Nous téléphoner?")="Tel: 071/30 98 10 "
+            span.information__span="Tel "
+            a.information__link(href="tel:022199874 ",title="Nous téléphoner?")="071/30 98 10 "
           li.information__element
-            a.information__link(href="mailto:espacepcharleroi@hotmail.com",title="Nous envoyer un email")="Mail: espacepcharleroi@hotmail.com"
-          li.information__element.information__element--adresse="Adresse : 3, rue Désandrouin – 6000 Charleroi"
+            span.information__span="Mail"
+            a.information__link(href="mailto:espacepcharleroi@hotmail.com",title="Nous envoyer un email")="espacepcharleroi@hotmail.com"
+          li.information__element.information__element--adresse
+            span.information__span="Adresse"
+            ="3, rue Désandrouin – 6000 Charleroi"
 
 
       section.information__content
         h3.information__subtitle="Arlon"
         ul.information__list
           li.information__element
-            a.information__link(href="tel:0474138654",title="Nous téléphoner?")="Tel: 0474 13 86 54 "
+            span.information__span="Tel"
+            a.information__link(href="tel:0474138654",title="Nous téléphoner?")="0474 13 86 54 "
           li.information__element
-            a.information__link(href="mailto:espaceparlon@gmail.com",title="Nous envoyer un email")="Mail: espaceparlon@gmail.com"
-          li.information__element.information__element--adresse="Adresse : Maison Médicale «Porte Sud», 88 rue de Bastogne à Arlon."
+            span.information__span="Mail"
+            a.information__link(href="mailto:espaceparlon@gmail.com",title="Nous envoyer un email")="espaceparlon@gmail.com"
+          li.information__element.information__element--adresse
+            span.information__span="Adresse"
+            ="Maison Médicale «Porte Sud», 88 rue de Bastogne à Arlon."
+
 script(src="https://code.jquery.com/jquery-3.1.1.min.js")
-script(src="script/sticky.js")
+script.hello(src="script/sticky.js")
 script(src="script/script.js")

@@ -1,12 +1,18 @@
-$(document).ready(function(){
+
 
     (function($) {
-
       $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[1]).offset().top });
       //Aside fixe
       $(window).on('resize', function(){
-        if ( $(window).width() < 1231) {
-          $('aside').css({"display":"none"});
+        if ( $(window).width() < 1251) {
+          //$.ScrollToFixed=null;
+          $('aside').trigger('detach.ScrollToFixed');
+          $('body').addClass('no-sticky')
+      }
+      else{
+        $('aside').attr('id',"sticky");
+        $('body').removeClass('no-sticky');
+        $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[1]).offset().top });
       }
     });
 
@@ -22,6 +28,3 @@ $(document).ready(function(){
     });
 
     })(jQuery);
-
-
-  });

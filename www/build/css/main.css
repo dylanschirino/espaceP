@@ -380,6 +380,9 @@ body {
 .information__list {
   width: 17.9em; }
 
+.information__span {
+  display: block; }
+
 .information__content {
   margin-bottom: 3.8em;
   margin-left: 9.5em; }
@@ -824,6 +827,26 @@ body {
 .contactInfo__list {
   margin-bottom: 5em; }
 
+.contactInfo__google {
+  position: relative; }
+
+.contactInfo__image:hover ~ .contactInfo__gmap {
+  display: block;
+  transition: .2s ease-in; }
+
+.contactInfo__gmap {
+  width: 13em;
+  height: 3em;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: none; }
+
+@media screen and (max-width: 913px) {
+  .contactInfo__gmap {
+    right: 200px; } }
+
 @media screen and (max-width: 931px) {
   .contactForm, .contactInfo {
     float: none;
@@ -831,10 +854,17 @@ body {
     margin: 8em auto;
     display: block; } }
 
+@media screen and (max-width: 649px) {
+  .contactInfo__gmap {
+    right: 20px; } }
+
 @media screen and (max-width: 534px) {
   .contactInfo__img {
     width: 100%;
-    height: auto; } }
+    height: auto;
+    position: relative; }
+  .contactInfo__gmap {
+    position: absolute; } }
 
 @media screen and (max-width: 405px) {
   .contactForm, .contactInfo {
@@ -873,6 +903,11 @@ body {
     .aside__link--button {
       width: 16.166em;
       height: 2.5em; }
+
+.no-sticky .aside {
+  float: none;
+  display: block;
+  position: static; }
 
 @media screen and (max-width: 975px) {
   .aside {
@@ -1341,8 +1376,13 @@ body {
   text-transform: uppercase;
   border-bottom: 1px solid white; }
 
+.information__span {
+  text-transform: uppercase;
+  font: 1.3em/1.333em "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  padding-bottom: 0.3em; }
+
 .information__element {
-  font: 1.4em/1.333em "source_sans_prolight";
+  font: 1.2em/1.4em "source_sans_prolight";
   padding-top: 0.8em; }
 
 /* EspaceP
@@ -1727,6 +1767,14 @@ body {
     content: "\e903"; }
   .contactInfo__subtitle--email::before {
     content: "\e907"; }
+
+.contactInfo__gmap {
+  background-color: white;
+  color: black;
+  font: 1.6em/3 "playfair_display";
+  text-transform: uppercase;
+  border: 1px solid black;
+  text-align: center; }
 
 .contactInfo__element {
   font: 1.6em/1.25 "source_sans_prolight";

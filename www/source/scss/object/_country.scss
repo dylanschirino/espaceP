@@ -53,9 +53,32 @@
    &__list{
      margin-bottom:5em;
    }
+   &__google{
+     position: relative;
+   }
+   &__image:hover ~ .contactInfo__gmap{
+     display: block;
+     transition: .2s ease-in;
+   }
+   &__gmap{
+     width: 13em;
+     height: 3em;
+     display: block;
+     position: absolute;
+     top: 15px;
+     right: 15px;
+     display: none;
+   }
  }
 
+@media screen and (max-width:913px) {
+  .contactInfo{
+    &__gmap{
+      right:200px;
+    }
+  }
 
+}
  @media screen and (max-width:931px) {
     .contactForm,.contactInfo{
       float: none;
@@ -66,11 +89,24 @@
 
  }
 
+@media screen and (max-width:649px) {
+
+  .contactInfo{
+    &__gmap{
+      right:20px;
+    }
+  }
+
+}
  @media screen and (max-width:534px) {
     .contactInfo{
       &__img{
         width: 100%;
         height: auto;
+        position: relative;
+      }
+      &__gmap{
+        position: absolute;
       }
     }
  }
