@@ -1,0 +1,2063 @@
+/* EspaceP
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+@font-face {
+  font-family: 'playfair_display';
+  src: url("../fonts/playfair/playfairdisplay-regular-webfont.eot");
+  src: url("../fonts/playfair/playfairdisplay-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/playfair/playfairdisplay-regular-webfont.woff2") format("woff2"), url("../fonts/playfair/playfairdisplay-regular-webfont.woff") format("woff"), url("../fonts/playfair/playfairdisplay-regular-webfont.ttf") format("truetype"), url("../fonts/playfair/playfairdisplay-regular-webfont.svg#playfair_displayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source_sans_prolight';
+  src: url("../fonts/source-sans/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/source-sans/sourcesanspro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/sourcesanspro-light-webfont.woff2") format("woff2"), url("../fonts/source-sans/sourcesanspro-light-webfont.woff") format("woff"), url("../fonts/source-sans/sourcesanspro-light-webfont.ttf") format("truetype"), url("../fonts/source-sans/sourcesanspro-light-webfont.svg#source_sans_prolight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("../fonts/source-sans/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/source-sans/sourcesanspro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/sourcesanspro-regular-webfont.woff2") format("woff2"), url("../fonts/source-sans/sourcesanspro-regular-webfont.woff") format("woff"), url("../fonts/source-sans/sourcesanspro-regular-webfont.ttf") format("truetype"), url("../fonts/source-sans/sourcesanspro-regular-webfont.svg#source_sans_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'glyphs';
+  src: url("../fonts/glyphs/icomoon.eot?lu6wyt");
+  src: url("../fonts/glyphs/icomoon.eot?lu6wyt#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?lu6wyt") format("truetype"), url("../fonts/glyphs/icomoon.woff?lu6wyt") format("woff"), url("../fonts/glyphs/icomoon.svg?lu6wyt#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Fin du reset de meyer*/
+/* EspaceP
+ *
+ * /scss/base/root.scss - ROOT stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 19/07/2016
+ */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-size: 62.5%; }
+
+.maincontainer {
+  width: 87.3%;
+  margin: auto; }
+
+/* EspaceP
+ *
+ * /sass/object/header.scss - Header objects
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.none {
+  position: absolute;
+  display: none; }
+
+.header__content {
+  max-width: 88.7%;
+  margin: auto;
+  height: 9em; }
+
+.header__logo {
+  display: inline-block; }
+
+.header__search {
+  display: inline-block;
+  width: 15.5em;
+  position: relative;
+  left: 4px; }
+
+.menu__content {
+  display: inline-block;
+  margin-left: 5.1em; }
+
+.menu__list {
+  display: inline-block; }
+
+.menu__element {
+  display: inline-block; }
+
+.search__box {
+  margin-right: 1em; }
+
+.search__submit {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  width: 1.7em;
+  height: 1.7em;
+  transition: .2s ease-in-out; }
+  .search__submit:hover {
+    cursor: pointer;
+    transform: rotate(45deg); }
+
+@media only screen and (max-width: 1215px) {
+  .menu__content {
+    margin-left: 1em; } }
+
+@media only screen and (max-width: 1169px) {
+  .menu__element {
+    font-size: 0.8em; } }
+
+@media only screen and (max-width: 1027px) {
+  .none {
+    display: block;
+    position: static; }
+  .header {
+    position: static; }
+    .header__search {
+      float: right;
+      margin-top: 3em; }
+    .header__burger {
+      position: relative;
+      display: block;
+      float: left;
+      width: 50px;
+      height: 66px; }
+      .header__burger::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1rem;
+        height: 0;
+        top: 30px;
+        left: 0px;
+        box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black; }
+  .site-pusher {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: transform 0.3s cubic-bezier(0.42, 0.52, 0.87, 0.55); }
+  .menu__list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    transform: translateX(-250px);
+    -webkit-transition: transform 1s ease-in; }
+  .menu__element {
+    display: block; }
+  .menu__link {
+    display: block;
+    height: 40px;
+    line-height: 40px; }
+  .site-content {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0; }
+  .with--sidebar {
+    overflow: hidden;
+    height: 100%; }
+    .with--sidebar .site-pusher {
+      transform: translateX(250px); }
+    .with--sidebar .site-cache {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6); } }
+
+@media screen and (max-width: 478px) {
+  .header__img {
+    display: none; }
+  .header__logolink {
+    display: block;
+    margin-top: 0.6em; } }
+
+@media screen and (max-width: 366px) {
+  .header__logolink {
+    font-size: 0.55em;
+    margin-top: 1.5em; } }
+
+/* EspaceP
+ *
+ * /sass/object/mainimage.scss - Mainimage components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.mainimage {
+  min-height: 85.8vh; }
+  .mainimage__title {
+    margin-left: 1.63em; }
+  .mainimage__subtitle {
+    width: 14.8611em;
+    margin-left: 2.20em; }
+  .mainimage__link {
+    display: block;
+    text-align: center;
+    margin-top: 3.3em; }
+
+@media screen and (max-width: 640px) {
+  .mainimage__title {
+    font-size: 0.7em; }
+  .mainimage__title, .mainimage__subtitle {
+    margin: 0;
+    text-align: center; }
+  .mainimage__subtitle {
+    width: 100%; } }
+
+/* EspaceP
+ *
+ * /sass/object/news.scss - News Object
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.news {
+  min-height: 22.5em;
+  padding-bottom: 3.5em; }
+  .news__content {
+    width: 57.5%;
+    margin: auto; }
+  .news__text {
+    margin-top: 2em; }
+  .news__time {
+    display: block;
+    text-align: center;
+    margin-top: 1em; }
+  .news__button {
+    display: block;
+    margin: auto;
+    width: 9.8em;
+    margin-top: 2em;
+    height: 3em; }
+
+@media screen and (max-width: 614px) {
+  .news__content {
+    width: 90%;
+    margin: auto; } }
+
+/* EspaceP
+ *
+ * /sass/object/navigation.scss - Navigation components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.navigation__container {
+  width: 87.4%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto; }
+
+.profil {
+  width: 47.6em;
+  min-height: 42.9em;
+  margin-top: 6em; }
+  .profil__box {
+    width: 28.5em;
+    margin: 3em auto; }
+    .profil__box--etudiants {
+      margin-top: 3.5em; }
+    .profil__box--clients {
+      margin-top: 3.7em; }
+  .profil__text {
+    width: 17.4375em;
+    margin: 1em auto; }
+  .profil__button {
+    display: block; }
+
+@media screen and (max-width: 1099px) {
+  .navigation__container {
+    width: 95%;
+    margin: auto; } }
+
+@media screen and (max-width: 1010px) {
+  .profil {
+    width: 40em; } }
+
+@media screen and (max-width: 854px) {
+  .navigation__container {
+    display: block; }
+  .profil {
+    width: 100%;
+    display: block; }
+    .profil__box {
+      margin: 3em auto; } }
+
+/* EspaceP
+ *
+ * /sass/object/footer.scss - Footer object
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.footer::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.footer__menu {
+  margin-left: 5em;
+  float: left; }
+
+.footer__information {
+  display: flex;
+  justify-content: space-between;
+  width: 76%;
+  margin: auto; }
+
+.footer__title {
+  display: inline-block; }
+
+.footer__element--button {
+  width: 9.6875em;
+  height: 2.5em;
+  margin-top: 1em; }
+
+.information__subtitle {
+  display: inline-block; }
+
+.information__list {
+  width: 17.9em; }
+
+.information__span {
+  display: block; }
+
+.information__content {
+  margin-bottom: 3.8em;
+  margin-left: 9.5em; }
+
+@media screen and (max-width: 1082px) {
+  .footer__menu {
+    float: none;
+    width: 80%;
+    margin: auto; }
+  .footer__title {
+    display: block;
+    text-align: center;
+    padding-bottom: 1em; }
+  .footer__element {
+    display: inline-block;
+    padding-left: 1em; }
+    .footer__element--button {
+      display: block;
+      margin: 2em auto;
+      padding-left: 0; }
+  .footer__information {
+    width: 80%;
+    margin: auto; }
+  .information__content {
+    margin-left: 0; } }
+
+@media screen and (max-width: 667px) {
+  .footer__menu, .footer__information {
+    width: 90%;
+    margin: auto;
+    display: block; }
+  .information__subtitle {
+    display: block;
+    text-align: center;
+    padding-bottom: 1em; }
+  .information__list {
+    width: 90%;
+    margin: auto; }
+  .information__span {
+    display: inline-block;
+    padding-right: 1em; }
+  .information__element {
+    text-align: left; }
+  .information__content {
+    width: 90%;
+    margin: 3em auto; } }
+
+@media screen and (max-width: 587px) {
+  .footer__menu {
+    display: none; } }
+
+/* EspaceP
+ *
+ * /sass/object/headActu.scss - HeadActu objects
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.headActu {
+  min-height: 33.1em; }
+
+/* EspaceP
+ *
+ * /sass/object/facebook.scss - Facebook components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.facebook::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.facebook__title {
+  margin-top: 2em; }
+
+.facebook__box {
+  width: 72.5em;
+  margin: 5em auto; }
+
+.facebook__time {
+  display: block;
+  margin-bottom: 1em; }
+
+.facebook__button {
+  width: 7em;
+  height: 2.5714285714em;
+  margin-right: 1em; }
+
+@media screen and (max-width: 867px) {
+  .facebook__box {
+    width: 80%;
+    margin: 5em auto; } }
+
+@media screen and (max-width: 555px) {
+  .facebook__box {
+    width: 80%;
+    margin: 5em auto; } }
+
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Actuality Object
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.actuality__container {
+  width: 87.3%;
+  margin: auto; }
+  .actuality__container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.actuality__etiquette {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8.4em; }
+
+.actuality__article {
+  margin-top: 8.8em; }
+  .actuality__article::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.etiquette__list {
+  margin-top: 2em; }
+
+.etiquette__element--facebook {
+  margin-right: 2.4em; }
+
+.etiquette__element--facebook, .etiquette__element--twitter {
+  display: inline-block; }
+
+.etiquette__link {
+  display: block; }
+
+.article__title {
+  float: left;
+  width: 11em; }
+
+.article__text {
+  float: right;
+  width: 45.3125em; }
+  .article__text--rapport {
+    width: 35em;
+    margin-left: 5.3em; }
+
+@media screen and (max-width: 1075px) {
+  .actuality__title {
+    text-align: center;
+    margin-left: 0; }
+  .actuality__etiquette {
+    display: block;
+    width: 90%;
+    margin: 2em auto; }
+  .etiquette__title {
+    text-align: center;
+    padding-bottom: 1em; }
+  .etiquette__element {
+    text-align: center; }
+    .etiquette__element--facebook, .etiquette__element--twitter {
+      display: block;
+      text-align: center;
+      margin: 0; }
+  .article__text, .article__title {
+    float: none;
+    width: 100%; }
+  .article__title {
+    text-align: center; }
+  .article__text {
+    width: 90%;
+    margin: 2em auto; } }
+
+@media screen and (max-width: 692px) {
+  .actuality__etiquette {
+    margin-right: 2em; } }
+
+/* EspaceP
+ *
+ * /sass/objects/headSoutien.scss - HeadSoutien objects
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.mainSoutien {
+  width: 72.5%;
+  margin: 5em auto; }
+
+.headActu {
+  float: left;
+  width: 50%;
+  height: 85.3vh; }
+  .headActu__info {
+    float: right;
+    width: 50%;
+    height: 85.3vh; }
+
+.headSoutien {
+  margin-bottom: 6.5em; }
+  .headSoutien__title {
+    margin: 1em auto; }
+  .headSoutien__subtitle {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2.777em; }
+  .headSoutien__cards {
+    width: 14.375em;
+    margin: auto; }
+  .headSoutien__label {
+    margin-left: 4.28571428em; }
+  .headSoutien__compte {
+    text-align: center; }
+  .headSoutien__info {
+    text-align: center; }
+
+@media screen and (max-width: 682px) {
+  .headActu, .headActu__info {
+    float: none;
+    width: 100%;
+    margin: 0;
+    display: block;
+    height: auto; } }
+
+@media screen and (max-width: 567px) {
+  .mainSoutien {
+    width: 90%;
+    margin: 5em auto; } }
+
+@media screen and (max-width: 400px) {
+  .headSoutien__subtitle {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2.777em; }
+  .headSoutien__cards {
+    width: 80%;
+    margin: auto; } }
+
+/* EspaceP
+ *
+ * /sass/objects/mainSoutien.scss - mainSoutien objects
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.explain {
+  margin-bottom: 5em; }
+  .explain::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .explain__text {
+    width: 21.5625em;
+    float: left; }
+  .explain__formulaire {
+    width: 34.6em;
+    float: right; }
+
+.form__label {
+  display: block; }
+  .form__label--inline {
+    display: inline-block; }
+
+.form__float {
+  width: 91%; }
+  .form__float::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.form__input {
+  width: 90%;
+  margin-bottom: 2em; }
+
+.form__container--adress {
+  float: left;
+  width: 63%;
+  display: inline-block; }
+
+.form__container--number {
+  float: right;
+  width: 17.8%;
+  display: inline-block; }
+
+.form__container--ville {
+  float: left;
+  width: 50%;
+  display: inline-block; }
+
+.form__container--cp {
+  float: right;
+  width: 30%;
+  display: inline-block; }
+
+.form__submit {
+  width: 15.625em;
+  height: 3.6em; }
+
+@media screen and (max-width: 971px) {
+  .explain__text, .explain__formulaire {
+    float: none;
+    width: 90%;
+    margin: 2em auto; } }
+
+/* EspaceP
+ *
+ * /sass/object/Partenaire.scss - Partenaire object
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.partenaire {
+  margin-bottom: 5em; }
+  .partenaire__container {
+    display: flex;
+    flex-direction: row; }
+  .partenaire__list::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .partenaire__element {
+    display: inline-block; }
+  .partenaire__element:not(:first-child) {
+    margin: 0 2.5em; }
+  .partenaire__element:last-child {
+    margin: 0; }
+
+@media screen and (max-width: 1250px) {
+  .partenaire__element, .partenaire__element:not(:first-child) {
+    margin: 0; }
+  .partenaire__element {
+    padding: 1em; } }
+
+/* EspaceP
+ *
+ * /sass/components/mainContact.scss - mainContact components
+ *
+ * coded by Dylan Schirino
+ * started at 07/10/2016
+ */
+.header__mainContainer::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.mainContact {
+  width: 50%;
+  height: 85.2vh;
+  float: right; }
+  .mainContact__subtitle {
+    width: 80%;
+    margin: auto; }
+
+.country {
+  width: 50%;
+  float: left; }
+  .country__link {
+    display: block; }
+
+@media screen and (max-width: 557px) {
+  .mainContact {
+    display: none; }
+  .country {
+    width: 100%;
+    float: none; } }
+
+/* EspaceP
+ *
+ * /sass/object/rapport.scss - rapport object
+ *
+ * coded by Dylan Schirino
+ * started at 07/10/2016
+ */
+.rapport {
+  width: 50%;
+  float: right;
+  height: 85.3vh; }
+
+.sommaire {
+  width: 50%;
+  height: 85.3vh; }
+  .sommaire__list {
+    margin-top: 2em; }
+  .sommaire__link {
+    display: inline-block; }
+
+.rapportContent {
+  margin-bottom: 6em;
+  float: left;
+  position: relative; }
+
+.button__link {
+  width: 9.6875em;
+  height: 2.8125em;
+  display: block;
+  position: fixed;
+  right: 0;
+  bottom: 0; }
+
+@media screen and (max-width: 759px) {
+  .button {
+    display: none; } }
+
+@media screen and (max-width: 604px) {
+  .rapport {
+    width: 100%;
+    float: none;
+    display: block; }
+    .rapport__title {
+      padding: 6em 0; }
+  .sommaire {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    float: none; } }
+
+/* EspaceP
+ *
+ * /sass/object/country.scss - country object
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.mainCountry {
+  width: 87.8%;
+  margin: 5em auto; }
+  .mainCountry::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.contactForm {
+  float: left;
+  width: 33.5em; }
+
+.contactInfo {
+  float: right;
+  width: 44.1em; }
+
+.contactForm__title {
+  margin-bottom: 1em; }
+  .contactForm__title--country {
+    display: inline-block; }
+
+.contactForm__label {
+  display: block; }
+
+.contactForm__input {
+  width: 97%;
+  height: 3em;
+  margin-bottom: 2em; }
+  .contactForm__input--textarea {
+    height: 14.25em; }
+
+.contactForm__submit {
+  width: 15.625em;
+  height: 3.5em; }
+
+.contactInfo__list {
+  margin-bottom: 5em; }
+
+.contactInfo__google {
+  position: relative; }
+
+.contactInfo__image:hover ~ .contactInfo__gmap {
+  display: block;
+  transition: .2s ease-in; }
+
+.contactInfo__gmap {
+  width: 13em;
+  height: 3em;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: none; }
+
+@media screen and (max-width: 913px) {
+  .contactInfo__gmap {
+    right: 200px; } }
+
+@media screen and (max-width: 931px) {
+  .contactForm, .contactInfo {
+    float: none;
+    width: 80%;
+    margin: 8em auto;
+    display: block; } }
+
+@media screen and (max-width: 649px) {
+  .contactInfo__gmap {
+    right: 20px; } }
+
+@media screen and (max-width: 534px) {
+  .contactInfo__img {
+    width: 100%;
+    height: auto;
+    position: relative; }
+  .contactInfo__gmap {
+    position: absolute; } }
+
+@media screen and (max-width: 405px) {
+  .contactForm, .contactInfo {
+    width: 90%;
+    margin: 8em auto; } }
+
+/* EspaceP
+ *
+ * /sass/Object/sympathisant.scss - Sympathisant Object
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.actuality__container::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.choix {
+  height: 85.2vh;
+  float: left;
+  width: 50%; }
+  .choix__image {
+    float: right;
+    width: 50%;
+    height: 85.2vh; }
+  .choix__subtitle {
+    width: 80%;
+    margin: 2.9375em auto; }
+
+.aside {
+  float: right;
+  margin-top: 4em; }
+  .aside__link {
+    display: block; }
+    .aside__link--button {
+      width: 16.166em;
+      height: 2.5em; }
+
+.no-sticky .aside {
+  float: none;
+  display: block;
+  position: static; }
+
+@media screen and (max-width: 975px) {
+  .aside {
+    width: 90%;
+    margin: auto;
+    margin-top: 5em; } }
+
+@media screen and (max-width: 624px) {
+  .choix {
+    float: none;
+    width: 100%;
+    height: auto; }
+    .choix__image {
+      float: none;
+      width: 100%;
+      height: 25em; } }
+
+@media screen and (max-width: 400px) {
+  .choix__image {
+    display: none; } }
+
+/* EspaceP
+ *
+ * /sass/object/askforus.scss - Askforus Object
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.askforus__section {
+  width: 87.5%;
+  margin: auto; }
+
+.askforus__label {
+  display: block; }
+
+.askforus__form {
+  width: 100%; }
+
+.askforus fieldset::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.askforus__input {
+  width: 100%;
+  height: 3em;
+  margin-bottom: 2em; }
+  .askforus__input--textarea {
+    height: 20em; }
+
+.askforus__submit {
+  width: 15.625em;
+  height: 3.5em; }
+
+.askforus__left {
+  float: left;
+  width: 40%;
+  display: inline-block; }
+
+.askforus__right {
+  display: inline-block;
+  float: right;
+  width: 50%;
+  margin-left: 3em; }
+
+@media screen and (max-width: 598px) {
+  .askforus__section {
+    width: 80%;
+    margin: auto; }
+  .askforus__left, .askforus__right {
+    float: none;
+    width: 100%;
+    margin-left: 0; } }
+
+/* EspaceP
+ *
+ * /sass/Object/manifeste.scss - manifeste Object
+ *
+ * coded by Dylan Schirino
+ * started at 09/10/2016
+ */
+.headManifeste {
+  height: 100vh; }
+  .headManifeste__link {
+    display: block;
+    width: 15em;
+    margin: 3em auto;
+    height: 3.5em; }
+
+.manifeste__title {
+  margin-top: 2.0833em;
+  display: inline-block; }
+
+.manifeste__number {
+  display: block; }
+
+.manifeste__subtitle {
+  float: left;
+  width: 19em; }
+
+.manifeste__text {
+  float: right;
+  width: 65%; }
+
+.manifeste__citation {
+  width: 50%;
+  margin: 3em auto; }
+
+.manifeste__section {
+  margin-bottom: 5em; }
+  .manifeste__section--change {
+    padding-bottom: 5em; }
+  .manifeste__section--changer {
+    width: 87.3%;
+    margin: auto; }
+
+.commentaire {
+  width: 87.3%;
+  margin: auto; }
+  .commentaire__content {
+    width: 83%;
+    margin: auto; }
+    .commentaire__content::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .commentaire__subject {
+    display: block; }
+  .commentaire__info {
+    display: block;
+    float: left; }
+  .commentaire__time {
+    display: block; }
+  .commentaire__text {
+    float: right;
+    width: 80%;
+    margin: auto; }
+
+@media screen and (max-width: 952px) {
+  .commentaire__info {
+    display: block;
+    float: none;
+    text-align: center; }
+  .commentaire__time {
+    display: inline-block;
+    padding-left: 1em; }
+  .commentaire__text {
+    float: none;
+    width: 90%;
+    margin: 1em auto; } }
+
+@media screen and (max-width: 559px) {
+  .commentaire {
+    width: 100%;
+    margin: auto; }
+    .commentaire__title {
+      text-align: center; }
+    .commentaire__text {
+      width: 100%;
+      margin: 1em auto; } }
+
+@media screen and (max-width: 1006px) {
+  .manifeste__title {
+    text-align: center;
+    display: block;
+    padding: 2em 0 1em 0; }
+  .manifeste__subtitle {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3em; }
+  .manifeste__text {
+    width: 100%;
+    margin: auto;
+    float: none; }
+  .manifeste__citation {
+    width: 100%;
+    margin: 3em auto; } }
+
+/* EspaceP
+ *
+ * /sass/components/header.scss - Header components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.header {
+  background-color: #FBF9F9; }
+  .header__logo {
+    font: 2.4em "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    padding-top: 0.6667em; }
+  .header__img {
+    vertical-align: middle;
+    padding-right: 0.8333em; }
+
+.menu__list {
+  font: 1.8em/2.3 "source_sans_prolight";
+  text-transform: uppercase;
+  letter-spacing: 0.4px; }
+
+.menu__element {
+  padding-right: 1.666em; }
+
+.menu__link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: black;
+  transition: .2s ease-in; }
+
+.menu__link--active {
+  font-weight: bold; }
+  .menu__link--active::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 30px;
+    background-color: black; }
+
+.menu__link:hover:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 30px; }
+
+.search__box {
+  font: 1.8em/1.4 "source_sans_prolight";
+  border: none;
+  background: none;
+  border-bottom: 1px solid #979797;
+  outline: none; }
+
+.search__submit {
+  background: none;
+  border: none;
+  background: url("../images/search.svg") no-repeat; }
+
+@media only screen and (max-width: 1027px) {
+  .menu__list {
+    background-color: #FBF9F9; }
+  .menu__element {
+    padding-left: 2em;
+    border-bottom: 1px solid white;
+    transition: .2s ease-in-out; }
+    .menu__element:hover {
+      background-color: #333333;
+      color: white;
+      cursor: pointer; }
+  .menu__link:hover:after {
+    height: 0;
+    background: none;
+    width: 0; } }
+
+/* EspaceP
+*
+* /sass/components/mainimage.scss - Mainimage components
+*
+* coded by Dylan Schirino
+* started at 04/10/2016
+*/
+.mainimage {
+  background: url("../images/mainimage.jpg") center fixed;
+  font-family: "playfair_display";
+  color: white; }
+  .mainimage__title {
+    font-size: 4.8em;
+    line-height: 1.3333333333em;
+    text-transform: uppercase;
+    letter-spacing: 1.07px;
+    padding-top: 3.4em; }
+  .mainimage__subtitle {
+    font-size: 3.6em;
+    line-height: 1.3333em;
+    padding-top: 0.9444em; }
+  .mainimage__link {
+    font: 2.4em/1.292em "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    transition: .2s ease-in-out; }
+    .mainimage__link:hover {
+      transform: translateY(3px); }
+    .mainimage__link::after {
+      display: block;
+      font: 1.6em "glyphs";
+      padding-top: 0.375em;
+      content: "\e900"; }
+
+@media screen and (max-width: 640px) {
+  .mainimage__title {
+    font-size: 3.6em; }
+  .mainimage__subtitle {
+    font-size: 2.4em; } }
+
+/* EspaceP
+ *
+ * /sass/components/news.scss - News components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.news {
+  background-color: #F2F2E8; }
+  .news__title {
+    font: 1.8em/1.333em "playfair_display";
+    text-transform: uppercase;
+    padding-top: 1.556em; }
+    .news__title::after {
+      display: block;
+      content: "";
+      margin-top: 0.3em;
+      width: 97px;
+      height: 1px;
+      background-color: black; }
+  .news__text {
+    font: 1.8em/1.278em "source_sans_prolight"; }
+  .news__time {
+    font: 1.3em/1.233em "source_sans_prolight";
+    text-transform: uppercase;
+    letter-spacing: 0.6px; }
+  .news__button {
+    font: 1.6em/3em "playfair_display";
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    transition: .2s ease-in; }
+    .news__button:hover {
+      border: 1px solid black;
+      background-color: white;
+      color: black; }
+
+@media screen and (max-width: 400px) {
+  .news__title {
+    text-align: center; }
+    .news__title::after {
+      margin: 0.3em auto; } }
+
+/* EspaceP
+ *
+ * /sass/components/navigation.scss - Navigation components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.profil--tds {
+  background: url("../images/tds.png") no-repeat; }
+
+.profil--etudiants {
+  background: url("../images/etudiant.png") no-repeat; }
+
+.profil--sympathisant {
+  background: url("../images/sympathisant.png") no-repeat; }
+
+.profil--clients {
+  background: url("../images/client.png") no-repeat; }
+
+.profil__title {
+  font: 2.4em/3.2 "playfair_display";
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+  .profil__title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 285px;
+    background-color: white;
+    margin: auto; }
+
+.profil__english {
+  color: white;
+  display: block;
+  font: 0.6em/1.333 "source_sans_prolight";
+  text-decoration: underline;
+  text-align: center;
+  text-transform: lowercase; }
+
+.profil__text {
+  font: 1.6em/1.4 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  color: white; }
+
+.profil__box {
+  background-color: white;
+  padding: 1.5em 0; }
+
+.profil__element {
+  font: 1.6em/1.9 "source_sans_prolight";
+  padding-left: 1.1428571429em; }
+  .profil__element::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 0.7em; }
+  .profil__element--tds::before {
+    background-color: #F4A6B0; }
+  .profil__element--etudiants::before {
+    background-color: #8BB1B3; }
+  .profil__element--sympathisant::before {
+    background-color: #75D4BA; }
+
+.profil__link {
+  border-bottom: 1px solid black;
+  transition: .2s ease-in; }
+  .profil__link:hover {
+    border: none; }
+
+.profil__button {
+  font: 1.6em/2.1 "playfair_display";
+  text-align: center;
+  text-transform: uppercase; }
+
+.profil__box {
+  transition: .2s ease-in-out; }
+  .profil__box--clients:hover {
+    background-color: black;
+    color: white; }
+
+@media screen and (max-width: 854px) {
+  .profil--tds, .profil--etudiants, .profil--sympathisant, .profil--clients {
+    background-size: contain;
+    background-position: center center; } }
+
+@media screen and (max-width: 513px) {
+  .profil--tds, .profil--etudiants, .profil--sympathisant, .profil--clients {
+    background: none; }
+  .profil--tds {
+    background: #ED707F;
+    background-color: rgba(237, 112, 127, 0.62); }
+  .profil--etudiants {
+    background: #438185;
+    background-color: rgba(67, 129, 133, 0.62); }
+  .profil--sympathisant {
+    background: #21B990;
+    background-color: rgba(33, 185, 144, 0.62); }
+  .profil--clients {
+    background: #754385;
+    background-color: rgba(117, 67, 133, 0.62); } }
+
+/* EspaceP
+ *
+ * /sass/object/footer.scss - Footer components
+ *
+ * coded by Dylan Schirino
+ * started at 04/10/2016
+ */
+.footer {
+  background-color: #3C3D41;
+  padding: 5em 0;
+  color: white; }
+  .footer__menu {
+    font: 1.6em/1.25em "source_sans_prolight"; }
+  .footer__title {
+    font: 1.125em/1.333em "playfair_display";
+    text-transform: uppercase;
+    border-bottom: 1px solid white; }
+  .footer__element {
+    padding-top: 0.9375em; }
+    .footer__element--button {
+      font-family: "playfair_display";
+      text-transform: uppercase;
+      text-align: center;
+      background-color: white;
+      color: black; }
+      .footer__element--button:hover {
+        background-color: black;
+        color: white; }
+
+.information__subtitle {
+  font: 1.8em/1.4em "playfair_display";
+  text-transform: uppercase;
+  border-bottom: 1px solid white; }
+
+.information__span {
+  text-transform: uppercase;
+  font: 1.3em/1.333em "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  padding-bottom: 0.3em; }
+
+.information__element {
+  font: 1.2em/1.4em "source_sans_prolight";
+  padding-top: 0.8em; }
+
+/* EspaceP
+ *
+ * /sass/components/headActu.scss - HeadActu components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.header__mainContainer::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.headActu {
+  background: url("../images/actu.jpg") no-repeat center center;
+  background-size: cover;
+  color: white; }
+  .headActu__title {
+    font: 3.4em/1.353em "playfair_display";
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8em 0 1.5588235294em 0;
+    letter-spacing: 0.84px; }
+    .headActu__title::after {
+      background-color: black; }
+  .headActu__info {
+    background-color: #F2F2F2; }
+  .headActu__subtitle {
+    font: 2.4em/1.333em "playfair_display";
+    letter-spacing: 0.6px;
+    text-align: center;
+    margin-top: 11.5em; }
+
+@media screen and (max-width: 682px) {
+  .headActu__subtitle {
+    margin: 0;
+    padding: 3em 0; } }
+
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook components
+ *
+ * coded by Dylan Schirino
+ * started at 03/10/2016
+ */
+.facebook {
+  color: #333333; }
+  .facebook__title {
+    font: 2.4em/1.333em "playfair_display";
+    text-transform: uppercase;
+    letter-spacing: 0.6px; }
+  .facebook__box {
+    font-family: "source_sans_prolight";
+    background-color: white;
+    box-shadow: 0 0 4px black;
+    padding: 3.5em; }
+  .facebook__time {
+    font-size: 1.4em;
+    text-transform: uppercase; }
+    .facebook__time::before {
+      content: "\e901";
+      font: 2em "glyphs";
+      display: block;
+      padding-bottom: 0.5em; }
+  .facebook__text {
+    font-size: 1.6em;
+    line-height: 1.4em;
+    padding-bottom: 3em; }
+  .facebook__button {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border: 1px solid white; }
+    .facebook__button:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black; }
+
+/* EspaceP
+ *
+ * /sass/components/facebook.scss - Facebook Components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.actuality {
+  padding-bottom: 6.1em; }
+  .actuality__title {
+    font: 3.6em/1.333em "playfair_display";
+    text-transform: uppercase;
+    letter-spacing: 0.89px;
+    padding: 1.333em 0;
+    color: #333333; }
+
+.etiquette__title {
+  font: 2.4em/1.333em "playfair_display";
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #A69064;
+  border-bottom: 1px solid #A69064; }
+
+.etiquette__element {
+  font: 1.6em/1.5 "source_sans_proregular", "Helvetica", Arial, sans-serif; }
+
+.etiquette__link {
+  transition: .2s ease-in; }
+  .etiquette__link::after {
+    font: 2em/1.6 "glyphs";
+    display: block; }
+  .etiquette__link--facebook::after {
+    content: "\e901"; }
+  .etiquette__link--twitter::after {
+    content: "\e904"; }
+  .etiquette__link:hover {
+    transform: scale(1.1); }
+
+.article__title {
+  font: 1.8em/1.5 "playfair_display";
+  text-transform: uppercase;
+  color: #A69064; }
+
+.article__text {
+  font: 1.6em/1.312em "source_sans_prolight"; }
+
+/* EspaceP
+ *
+ * /sass/components/headSoutien.scss - HeadSoutien components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.headSoutien {
+  background: url("../images/soutien.png") no-repeat center center;
+  height: 60em; }
+  .headSoutien__title {
+    font: 3.4em/1.353 "playfair_display";
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    color: white;
+    text-align: center;
+    padding: 4.4117647059em 0 1.4705882353em 0; }
+  .headSoutien__subtitle {
+    font: 1.8em/1.278 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    color: white; }
+  .headSoutien__cards {
+    background-color: #333333;
+    color: white;
+    font: 2.4em/1.292 "source_sans_prolight";
+    text-transform: uppercase;
+    padding: 0.8em 0; }
+  .headSoutien__info {
+    font-size: 0.5em;
+    padding: 1em 0; }
+  .headSoutien__label {
+    letter-spacing: 0.6px;
+    font-size: 0.58333em; }
+
+/* EspaceP
+ *
+ * /sass/components/mainSoutien.scss - mainSoutien components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.explain__title {
+  font: 2.4em/1.333em "playfair_display";
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #333333;
+  padding-bottom: 1em; }
+
+.explain__text {
+  font: 1.6em/1.25 "source_sans_prolight";
+  color: #333333; }
+
+.form__label {
+  font: 1.6em/1.312 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 0.9375em; }
+
+.form__input {
+  font: 1.6em/1.312 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  background: white;
+  border: 1px solid black;
+  padding: 1em; }
+
+.form__submit {
+  font: 1.6em/1.312 "playfair_display";
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+  -webkit-appareance: none;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  transition: .2s ease-in; }
+  .form__submit:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer; }
+
+/* EspaceP
+ *
+ * /sass/components/Partenaire.scss - Partenaire components
+ *
+ * coded by Dylan Schirino
+ * started at 06/10/2016
+ */
+.partenaire__title {
+  font: 2.4em/1.333 "playfair_display";
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding-bottom: 2em; }
+
+/* EspaceP
+ *
+ * /sass/objects/mainContact.scss - mainContact objects
+ *
+ * coded by Dylan Schirino
+ * started at 07/10/2016
+ */
+.mainContact {
+  background-color: #754385;
+  color: white; }
+  .mainContact__title {
+    font: 3.4em/1.353 "playfair_display";
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+    text-align: center;
+    padding-top: 4.5294117647em; }
+  .mainContact__subtitle {
+    font: 1.6em/1.25 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    padding: 3.125em 0; }
+    .mainContact__subtitle::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 18em;
+      background-color: white;
+      margin: 5em auto; }
+
+@media screen and (max-width: 659px) {
+  .mainContact__subtitle::after {
+    background: none; } }
+
+.country__element {
+  text-align: center; }
+
+.country__link {
+  font: 2.4em/1.344 "playfair_display";
+  text-transform: uppercase;
+  color: white;
+  padding: 1.134em;
+  transition: .2s ease-in; }
+  .country__link--bruxelles {
+    background: url("../images/bruxelles.png") no-repeat center center; }
+  .country__link--namur {
+    background: url("../images/namur.png") no-repeat center center; }
+  .country__link--mons {
+    background: url("../images/mons.png") no-repeat center center; }
+  .country__link--liege {
+    background: url("../images/liege.png") no-repeat center center; }
+  .country__link--charleroi {
+    background: url("../images/charleroi.png") no-repeat center center; }
+  .country__link--arlon {
+    background: url("../images/arlon.png") no-repeat center center; }
+  .country__link::after {
+    content: "\e902";
+    font: 1em "glyphs";
+    display: none;
+    padding-left: 4em; }
+  .country__link:hover {
+    background: none;
+    color: #754385; }
+  .country__link:hover:after {
+    display: inline-block; }
+
+/* EspaceP
+ *
+ * /sass/components/rapport.scss - rapport components
+ *
+ * coded by Dylan Schirino
+ * started at 07/10/2016
+ */
+.rapport {
+  background: url("../images/Rapport.png") no-repeat center center;
+  height: 85.3vh;
+  color: white; }
+  .rapport__title {
+    font: 3.4em "playfair_display";
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6em 0; }
+
+.sommaire {
+  background-color: #C1A5CA;
+  padding-left: 8em; }
+  .sommaire__title {
+    font: 2.4em/1.333 "playfair_display";
+    text-transform: uppercase;
+    color: white;
+    padding-top: 3em; }
+  .sommaire__link {
+    font: 1.6em/1.25 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    color: white;
+    padding: 0.3em 0;
+    transition: .2s ease-in; }
+    .sommaire__link:hover {
+      text-decoration: underline; }
+    .sommaire__link::before {
+      content: "";
+      display: inline-block;
+      width: 0.7em;
+      height: 0.7em;
+      background-color: white;
+      margin-right: 1.5em; }
+
+.button {
+  opacity: 0.2;
+  transition: .2s ease-in; }
+  .button:hover {
+    opacity: 1; }
+  .button__link {
+    background-color: black;
+    color: white;
+    font: 1.6em/2.7 "playfair_display";
+    text-transform: uppercase;
+    text-align: center; }
+
+@media screen and (max-width: 604px) {
+  .sommaire {
+    padding-bottom: 2em;
+    padding-left: 0; }
+    .sommaire__title {
+      padding-top: 1em;
+      text-align: center; }
+    .sommaire__element {
+      text-align: center; } }
+
+/* EspaceP
+ *
+ * /sass/components/country.scss - country components
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.contactForm__title {
+  font: 3.2em/1.344 "playfair_display";
+  text-transform: uppercase;
+  color: #754385; }
+  .contactForm__title--country {
+    border-bottom: 1px solid #754385; }
+
+.contactForm__label {
+  font: 1.6em/1.333 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 1em; }
+
+.contactForm__input {
+  font: 1.6em/1.333 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  background: none;
+  border: none;
+  border: 1px solid black;
+  padding-left: 1em; }
+
+.contactForm__submit {
+  font: 1.6em/2 "playfair_display";
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  -webkit-appareance: none;
+  border: 1px solid white;
+  transition: .2s ease-in; }
+  .contactForm__submit:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer; }
+
+.contactInfo__subtitle {
+  font: 1.125em/1.278 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  padding-right: 1em; }
+  .contactInfo__subtitle::before {
+    font: 1.4em "glyphs";
+    display: inline-block;
+    padding-right: 0.7em; }
+  .contactInfo__subtitle--coordinateur::before {
+    content: "\e906"; }
+  .contactInfo__subtitle--adresse::before {
+    content: "\e908"; }
+  .contactInfo__subtitle--telephone::before {
+    content: "\e905"; }
+  .contactInfo__subtitle--fax::before {
+    content: "\e903"; }
+  .contactInfo__subtitle--email::before {
+    content: "\e907"; }
+
+.contactInfo__gmap {
+  background-color: white;
+  color: black;
+  font: 1.6em/3 "playfair_display";
+  text-transform: uppercase;
+  border: 1px solid black;
+  text-align: center; }
+
+.contactInfo__element {
+  font: 1.6em/1.25 "source_sans_prolight";
+  padding-bottom: 1.25em; }
+
+.contactInfo__link:hover {
+  text-decoration: underline; }
+
+/* EspaceP
+ *
+ * /sass/components/sympathisant.scss - Sympathisant Components
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.choix--sympathisant {
+  background-color: #21B990;
+  background-color: rgba(33, 185, 144, 0.62); }
+
+.choix--clients {
+  background-color: #754385;
+  background-color: rgba(117, 67, 133, 0.62);
+  float: right; }
+
+.choix--etudiant {
+  background-color: #438185;
+  background-color: rgba(67, 129, 133, 0.62); }
+
+.choix--tds {
+  background-color: #ED707F;
+  background-color: rgba(237, 112, 127, 0.62); }
+
+.choix__image--sympathisant {
+  background: url("../images/sympathisant.png") no-repeat center center;
+  background-size: cover; }
+
+.choix__image--client {
+  background: url("../images/client.png") no-repeat center center;
+  background-size: cover;
+  float: left; }
+
+.choix__image--etudiant {
+  background: url("../images/etudiant.png") no-repeat center center;
+  background-size: cover; }
+
+.choix__image--tds {
+  background: url("../images/tds.png") no-repeat center center;
+  background-size: cover; }
+
+.choix__title {
+  font: 3.4em/1.353 "playfair_display";
+  text-transform: uppercase;
+  letter-spacing: 0.84px;
+  padding-top: 4.5294117647em;
+  text-align: center;
+  color: white; }
+  .choix__title--tds {
+    font-size: 3em; }
+
+.choix__subtitle {
+  font: 1.6em/1.25 "source_sans_prolight";
+  color: white; }
+  .choix__subtitle::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 3em auto;
+    height: 1px;
+    background-color: white; }
+
+.aside__list {
+  border-left: 1px solid black;
+  padding: 0 1.875em; }
+
+.aside__link {
+  font: 1.6em/1.25 "source_sans_prolight";
+  padding: 0.7em 0;
+  text-decoration: underline; }
+  .aside__link:hover {
+    text-decoration: none; }
+  .aside__link--button {
+    font: 1.2em/2.5 "playfair_display";
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: .2s ease-in;
+    text-align: center; }
+    .aside__link--button:hover {
+      border: 1px solid black;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      text-decoration: none; }
+
+@media screen and (max-width: 624px) {
+  .choix__title {
+    padding-top: 2em; }
+  .choix__subtitle {
+    padding: 3em 0;
+    margin: auto; }
+  .choix__subtitle::after {
+    background: none;
+    margin: 0; } }
+
+/* EspaceP
+ *
+ * /sass/components/askforus.scss - Askforus Components
+ *
+ * coded by Dylan Schirino
+ * started at 08/10/2016
+ */
+.askforus {
+  background-color: #F9F9F4;
+  padding-bottom: 5em; }
+  .askforus--comment {
+    background: none; }
+  .askforus__title {
+    font: 2.4em/1.344 "playfair_display";
+    text-transform: uppercase;
+    color: #333333;
+    padding: 2.08333em 0; }
+  .askforus__label {
+    font: 1.6em/1.333 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    color: #333333; }
+  .askforus__input {
+    font: 1.6em/1.333 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    padding-left: 1em;
+    color: #333333;
+    background: none;
+    background-color: white;
+    border: 1px solid black; }
+  .askforus__submit {
+    font: 1.6em/2 "playfair_display";
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 1px solid #F9F9F4;
+    transition: .2s ease-in; }
+    .askforus__submit:hover {
+      background-color: #F9F9F4;
+      color: black;
+      border: 1px solid black;
+      cursor: pointer; }
+
+/* EspaceP
+ *
+ * /sass/Components/manifeste.scss - manifeste Components
+ *
+ * coded by Dylan Schirino
+ * started at 09/10/2016
+ */
+.headManifeste {
+  background: url("../images/Manifeste.jpg") no-repeat center fixed;
+  color: white; }
+  .headManifeste__subtitle {
+    font: 2.4em/1.333 "playfair_display";
+    text-align: center;
+    padding-top: 4.667em; }
+  .headManifeste__title {
+    font: 3.4em/1.353 "playfair_display";
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.4705882353em; }
+  .headManifeste__link {
+    font: 1.6em/3.2 "playfair_display";
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    transition: .2s ease-in;
+    text-align: center; }
+    .headManifeste__link:hover {
+      color: black;
+      background-color: white;
+      border: 1px solid black; }
+
+@media screen and (max-width: 400px) {
+  .headManifeste__title {
+    font-size: 3em; }
+  .headManifeste__subtitle {
+    font-size: 2em; } }
+
+.manifeste {
+  color: #333333; }
+  .manifeste__title {
+    font: 2.4em/1.333 "playfair_display";
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-bottom: 1px solid #333333; }
+  .manifeste__number {
+    font: 2.4em/1.333 "source_sans_prolight";
+    padding-bottom: 0.5em;
+    color: #A69064;
+    font-weight: bold; }
+  .manifeste__subtitle {
+    font: 1.6em/1.25 "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    letter-spacing: 0.4px;
+    text-transform: uppercase; }
+  .manifeste__text {
+    font: 1.6em/1.4 "source_sans_prolight";
+    padding-bottom: 1.5em; }
+  .manifeste__citation {
+    font: 1.8em/1.5 "playfair_display";
+    color: #A69064;
+    text-align: center; }
+    .manifeste__citation::after, .manifeste__citation::before {
+      content: "";
+      display: block;
+      background-color: #F2F2E8;
+      width: 50%;
+      height: 10px;
+      margin: 2em auto; }
+  .manifeste__section--change {
+    background-color: #F9F9F4; }
+
+.commentaire__title {
+  font: 2.4em/0.875 "playfair_display";
+  text-transform: uppercase;
+  padding: 2em 0; }
+
+.commentaire__content {
+  padding-bottom: 2.6em;
+  border-bottom: 1px solid black; }
+
+.commentaire__subject {
+  font: 1.6em/1.315 "playfair_display";
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1.5625em; }
+
+.commentaire__info {
+  font: 1.8em/1.167 "source_sans_proregular", "Helvetica", Arial, sans-serif; }
+
+.commentaire__time {
+  font-family: "source_sans_prolight";
+  font-style: italic;
+  padding-top: 0.6111em; }
+
+.commentaire__text {
+  font: 1.6em/1.4 "source_sans_prolight"; }
