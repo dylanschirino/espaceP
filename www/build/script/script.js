@@ -2,16 +2,11 @@ $(document).ready(function(){
 
     (function($) {
 
+      $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[1]).offset().top });
       //Aside fixe
       $(window).on('resize', function(){
-        if ( $(window).width() > 1231) {
-          $('aside').css({"float":"none"});
-          $('aside').css({"display":"block"});
-          $('aside').css({"position":"static"});
-          $('.no-sticky').trigger('resize');
-      }
-      else{
-        $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[1]).offset().top });
+        if ( $(window).width() < 1231) {
+          $('aside').css({"display":"none"});
       }
     });
 

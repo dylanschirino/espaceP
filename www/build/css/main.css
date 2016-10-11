@@ -253,7 +253,8 @@ body {
     margin-left: 2.20em; }
   .mainimage__link {
     display: block;
-    text-align: center; }
+    text-align: center;
+    margin-top: 3.3em; }
 
 @media screen and (max-width: 640px) {
   .mainimage__title {
@@ -1151,10 +1152,9 @@ body {
   .mainimage__link {
     font: 2.4em/1.292em "source_sans_proregular", "Helvetica", Arial, sans-serif;
     text-transform: uppercase;
-    padding-top: 3.5333em;
     transition: .2s ease-in-out; }
     .mainimage__link:hover {
-      transform: translateY(5px); }
+      transform: translateY(3px); }
     .mainimage__link::after {
       display: block;
       font: 1.6em "glyphs";
@@ -1418,7 +1418,6 @@ body {
  * started at 06/10/2016
  */
 .actuality {
-  background-color: #F2F2E8;
   padding-bottom: 6.1em; }
   .actuality__title {
     font: 3.6em/1.333em "playfair_display";
@@ -1804,9 +1803,10 @@ body {
 
 .aside__link {
   font: 1.6em/1.25 "source_sans_prolight";
-  padding: 0.7em 0; }
+  padding: 0.7em 0;
+  text-decoration: underline; }
   .aside__link:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
   .aside__link--button {
     font: 1.2em/2.5 "playfair_display";
     text-transform: uppercase;

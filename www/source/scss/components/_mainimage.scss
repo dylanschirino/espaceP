@@ -24,10 +24,9 @@
   &__link{
     font: 2.4em/1.2916em $sourcesans;
     text-transform: uppercase;
-    padding-top: 3.5333em;
     transition: .2s ease-in-out;
     &:hover{
-      transform: translateY(5px);
+      transform: translateY(3px);
     }
     &::after{
       display: block;
