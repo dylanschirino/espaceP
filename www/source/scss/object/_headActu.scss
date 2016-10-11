@@ -8,13 +8,4 @@
 
 .headActu{
   min-height: 33.1em;
-  &__title{
-    &::after{
-      content: "";
-      display: block;
-      margin: auto;
-      height: 1px;
-      width: 180px;
-    }
-  }
 }

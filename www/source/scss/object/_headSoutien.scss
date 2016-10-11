@@ -10,11 +10,23 @@
    width:72.5%;
    margin:5em auto;
  }
-
+.headActu{
+  float: left;
+  width: 50%;
+  height: 85.3vh;
+  &__info{
+    float: right;
+    width: 50%;
+    height: 85.3vh;
+  }
+}
  .headSoutien{
    margin-bottom: 6.5em;
+   &__title{
+     margin: 1em auto;
+   }
    &__subtitle{
-     width: 19.2em;
+     width: 60%;
      margin: auto;
      margin-bottom: 2.777em;
    }
@@ -26,10 +38,22 @@
      margin-left:4.28571428em;
    }
    &__compte{
-     margin-left: 2.4em;
+    text-align: center;
+   }
+   &__info{
+     text-align: center;
    }
  }
 
+@media screen and (max-width:682px) {
+    .headActu,.headActu__info{
+      float: none;
+      width: 100%;
+      margin: 0;
+      display: block;
+      height: auto;
+    }
+}
  @media screen and (max-width:567px) {
    .mainSoutien{
      width: 90%;

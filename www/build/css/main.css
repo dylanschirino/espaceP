@@ -421,8 +421,11 @@ body {
   .information__list {
     width: 90%;
     margin: auto; }
+  .information__span {
+    display: inline-block;
+    padding-right: 1em; }
   .information__element {
-    text-align: center; }
+    text-align: left; }
   .information__content {
     width: 90%;
     margin: 3em auto; } }
@@ -440,12 +443,6 @@ body {
  */
 .headActu {
   min-height: 33.1em; }
-  .headActu__title::after {
-    content: "";
-    display: block;
-    margin: auto;
-    height: 1px;
-    width: 180px; }
 
 /* EspaceP
  *
@@ -576,10 +573,21 @@ body {
   width: 72.5%;
   margin: 5em auto; }
 
+.headActu {
+  float: left;
+  width: 50%;
+  height: 85.3vh; }
+  .headActu__info {
+    float: right;
+    width: 50%;
+    height: 85.3vh; }
+
 .headSoutien {
   margin-bottom: 6.5em; }
+  .headSoutien__title {
+    margin: 1em auto; }
   .headSoutien__subtitle {
-    width: 19.2em;
+    width: 60%;
     margin: auto;
     margin-bottom: 2.777em; }
   .headSoutien__cards {
@@ -588,7 +596,17 @@ body {
   .headSoutien__label {
     margin-left: 4.28571428em; }
   .headSoutien__compte {
-    margin-left: 2.4em; }
+    text-align: center; }
+  .headSoutien__info {
+    text-align: center; }
+
+@media screen and (max-width: 682px) {
+  .headActu, .headActu__info {
+    float: none;
+    width: 100%;
+    margin: 0;
+    display: block;
+    height: auto; } }
 
 @media screen and (max-width: 567px) {
   .mainSoutien {
@@ -1392,21 +1410,35 @@ body {
  * coded by Dylan Schirino
  * started at 03/10/2016
  */
+.header__mainContainer::after {
+  content: "";
+  display: block;
+  clear: both; }
+
 .headActu {
-  background: url("../images/actu.png") no-repeat center;
-  color: #333333; }
+  background: url("../images/actu.jpg") no-repeat center center;
+  background-size: cover;
+  color: white; }
   .headActu__title {
     font: 3.4em/1.353em "playfair_display";
     text-transform: uppercase;
     text-align: center;
-    padding: 2.9411764706em 0 1.5588235294em 0;
+    padding: 8em 0 1.5588235294em 0;
     letter-spacing: 0.84px; }
     .headActu__title::after {
       background-color: black; }
+  .headActu__info {
+    background-color: #F2F2F2; }
   .headActu__subtitle {
     font: 2.4em/1.333em "playfair_display";
     letter-spacing: 0.6px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 11.5em; }
+
+@media screen and (max-width: 682px) {
+  .headActu__subtitle {
+    margin: 0;
+    padding: 3em 0; } }
 
 /* EspaceP
  *
@@ -1522,6 +1554,9 @@ body {
     font: 2.4em/1.292 "source_sans_prolight";
     text-transform: uppercase;
     padding: 0.8em 0; }
+  .headSoutien__info {
+    font-size: 0.5em;
+    padding: 1em 0; }
   .headSoutien__label {
     letter-spacing: 0.6px;
     font-size: 0.58333em; }

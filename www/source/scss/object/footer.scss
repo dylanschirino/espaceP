@@ -103,8 +103,12 @@
       width: 90%;
       margin: auto;
     }
+    &__span{
+      display: inline-block;
+      padding-right: 1em;
+    }
     &__element{
-      text-align: center;
+      text-align:left;
     }
     &__content{
       width: 90%;

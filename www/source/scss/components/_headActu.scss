@@ -5,23 +5,43 @@
  * coded by Dylan Schirino
  * started at 03/10/2016
  */
-
+.header__mainContainer{
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
 .headActu{
-  background:url("../images/actu.png")no-repeat center;
-  color: $texteColor;
+  background:url("../images/actu.jpg")no-repeat center center;
+  background-size: cover;
+  color: $white;
   &__title{
     font: 3.4em/1.35294117em $playfair;
     text-transform: uppercase;
     text-align: center;
-    padding: 2.9411764706em 0 1.5588235294em 0;
+    padding: 8em 0 1.5588235294em 0;
     letter-spacing: 0.84px;
     &::after{
       background-color: $black;
     }
   }
+  &__info{
+    background-color: #F2F2F2;
+  }
   &__subtitle{
     font: 2.4em/1.333em $playfair;
     letter-spacing: 0.6px;
     text-align: center;
+    margin-top:11.5em;
   }
+}
+
+@media screen and (max-width:682px) {
+    .headActu{
+      &__subtitle{
+        margin: 0;
+        padding:3em 0;
+      }
+    }
 }
