@@ -1670,17 +1670,17 @@ body {
   color: white;
   padding: 1.134em;
   transition: .2s ease-in; }
-  .country__link--bruxelles {
+  .country__link--Bruxelles {
     background: url("../images/bruxelles.png") no-repeat center center; }
-  .country__link--namur {
+  .country__link--Namur {
     background: url("../images/namur.png") no-repeat center center; }
-  .country__link--mons {
+  .country__link--Mons {
     background: url("../images/mons.png") no-repeat center center; }
-  .country__link--liege {
+  .country__link--Liège {
     background: url("../images/liege.png") no-repeat center center; }
-  .country__link--charleroi {
+  .country__link--Charleroi {
     background: url("../images/charleroi.png") no-repeat center center; }
-  .country__link--arlon {
+  .country__link--Arlon {
     background: url("../images/arlon.png") no-repeat center center; }
   .country__link::after {
     content: "\e902";
@@ -1803,6 +1803,7 @@ body {
     font: 1.4em "glyphs";
     display: inline-block;
     padding-right: 0.7em; }
+
   .contactInfo__subtitle--coordinateur::before {
     content: "\e906"; }
   .contactInfo__subtitle--adresse::before {

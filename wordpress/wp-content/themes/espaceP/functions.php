@@ -1,6 +1,7 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 
+
 define('WPCF7_AUTOP', false);
 /*
 *  Register nav menus
@@ -27,6 +28,17 @@ function b_get_menu_items( $location )
       }
       return $navItems;
 }
+
+
+add_filter('nav_menu_css_class' , 'add_custom_class' , 10 , 2);
+
+function add_custom_class ($classes, $navItem) {
+    if (in_array('menu__list', $classes) ){
+        $classes[] = '.menu__link--active ';
+    }
+    return $classes;
+}
+
 
 function get_the_link($string, $replace = '%s')
 {
@@ -91,7 +103,7 @@ function the_link($string, $replace = '%s')
 }
 
 
-register_post_type( 'Antenne', [
+register_post_type( 'antenne', [
             'label' => __('Antenne','p'),
             'lapels' => [
                         'singular_name' => __('Antenne de Contact','p'),

@@ -2,12 +2,12 @@
   <section class="footer__menu">
     <h2 class="footer__title">Menu<span class="hidden"> Secondaire</span></h2>
     <ul class="footer__list">
-      <li class="footer__element"><a class="footer__link" href="actu.html" title="Aller a la page actualité">Actualité</a></li>
-      <li class="footer__element"><a class="footer__link" href="rapport.html" title="Aller a la page actualité">Rapport d'activité</a></li>
-      <li class="footer__element"><a class="footer__link" href="manifeste.html" title="Aller a la page manifeste">Manifeste</a></li>
+      <li class="footer__element"><a class="footer__link" href="<?php echo the_permalink('53');?>" title="Aller a la page actualité">Actualité</a></li>
+      <li class="footer__element"><a class="footer__link" href="<?php echo the_permalink('53');?>" title="Aller a la page actualité">Rapport d'activité</a></li>
+      <li class="footer__element"><a class="footer__link" href="<?php echo the_permalink('56');?>" title="Aller a la page manifeste">Manifeste</a></li>
       <li class="footer__element"><a class="footer__link" href="contact.html" title="Aller a la page contact">Contact</a></li>
       <li class="footer__element"><a class="footer__link" href="soutenir.html" title="Aller a la page soutenir">Soutenir</a></li>
-      <li class="footer__element"><a class="footer__link" href="tds.html" title="Aller a la page travailleur du sexe">Travailleur du sexe</a></li>
+      <li class="footer__element"><a class="footer__link" href="<?php echo the_permalink('21');?>" title="Aller a la page travailleur du sexe">Travailleur du sexe</a></li>
       <li class="footer__element"><a class="footer__link" href="etudiants.html" title="Aller a la page étudiants">Étudiants</a></li>
       <li class="footer__element"><a class="footer__link" href="sympathisant.html" title="Aller a la page sympathisant">Sympathisant</a></li>
       <li class="footer__element"><a class="footer__link" href="clients.html" title="Aller a la page clients">Clients</a></li>
@@ -17,8 +17,8 @@
   <section class="footer__information">
     <h2 class="information__title hidden">Information de contact</h2>
     <div class="information__container information__container--left">
-      <section class="information__content"><a class="information__titleLink" href="ville.html" title="Aller vers la page bruxelles">
-          <h3 class="information__subtitle">Bruxelles</h3></a>
+      <section class="information__content">
+          <h3 class="information__subtitle">Bruxelles</h3>
         <ul class="information__list">
           <li class="information__element"><span class="information__span">Tel</span><a class="information__link" href="tel:022199874 " title="Nous téléphoner?">02 219 98 74</a></li>
           <li class="information__element"><span class="information__span">Mail</span><a class="information__link" href="mailto:espacepbxl@hotmail.com" title="Nous envoyer un email">espacepbxl@hotmail.com</a></li>
