@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 
 
-  $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[1]).offset().top });
+  $('#sticky').scrollToFixed({ limit: $($('.actuality__article h3')[4]).offset().top });
   //Aside fixe
   $(window).on('resize', function(){
     if ( $(window).width() < 1251) {

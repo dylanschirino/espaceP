@@ -1304,7 +1304,10 @@ body {
   font: 0.6em/1.333 "source_sans_prolight";
   text-decoration: underline;
   text-align: center;
-  text-transform: lowercase; }
+  display: inline-block;
+  padding-left: 0.5em; }
+  .profil__english:hover {
+    text-decoration: none; }
 
 .profil__text {
   font: 1.6em/1.4 "source_sans_proregular", "Helvetica", Arial, sans-serif;

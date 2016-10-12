@@ -34,12 +34,16 @@
     }
   }
   &__english{
-    color: $white;
+    color: white;
     display: block;
-    font: 0.6em/1.333 $sourcesanslight;
+    font: 0.6em/1.333 "source_sans_prolight";
     text-decoration: underline;
     text-align: center;
-    text-transform: lowercase;
+    display: inline-block;
+    padding-left:0.5em;
+    &:hover{
+      text-decoration: none;
+    }
 
   }
   &__text{
