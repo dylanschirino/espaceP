@@ -39,13 +39,19 @@ get_header();
               <?php $rows = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 21 AND meta_key LIKE "section_de_contenu_%_titre"');?>
 
               <?php $texte = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 21 AND meta_key LIKE "section_de_contenu_%_texte"');?>
+
                 <?php foreach($rows as $row): ;?>
               <article class="actuality__article" id="<?php echo str_replace(" ","",$row->meta_value);?>">
                 <h3 class="article__title"><?php echo $row->meta_value;?></h3>
                 <?php foreach($texte as $text): ;?>
-                <p class="article__text article__text--rapport">
-                  <!-- <?php echo $text->meta_value;?> -->
-                </p>
+
+                  <?php $rowkey=substr($row->meta_key,19,-6);?>
+                  <?php $textkey= substr($text->meta_key,19,-6);?>
+                  <?php if($rowkey==$textkey):;?>
+                <div class="article__text article__text--rapport">
+                  <?php echo $text->meta_value;?>
+                </div>
+                <?php endif;?>
                 <?php endforeach;?>
               </article>
             <?php endforeach;?>

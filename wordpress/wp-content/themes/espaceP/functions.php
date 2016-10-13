@@ -23,6 +23,7 @@ function b_get_menu_items( $location )
             $item = new stdClass();
             $item->url = $obj->url;
             $item->label = $obj->title;
+            $item->icon = $obj->classes[0];
             $item->id = $obj->object_id;
             array_push($navItems, $item);
       }
