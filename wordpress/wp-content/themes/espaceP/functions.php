@@ -87,17 +87,13 @@ function the_link($string, $replace = '%s')
         $linkedinURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$share_URL.'/&title='.$share_title.'&summary=&source=';
 
         $content .= '<!-- Facebook Share Button -->
-        <ul class="share__list">
-        <li class="share__element share__element--facebook">
-        <a class="share__link share__link--facebook" href="'.$facebookURL.'" title="Partager sur facebook"><span class="hidden">Facebook</span></a>
+        <ul class="etiquette__list">
+        <li class="etiquette__element etiquette__element--facebook">
+        <a class="etiquette__link etiquette__link--facebook" href="'.$facebookURL.'" title="Partager sur facebook"><span class="hidden">Facebook</span></a>
         </li>
         <!-- Twitter Share Button -->
-        <li class="share__element share__element--twitter">
-        <a class="share__link share__link--twitter" href="'.$twitterURL.'" title="Partager sur twitter"><span class="hidden">Twitter</span></a>
-        </li>
-        <!-- Google+ Share Button -->
-        <li class="share__element share__element--pinterest">
-        <a class="share__link share__link--pinterest" href="'.$pinterestURL.'" title="Partager sur Pinterest"><span class="hidden">Pinterest</span></a>
+        <li class="etiquette__element etiquette__element--twitter">
+        <a class="etiquette__link etiquette__link--twitter" href="'.$twitterURL.'" title="Partager sur twitter"><span class="hidden">Twitter</span></a>
         </li>
         </ul>';
     return $content;

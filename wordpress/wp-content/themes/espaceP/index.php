@@ -31,7 +31,14 @@ get_header();
             <h2 class="news__title">Actualité</h2>
             <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
             <time class="news__time"><?php echo the_field('time');?></time>
-            <p class="news__text"><?php echo substr(get_the_excerpt(), 0,184).'...'; ?></p><a class="news__button" href="<?php the_permalink();?>">Vers l'article</a>
+
+            <?php if( have_rows('actualite_contenu') ):
+            while( have_rows('actualite_contenu') ) : the_row();?>
+            <div class="news__text">
+              <?php echo substr(get_sub_field('texte'), 0,184).'...'; ?>
+            </div>
+          <?php endwhile; endif;?>
+            <a class="news__button" href="<?php the_permalink();?>">Vers l'article</a>
             <?php endwhile; endif;?>
           </div>
         </section>

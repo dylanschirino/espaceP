@@ -19,9 +19,9 @@
           <nav class="header__menu"><a class="header__burger" id="header__burger" href="#" title="Voir le menu"><span class="hidden">Menu</span></a>
             <h2 class="header__logo"><a class="header__logolink" href="<?php the_permalink('5');?>"><img class="header__img" src="<?php echo get_template_directory_uri().'/images/logo.jpg';?>" width="76" height="57"><?php echo bloginfo();?><span class="hidden">- Navigation</span></a></h2>
 
-
             <div class="menu__content">
               <ul class="menu__list">
+                
                 <?php global $post; $thePostID = $post->ID;
                 foreach (b_get_menu_items('menu__list') as $navItem): ?>
                   <li class="menu__element">
@@ -30,6 +30,7 @@
                 </a>
               </li>
       <?php endforeach; ?>
+
               </ul>
             </div>
 

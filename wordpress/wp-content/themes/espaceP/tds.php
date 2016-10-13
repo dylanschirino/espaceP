@@ -43,8 +43,8 @@ get_header();
                 <?php foreach($rows as $row): ;?>
               <article class="actuality__article" id="<?php echo str_replace(" ","",$row->meta_value);?>">
                 <h3 class="article__title"><?php echo $row->meta_value;?></h3>
-                <?php foreach($texte as $text): ;?>
 
+                <?php foreach($texte as $text): ;?>
                   <?php $rowkey=substr($row->meta_key,19,-6);?>
                   <?php $textkey= substr($text->meta_key,19,-6);?>
                   <?php if($rowkey==$textkey):;?>
@@ -53,7 +53,9 @@ get_header();
                 </div>
                 <?php endif;?>
                 <?php endforeach;?>
+
               </article>
+              
             <?php endforeach;?>
 
               <div class="file">
