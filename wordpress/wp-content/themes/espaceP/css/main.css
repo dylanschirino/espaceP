@@ -531,6 +531,35 @@ body {
   .article__text--rapport {
     width: 33em;
     margin-left: 5.3em; }
+.article__text--rapport p{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+.article__text--rapport h4 {
+    text-transform: uppercase;
+  font-family: "source_sans_proregular", "Helvetica", Arial, sans-serif;}
+  .article__text--rapport h5 {
+    font-family: "source_sans_proregular", "Helvetica", Arial, sans-serif;
+    font-size: 1.1em;}
+.article__text--rapport li::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #CCCCCC;
+  display:inline-block;
+  margin-right:10px;
+}
+.article__text--rapport address{
+  font-style: italic;
+}
+.article__text--rapport a{
+  text-decoration: underline;
+  color: #e38cab;
+}
+.article__text--rapport a:hover{
+  text-decoration: none;
+  color: #e38cab;
+}
 
 @media screen and (max-width: 1075px) {
   .actuality__title {
@@ -1676,7 +1705,7 @@ body {
     background: url("../images/namur.png") no-repeat center center; }
   .country__link--Mons {
     background: url("../images/mons.png") no-repeat center center; }
-  .country__link--Liège {
+  .country__link--Liege {
     background: url("../images/liege.png") no-repeat center center; }
   .country__link--Charleroi {
     background: url("../images/charleroi.png") no-repeat center center; }

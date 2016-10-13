@@ -113,3 +113,9 @@ register_post_type( 'antenne', [
             'supports' => ['title','thumbnail'],
             'has_archive' => true
       ] );
+
+function gn_tinymce_filtre($arr){
+    $arr['block_formats'] = 'Paragraph=p;Address=address;Pre=pre;Titre paragraphe=h4;Sous-titre=h5;';
+    return $arr;
+  }
+add_filter('tiny_mce_before_init', 'gn_tinymce_filtre');
