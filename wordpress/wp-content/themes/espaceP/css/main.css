@@ -509,6 +509,7 @@ body {
     display: block;
     clear: both; }
 
+
 .etiquette__list {
   margin-top: 2em; }
 
@@ -1051,17 +1052,17 @@ body {
 .manifeste__number {
   display: block; }
 
-.manifeste__subtitle {
+.manifeste__subtitle{
   float: left;
   width: 19em; }
 
-.manifeste__text {
+.manifeste__text p {
   float: right;
   width: 65%; }
 
-.manifeste__citation {
+.manifeste__citation{
   width: 50%;
-  margin: 3em auto; }
+  margin: 3em auto;}
 
 .manifeste__section {
   margin-bottom: 5em; }
@@ -1121,12 +1122,12 @@ body {
     text-align: center;
     display: block;
     padding: 2em 0 1em 0; }
-  .manifeste__subtitle {
+    .manifeste__subtitle{
     float: none;
     width: 100%;
     text-align: center;
     padding-bottom: 3em; }
-  .manifeste__text {
+  .manifeste__text p {
     width: 100%;
     margin: auto;
     float: none; }
@@ -2038,24 +2039,25 @@ body {
 
 .manifeste {
   color: #333333; }
-  .manifeste__title {
+  .manifeste__title{
     font: 2.4em/1.333 "playfair_display";
     text-transform: uppercase;
     letter-spacing: 0.6px;
     border-bottom: 1px solid #333333; }
-  .manifeste__number {
+  .manifeste__number{
     font: 2.4em/1.333 "source_sans_prolight";
     padding-bottom: 0.5em;
+    display: block;
     color: #A69064;
     font-weight: bold; }
-  .manifeste__subtitle {
+  .manifeste__subtitle{
     font: 1.6em/1.25 "source_sans_proregular", "Helvetica", Arial, sans-serif;
     letter-spacing: 0.4px;
     text-transform: uppercase; }
-  .manifeste__text {
+  .manifeste__text p {
     font: 1.6em/1.4 "source_sans_prolight";
     padding-bottom: 1.5em; }
-  .manifeste__citation {
+  .manifeste__citation{
     font: 1.8em/1.5 "playfair_display";
     color: #A69064;
     text-align: center; }
