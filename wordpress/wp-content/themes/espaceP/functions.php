@@ -58,16 +58,19 @@ function the_link($string, $replace = '%s')
 */
       $comment_args = array( 'fields' => apply_filters( 'comment_form_default_fields', array(
           'author' =>
-          '<div class="commentform__left"><label for="name" class="commentform__label">' . __( 'Nom' ) . '</label> '.
-          '<input id="name" class="commentform__input" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . ' /></div>',
+          '<div class="askforus__left"><label for="name" class="askforus__label">' . __( 'Nom' ) . '</label> '.
+          '<input id="name" class="askforus__input" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . ' />',
           'email'  =>
-          '<div class="commentform__right"><label for="internet" class="commentform__label">' . __( 'Mail' ) . '</label> ' .
-          '<input id="internet" class="commentform__input" name="internet" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . ' /></div>',
+          '<label for="internet" class="askforus__label">' . __( 'Email' ) . '</label> ' .
+          '<input id="internet" class="askforus__input" name="internet" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . ' />',
+          'url'=>
+          '<label for="url" class="askforus__label">' . __( 'Sujet' ) . '</label> '.
+          '<input id="url" class="askforus__input" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30"' . ' /></div>',
           ) ),
-          'comment_field' =>'<label for="message" class="commentform__label">' . __( 'Message' ) . '</label>' .
-           '<textarea id="message" class="commentform__input commentform__input--textarea" name="comment" cols="45" rows="8" aria-required="true"></textarea>',
-           'class_submit'=>'commentform__submit',
-           'label_submit'=>'Commenter'
+          'comment_field' =>'<div class="askforus__right"><label for="message" class="askforus__label">' . __( 'Message' ) . '</label>' .
+           '<textarea id="message" class="askforus__input askforus__input--textarea" name="comment" cols="45" rows="8" aria-required="true"></textarea></div>',
+           'class_submit'=>'askforus__submit',
+           'label_submit'=>'Je signe !'
   );
 
 

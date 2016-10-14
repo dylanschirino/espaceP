@@ -112,9 +112,13 @@ body {
  * coded by Dylan Schirino
  * started at 03/10/2016
  */
-.none {
+.none,.comment-reply-title {
   display: none;
   position: absolute; }
+.comment-notes{
+  font: 1.3em "source_sans_proregular", "Helvetica", Arial, sans-serif;
+  padding: 2em 0;
+}
 
 .header__content {
   max-width: 88.7%;
@@ -2090,7 +2094,7 @@ body {
   font: 1.6em/1.315 "playfair_display";
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 1.5625em; }
+  padding: 1.5625em 0; }
 
 .commentaire__info {
   font: 1.8em/1.167 "source_sans_proregular", "Helvetica", Arial, sans-serif; }
