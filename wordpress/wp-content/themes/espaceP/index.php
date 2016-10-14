@@ -66,11 +66,14 @@ get_header();
 
               <article class="profil profil--etudiants">
                 <h3 class="profil__title">Étudiants</h3>
-                <p class="profil__text">Pour toute question concernant un stage, une intervention scolaire ou si vous avez simplement des interrogations sur nos actions, consultez cette section</p>
+                <?php global $wpdb;
+                $accroches = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 178 AND meta_key LIKE "accroche"');?>
+                <?php foreach($accroches as $accroche): ;?>
+                <div class="profil__text"><?php echo $accroche->meta_value;?></div>
+              <?php endforeach;?>
                 <div class="profil__box profil__box--etudiants">
                   <ul class="profil__list">
-                    <?php global $wpdb;
-
+                    <?php
                     $rows = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 169 AND meta_key LIKE "section_de_contenu_%_titre"');?>
                     <?php foreach($rows as $row): ;?>
                     <li class="profil__element profil__element--etudiants"><a class="profil__link" href="<?php echo the_permalink('169').'#'.strtolower(str_replace(" ","",$row->meta_value));?>"><?php echo $row->meta_value;?></a></li>

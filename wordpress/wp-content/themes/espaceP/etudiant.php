@@ -11,7 +11,12 @@ get_header();
     <div class="header__mainContainer">
       <section class="choix choix--etudiant">
         <h2 class="choix__title">Étudiant</h2>
-        <p class="choix__subtitle">Pour toute question concernant un stage, une intervention scolaire ou si vous avez simplement des interrogations sur nos actions, consultez cette section</p>
+        <?php global $wpdb;
+        $accroches = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 178 AND meta_key LIKE "accroche"');?>
+        <?php foreach($accroches as $accroche): ;?>
+        <div class="choix__subtitle"><?php echo $accroche->meta_value;?>
+        </div>
+        <?php endforeach;?>
       </section>
       <div class="choix__image choix__image--etudiant">
         <p class="hidden">Image représentant un homme qui est dans les bras d'une Travailleuse du sexe, plein de tendresse dans cette image</p>
@@ -21,7 +26,7 @@ get_header();
 
       <aside class="aside" id="sticky">
         <ul class="aside__list">
-        <?php global $wpdb;
+        <?php
         $rows = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 169 AND meta_key LIKE "section_de_contenu_%_titre"');?>
 
           <?php foreach($rows as $row): ;?>
