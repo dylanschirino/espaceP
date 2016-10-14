@@ -85,11 +85,18 @@ get_header();
             <div class="navigation__container--right">
               <article class="profil profil--sympathisant">
                 <h3 class="profil__title">Sympathisant</h3>
-                <p class="profil__text">Vous êtes un sympathisant ou vous avez entendu parlé de nous par hasard et vous voulez en savoir plus sur notre association ou adhérez à notre manifeste, vous êtes au bon endroits</p>
+                <?php global $wpdb;
+                $accroches = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 179 AND meta_key LIKE "accroche"');?>
+                <?php foreach($accroches as $accroche): ;?>
+                <div class="profil__text"><?php echo $accroche->meta_value;?></div>
+              <?php endforeach;?>
                 <div class="profil__box profil__box--sympathisant">
                   <ul class="profil__list">
-                    <li class="profil__element profil__element--sympathisant"><a class="profil__link" href="sympathisant.html#pointfort">Points fort de notre manifeste</a></li>
-                    <li class="profil__element profil__element--sympathisant"><a class="profil__link" href="sympathisant.html">Le point sur notre législation et les autres</a></li>
+                    <?php
+                    $rows = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 179 AND meta_key LIKE "section_de_contenu_%_titre"');?>
+                    <?php foreach($rows as $row): ;?>
+                    <li class="profil__element profil__element--sympathisant"><a class="profil__link" href="<?php echo the_permalink('179').'#'.strtolower(str_replace(" ","",$row->meta_value));?>"><?php echo $row->meta_value;?></a></li>
+                  <?php endforeach;?>
                   </ul>
                 </div>
               </article>

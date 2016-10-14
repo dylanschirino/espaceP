@@ -36,7 +36,7 @@ get_header();
         </ul>
       </aside>
       <section class="rapportContent">
-        <h2 class="hidden">Texte sur les sympathisant</h2>
+        <h2 class="hidden">Texte sur les étudiants</h2>
         <?php $rows = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 169 AND meta_key LIKE "section_de_contenu_%_titre"');?>
 
         <?php $texte = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 169 AND meta_key LIKE "section_de_contenu_%_texte"');?>
