@@ -102,8 +102,11 @@ get_header();
               </article>
               <article class="profil profil--clients">
                 <h3 class="profil__title">Clients</h3>
-                <p class="profil__text">Vous êtes un client et vous avez des droits mais vous avez aussi des obligations et des précautions à prendre de votre côtés pour que tout se passe dans le respect de chaqu’un. Vous trouverez ici un petit guide du client pour en apprendre d’avantage.</p>
-                <div class="profil__box profil__box--clients"><a class="profil__button" href="clients.html">Guide du clients</a></div>
+                <?php $accroches = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 183 AND meta_key LIKE "accroche"');?>
+                <?php foreach($accroches as $accroche): ;?>
+                <div class="profil__text"><?php echo $accroche->meta_value;?></div>
+              <?php endforeach;?>
+                <div class="profil__box profil__box--clients"><a class="profil__button" href="<?php echo the_permalink('183');?>">Guide du clients</a></div>
               </article>
             </div>
           </div>

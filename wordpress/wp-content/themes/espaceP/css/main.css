@@ -1055,6 +1055,12 @@ body {
 .manifeste__subtitle{
   float: left;
   width: 19em; }
+.article__text--rapport h4 {
+  padding: 2em 0;
+}
+.article__text--rapport p {
+  padding: 1em 0;
+}
 
 .manifeste__text p {
   float: right;
@@ -1127,7 +1133,7 @@ body {
     width: 100%;
     text-align: center;
     padding-bottom: 3em; }
-  .manifeste__text p {
+  .manifeste__text p{
     width: 100%;
     margin: auto;
     float: none; }
