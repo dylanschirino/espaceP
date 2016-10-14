@@ -113,8 +113,8 @@ body {
  * started at 03/10/2016
  */
 .none {
-  position: absolute;
-  display: none; }
+  display: none;
+  position: absolute; }
 
 .header__content {
   max-width: 88.7%;
@@ -158,11 +158,11 @@ body {
   .menu__content {
     margin-left: 1em; } }
 
-@media only screen and (max-width: 1169px) {
+@media only screen and (max-width: 1256px) {
   .menu__element {
     font-size: 0.8em; } }
 
-@media only screen and (max-width: 1027px) {
+@media only screen and (max-width: 1057px) {
   .none {
     display: block;
     position: static; }
@@ -202,7 +202,7 @@ body {
   .menu__element {
     display: block; }
   .menu__link {
-    display: block;
+    display:block;
     height: 40px;
     line-height: 40px; }
   .site-content {
@@ -1158,7 +1158,7 @@ body {
   letter-spacing: 0.4px; }
 
 .menu__element {
-  padding-right: 1.666em; }
+  padding-left: 1.1em; }
 
 .menu__link::after {
   content: "";

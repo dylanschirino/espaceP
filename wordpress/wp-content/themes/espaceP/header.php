@@ -21,7 +21,7 @@
 
             <div class="menu__content">
               <ul class="menu__list">
-                
+
                 <?php global $post; $thePostID = $post->ID;
                 foreach (b_get_menu_items('menu__list') as $navItem): ?>
                   <li class="menu__element">
