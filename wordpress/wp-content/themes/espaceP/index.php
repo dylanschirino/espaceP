@@ -57,7 +57,7 @@ get_header();
 
                     $rows = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 21 AND meta_key LIKE "section_de_contenu_%_titre"');?>
                     <?php foreach($rows as $row): ;?>
-                    <li class="profil__element profil__element--tds"><a class="profil__link" href="<?php echo the_permalink('21').'#'.str_replace(" ","",$row->meta_value);?>"><?php echo $row->meta_value;?></a></li>
+                    <li class="profil__element profil__element--tds"><a class="profil__link" href="<?php echo the_permalink('21').'#'.strtolower(str_replace(" ","",$row->meta_value));?>"><?php echo $row->meta_value;?></a></li>
                   <?php endforeach;?>
 
                   </ul>
@@ -69,10 +69,12 @@ get_header();
                 <p class="profil__text">Pour toute question concernant un stage, une intervention scolaire ou si vous avez simplement des interrogations sur nos actions, consultez cette section</p>
                 <div class="profil__box profil__box--etudiants">
                   <ul class="profil__list">
-                    <li class="profil__element profil__element--etudiants"><a class="profil__link" href="etudiant.html">Nos actions</a></li>
-                    <li class="profil__element profil__element--etudiants"><a class="profil__link" href="etudiant.html">Notre philosophie</a></li>
-                    <li class="profil__element profil__element--etudiants"><a class="profil__link" href="etudiant.html">Le point sur notre législation et les autres</a></li>
-                    <li class="profil__element profil__element--etudiants"><a class="profil__link" href="etudiant.html">Infos stage et intervention scolaire</a></li>
+                    <?php global $wpdb;
+
+                    $rows = $wpdb->get_results('SELECT * FROM wp_postmeta  WHERE post_id = 169 AND meta_key LIKE "section_de_contenu_%_titre"');?>
+                    <?php foreach($rows as $row): ;?>
+                    <li class="profil__element profil__element--etudiants"><a class="profil__link" href="<?php echo the_permalink('169').'#'.strtolower(str_replace(" ","",$row->meta_value));?>"><?php echo $row->meta_value;?></a></li>
+                  <?php endforeach;?>
                   </ul>
                 </div>
               </article>
