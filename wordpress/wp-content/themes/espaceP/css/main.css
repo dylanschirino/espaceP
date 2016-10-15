@@ -112,7 +112,7 @@ body {
  * coded by Dylan Schirino
  * started at 03/10/2016
  */
-.none,.comment-reply-title,.screen-reader-response,.wpcf7-validation-errors {
+.none,.comment-reply-title,.screen-reader-response,.wpcf7-validation-errors,.lang-item {
   display: none;
   position: absolute; }
 .comment-notes{
@@ -868,7 +868,8 @@ body {
 .contactForm__input {
   width: 97%;
   height: 3em;
-  margin-bottom: 2em; }
+  margin-bottom: 0.4em;}
+
   .contactForm__input--textarea {
     height: 14.25em; }
 
@@ -1176,7 +1177,7 @@ body {
   letter-spacing: 0.4px; }
 
 .menu__element {
-  padding-left: 1.1em; }
+  padding-left: 0.9em; }
 
 .menu__link::after {
   content: "";

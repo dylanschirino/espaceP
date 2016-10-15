@@ -49,7 +49,7 @@ get_header();
             <div class="navigation__container--left">
 
               <article class="profil profil--tds">
-                <h3 class="profil__title">Travailleur du sexe<a class="profil__english" href="#english">I'm a sex Worker</a></h3>
+                <h3 class="profil__title">Travailleur du sexe<a class="profil__english" href="<?php echo the_permalink('232');?>">I'm a sex Worker</a></h3>
                 <div class="profil__box">
                   <ul class="profil__list">
                     <li class="profil__element profil__element--tds"><a class="profil__link" href="<?php echo the_permalink('21').'#askforus'?>">Demandez le passage d'une équipe</a></li>

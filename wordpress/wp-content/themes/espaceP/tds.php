@@ -9,8 +9,8 @@ get_header();
         <main>
           <div class="header__mainContainer">
             <section class="choix choix--tds">
-              <h2 class="choix__title choix__title--tds">Travailleur du sexe</h2>
-              <p class="choix__subtitle">L’intime, c’est l’ensemble de ce qui se déroule depuis le moment où le client franchit le seuil et puis en ressort. Quels en sont les rituels, les codes et les enjeux intimes que vivent les personnes prostituées dans leur quotidien professionnel?</p>
+              <h2 class="choix__title choix__title--tds"><?php echo the_title();?></h2>
+              <div class="choix__subtitle"><?php echo get_field('accroche');?></div>
             </section>
             <div class="choix__image choix__image--tds">
               <p class="hidden">Image représentant les pieds d'une femme qui porte des chaussures rouge, le sol est représenter par du carrelage</p>

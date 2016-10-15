@@ -15,22 +15,11 @@ get_header();
           <div class="mainCountry">
             <section class="contactForm">
               <h2 class="contactForm__title">Contact</h2>
-              <form class="contactForm__form">
-                <fieldset>
-                  <legend class="hidden">Formulaire de contact</legend>
-                  <label class="contactForm__label" for="name">Nom</label>
-                  <input class="contactForm__input" type="text" name="nom" id="name" placeholder="Ex : Dupont ">
-                  <label class="contactForm__label" for="firstname">Prénom</label>
-                  <input class="contactForm__input" type="text" name="prénom" id="firstname" placeholder="Ex : Jean ">
-                  <label class="contactForm__label" for="email">Email</label>
-                  <input class="contactForm__input" type="email" name="email" id="email" placeholder="Ex : jean@dupont.be">
-                  <label class="contactForm__label" for="sujet">Sujet : </label>
-                  <input class="contactForm__input" type="text" name="sujet" id="sujet" placeholder="Ex : J'aimerais vous aider ">
-                  <label class="contactForm__label" for="message">Message : </label>
-                  <textarea class="contactForm__input contactForm__input--textarea" name="message" id="message"></textarea>
-                  <input class="contactForm__submit" type="submit" value="Nous contacter">
-                </fieldset>
-              </form>
+
+              <div class="contactForm__form">
+                  <?php echo do_shortcode('[contact-form-7 id="214" title="Contact"]');?>
+              </div>
+
             </section>
             <section class="contactInfo">
               <h2 class="contactForm__title contactForm__title--country"><?php echo the_title();?></h2>

@@ -6,9 +6,10 @@ define('WPCF7_AUTOP', false);
 /*
 *  Register nav menus
 */
-register_nav_menu( 'menu__list', __('Menu principal, affiché dans le header.','b') );
+register_nav_menu( 'menu__list', __('Menu principal, affiché dans le header.','p') );
+register_nav_menu( 'menu__list', __('Menu principal, affiché dans le header en Anglais.','p') );
 
-function b_get_menu_id( $location )
+function p_get_menu_id( $location )
 {
       $a = get_nav_menu_locations();
       if (isset($a[$location])) return $a[$location];
@@ -18,7 +19,7 @@ function b_get_menu_id( $location )
 function b_get_menu_items( $location )
 {
       $navItems = [];
-      foreach (wp_get_nav_menu_items( b_get_menu_id($location) ) as $obj) {
+      foreach (wp_get_nav_menu_items( p_get_menu_id($location) ) as $obj) {
             // Si vous avoir un contrôle sur les liens affichés, c'est ici. (Par exemple: mettre $item->isCurrent à true|false)
             $item = new stdClass();
             $item->url = $obj->url;
