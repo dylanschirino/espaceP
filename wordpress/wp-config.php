@@ -37,6 +37,7 @@ define('DB_CHARSET', 'utf8mb4');
   * N’y touchez que si vous savez ce que vous faites.
   */
 define('DB_COLLATE', '');
+define ( 'WPCF7_AUTOP', false );
 
 /**#@+
  * Clés uniques d’authentification et salage.

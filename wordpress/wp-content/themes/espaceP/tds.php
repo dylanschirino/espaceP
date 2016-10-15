@@ -55,7 +55,7 @@ get_header();
                 <?php endforeach;?>
 
               </article>
-              
+
             <?php endforeach;?>
 
               <div class="file">
@@ -68,29 +68,14 @@ get_header();
               </div>
             </section>
           </div>
+
+
           <div class="askforus">
             <section class="askforus__section" id="askforus">
               <h2 class="askforus__title">Demander le passage de l'équipe</h2>
-              <form class="askforus__form">
-                <fieldset>
-                  <legend class="hidden">Formulaire de passage</legend>
-                  <div class="askforus__left">
-                    <label class="askforus__label" for="name">Nom</label>
-                    <input class="askforus__input" type="text" name="nom" id="name" placeholder="Ex : Dupont ">
-                    <label class="askforus__label" for="firstname">Prénom</label>
-                    <input class="askforus__input" type="text" name="prénom" id="firstname" placeholder="Ex : Jean ">
-                    <label class="askforus__label" for="adresse">Adresse</label>
-                    <input class="askforus__input" type="text" name="adresse" id="adresse" placeholder="Ex : Rue de la rue">
-                    <label class="askforus__label" for="cp">Code Postal : </label>
-                    <input class="askforus__input" type="number" name="cp" id="cp" placeholder="Ex : 4000 ">
-                  </div>
-                  <div class="askforus__right">
-                    <label class="askforus__label" for="message">Message : </label>
-                    <textarea class="askforus__input askforus__input--textarea" name="message" id="message"></textarea>
-                    <input class="askforus__submit" type="submit" value="Demander le passage">
-                  </div>
-                </fieldset>
-              </form>
+              <div class="askforus__form">
+              <?php echo do_shortcode('[contact-form-7 id="212" title="Passage"]');?>
+            </div>
             </section>
           </div>
         </main>
