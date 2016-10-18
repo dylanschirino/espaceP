@@ -11,7 +11,7 @@ get_header();
 
         <section class="mainimage">
           <h2 class="mainimage__title"><?php echo bloginfo();?></h2>
-          <p class="mainimage__subtitle"><?php echo bloginfo('description');?></p><a class="mainimage__link" href="#menu" title="Vers le menu principal de choix des sections"><span>Vers le menu principal</span></a>
+          <p class="mainimage__subtitle"><?php echo bloginfo('description');?></p><a class="mainimage__link js-scrollTo" href="#menu" title="Vers le menu principal de choix des sections"><span>Vers le menu principal</span></a>
         </section>
 
         <section class="news">
