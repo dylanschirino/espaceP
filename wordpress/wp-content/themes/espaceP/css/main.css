@@ -130,7 +130,6 @@ body {
 
 .header__search {
   display: inline-block;
-  width: 15.5em;
   position: relative;
   left: 4px; }
 
@@ -145,11 +144,14 @@ body {
   display: inline-block; }
 
 .search__box {
-  margin-right: 1em; }
+  margin-right: 1em;
+  -webkit-appearance: none;
+  -webkit-border-radius:0px;
+  width: 8em; }
 
 .search__submit {
   position: absolute;
-  right: 0;
+  right: 15px;
   bottom: 5px;
   width: 1.7em;
   height: 1.7em;
@@ -236,11 +238,15 @@ body {
     display: block;
     margin-top: 0.6em; } }
 
-@media screen and (max-width: 366px) {
+@media screen and (max-width: 375px) {
   .header__logolink {
-    font-size: 0.55em;
-    margin-top: 1.5em; } }
-
+    font-size: 1em;
+    margin-top: 0.6em; }
+  .search__box{
+    margin: 0;}
+  .search__submit{
+    right: 2px;
+    } }
 /* EspaceP
  *
  * /sass/object/mainimage.scss - Mainimage components
@@ -516,6 +522,10 @@ body {
 
 .etiquette__list {
   margin-top: 2em; }
+.etiquette__list--categorie a {
+  display: block;
+  font: 1em/2 "source_sans_prolight","Helvetica Neue";
+}
 
 .etiquette__element--facebook {
   margin-right: 2.4em; }
@@ -765,7 +775,7 @@ body {
 
 .mainContact {
   width: 50%;
-  height: 85.2vh;
+  height: 51.8em;
   float: right; }
   .mainContact__subtitle {
     width: 80%;
@@ -794,11 +804,11 @@ body {
 .rapport {
   width: 50%;
   float: right;
-  height: 85.3vh; }
+  height: 51.8em; }
 
 .sommaire {
-  width: 50%;
-  height: 85.3vh; }
+  width: 45.4%;
+  height: 51.8em; }
   .sommaire__list {
     margin-top: 2em; }
   .sommaire__link {
@@ -1051,7 +1061,7 @@ body {
  * started at 09/10/2016
  */
 .headManifeste {
-  height: 100vh; }
+  height: 51.8em; }
   .headManifeste__link {
     display: block;
     width: 15em;
@@ -1238,7 +1248,8 @@ body {
 * started at 04/10/2016
 */
 .mainimage {
-  background: url("../images/mainimage.jpg") center fixed;
+  background: url("../images/mainimage.jpg")no-repeat center fixed;
+  background-size: cover;
   font-family: "playfair_display";
   color: white; }
   .mainimage__title {
@@ -1346,6 +1357,12 @@ body {
     width: 285px;
     background-color: white;
     margin: auto; }
+@media only screen and (max-width: 375px) {
+  .profil__title{
+    line-height: 1.2em;
+    padding-top: 1em;
+  }
+}
 
 .profil__english {
   color: white;
@@ -1445,6 +1462,9 @@ body {
       text-align: center;
       background-color: white;
       color: black; }
+    .footer__link--button{
+      display: block;
+    }
       .footer__element--button:hover {
         background-color: black;
         color: white; }
@@ -1720,17 +1740,23 @@ body {
   padding: 1.134em;
   transition: .2s ease-in; }
   .country__link--Bruxelles {
-    background: url("../images/bruxelles.png") no-repeat center center; }
+    background: url("../images/bruxelles.png") no-repeat center center;
+    background-size: cover; }
   .country__link--Namur {
-    background: url("../images/namur.png") no-repeat center center; }
+    background: url("../images/namur.png") no-repeat center center;
+    background-size: cover; }
   .country__link--Mons {
-    background: url("../images/mons.png") no-repeat center center; }
+    background: url("../images/mons.png") no-repeat center center;
+    background-size: cover; }
   .country__link--Liege {
-    background: url("../images/liege.png") no-repeat center center; }
+    background: url("../images/liege.png") no-repeat center center;
+    background-size: cover; }
   .country__link--Charleroi {
-    background: url("../images/charleroi.png") no-repeat center center; }
+    background: url("../images/charleroi.png") no-repeat center center;
+    background-size: cover; }
   .country__link--Arlon {
-    background: url("../images/arlon.png") no-repeat center center; }
+    background: url("../images/arlon.png") no-repeat center center;
+    background-size: cover; }
   .country__link::after {
     content: "\e902";
     font: 1em "glyphs";
@@ -1751,7 +1777,7 @@ body {
  */
 .rapport {
   background: url("../images/Rapport.png") no-repeat center center;
-  height: 85.3vh;
+  background-size: cover;
   color: white; }
   .rapport__title {
     font: 3.4em "playfair_display";
@@ -2028,6 +2054,7 @@ body {
  */
 .headManifeste {
   background: url("../images/Manifeste.jpg") no-repeat center fixed;
+  background-size: cover;
   color: white; }
   .headManifeste__subtitle {
     font: 2.4em/1.333 "playfair_display";
@@ -2051,6 +2078,11 @@ body {
       border: 1px solid black; }
 
 @media screen and (max-width: 400px) {
+  .headManifeste{
+    color: black;
+    background:none;
+    height: auto;
+  }
   .headManifeste__title {
     font-size: 3em; }
   .headManifeste__subtitle {

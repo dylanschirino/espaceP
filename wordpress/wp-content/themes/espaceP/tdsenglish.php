@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Travailleur du sexe
+Template Name: Sex Worker
 */
 get_header();
 ;?>

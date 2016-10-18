@@ -24,39 +24,6 @@ get_header();
             <?php echo get_field('information_sur_le_magazine');?>
           </div>
         </article>
-
-        <div class="explain__formulaire">
-          <form class="form" method="post" action="/">
-            <fieldset>
-              <legend class="hidden">Formulaire d'information</legend>
-              <label class="form__label" for="name">Nom</label>
-              <input class="form__input" type="text" name="nom" id="name" placeholder="Ex : Dupont ">
-              <label class="form__label" for="firstname">Prénom</label>
-              <input class="form__input" type="text" name="prénom" id="firstname" placeholder="Ex : Jean ">
-              <div class="form__float">
-                <div class="form__container form__container--adress">
-                  <label class="form__label form__label--inline" for="adress">Adresse</label>
-                  <input class="form__input form__input--adress" type="text" name="adresse" id="adress" placeholder="Ex : Rue de la rue ">
-                </div>
-                <div class="form__container form__container--number">
-                  <label class="form__label form__label--inline" for="number">N°</label>
-                  <input class="form__input form__input--number" type="number" name="numero" id="number" placeholder="Ex : 4 ">
-                </div>
-              </div>
-              <div class="form__float">
-                <div class="form__container form__container--ville">
-                  <label class="form__label" for="city">Ville</label>
-                  <input class="form__input" type="text" name="ville" id="city" placeholder="Ex : Liège ">
-                </div>
-                <div class="form__container form__container--cp">
-                  <label class="form__label" for="cp">CP</label>
-                  <input class="form__input" type="number" name="cp" id="cp" placeholder="Ex : 4000 ">
-                </div>
-              </div>
-              <input class="form__submit" type="submit" value="Voici mes infos !">
-            </fieldset>
-          </form>
-        </div>
       </section>
       <section class="partenaire">
         <h2 class="partenaire__title">Ils nous soutiennent déja</h2>
